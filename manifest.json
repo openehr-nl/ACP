@@ -1,0 +1,229 @@
+{
+  "modelVersion" : 1,
+  "sources" : [ {
+    "sourceType" : "repository",
+    "id" : "acp-6pc",
+    "user" : "marcvanaalten@gmail.com@google",
+    "repositoryId" : "acp-6pc"
+  } ],
+  "entries" : [ {
+    "path" : "Templates/ACP-DUTCH.t.json",
+    "type" : "template",
+    "id" : "ACP-DUTCH",
+    "sourceId" : "acp-6pc",
+    "lastModified" : "2024-07-23T12:30:34.526Z",
+    "dependsOn" : [ {
+      "type" : "archetype",
+      "reference" : "openEHR-EHR-CLUSTER.contact_cc.v0"
+    }, {
+      "type" : "archetype",
+      "reference" : "openEHR-EHR-CLUSTER.practitioner_role_cc.v0"
+    }, {
+      "type" : "archetype",
+      "reference" : "openEHR-EHR-EVALUATION.problem_diagnosis.v1"
+    }, {
+      "type" : "archetype",
+      "reference" : "openEHR-EHR-EVALUATION.cpr_decision_uk.v0"
+    }, {
+      "type" : "archetype",
+      "reference" : "openEHR-EHR-CLUSTER.identifier_cc.v0"
+    }, {
+      "type" : "archetype",
+      "reference" : "openEHR-EHR-CLUSTER.problem_qualifier.v2"
+    }, {
+      "type" : "archetype",
+      "reference" : "openEHR-EHR-COMPOSITION.care_plan.v0"
+    }, {
+      "type" : "archetype",
+      "reference" : "openEHR-EHR-CLUSTER.telecom_cc.v0"
+    }, {
+      "type" : "archetype",
+      "reference" : "openEHR-EHR-CLUSTER.person_name.v0"
+    }, {
+      "type" : "archetype",
+      "reference" : "openEHR-EHR-EVALUATION.goal.v1"
+    }, {
+      "type" : "archetype",
+      "reference" : "openEHR-EHR-EVALUATION.care_preference_uk.v0"
+    }, {
+      "type" : "archetype",
+      "reference" : "openEHR-EHR-CLUSTER.organisation_cc.v0"
+    }, {
+      "type" : "archetype",
+      "reference" : "openEHR-EHR-EVALUATION.advance_care_directive.v2"
+    }, {
+      "type" : "archetype",
+      "reference" : "openEHR-EHR-ADMIN_ENTRY.organ_donation_preferences.v0"
+    }, {
+      "type" : "archetype",
+      "reference" : "openEHR-EHR-CLUSTER.anatomical_location.v1"
+    }, {
+      "type" : "archetype",
+      "reference" : "openEHR-EHR-SECTION.adhoc.v1"
+    }, {
+      "type" : "archetype",
+      "reference" : "openEHR-EHR-EVALUATION.advance_intervention_decisions.v1"
+    }, {
+      "type" : "archetype",
+      "reference" : "openEHR-EHR-CLUSTER.address.v1"
+    }, {
+      "type" : "archetype",
+      "reference" : "openEHR-EHR-CLUSTER.care_team.v0"
+    }, {
+      "type" : "archetype",
+      "reference" : "openEHR-EHR-CLUSTER.practitioner_cc.v0"
+    }, {
+      "type" : "archetype",
+      "reference" : "openEHR-EHR-ADMIN_ENTRY.consent_to_share.v1"
+    }, {
+      "type" : "archetype",
+      "reference" : "openEHR-EHR-CLUSTER.organisation.v1"
+    }, {
+      "type" : "archetype",
+      "reference" : "openEHR-EHR-CLUSTER.device.v1"
+    } ]
+  }, {
+    "path" : "Templates/ACP-DUTCH.opt",
+    "type" : "opt",
+    "id" : "ACP-DUTCH",
+    "lastModified" : "2024-07-23T12:30:34.526Z"
+  }, {
+    "path" : "Archetypes/openEHR-EHR-CLUSTER.contact_cc.v0.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-CLUSTER.contact_cc.v0",
+    "sourceId" : "acp-6pc",
+    "lastModified" : "2023-12-15T08:05:12.452Z"
+  }, {
+    "path" : "Archetypes/openEHR-EHR-CLUSTER.practitioner_role_cc.v0.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-CLUSTER.practitioner_role_cc.v0",
+    "sourceId" : "acp-6pc",
+    "lastModified" : "2023-12-19T09:39:05.151Z"
+  }, {
+    "path" : "Archetypes/openEHR-EHR-EVALUATION.problem_diagnosis.v1.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-EVALUATION.problem_diagnosis.v1",
+    "sourceId" : "acp-6pc",
+    "lastModified" : "2023-10-16T13:32:25.301Z"
+  }, {
+    "path" : "Archetypes/openEHR-EHR-EVALUATION.cpr_decision_uk.v0.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-EVALUATION.cpr_decision_uk.v0",
+    "sourceId" : "acp-6pc",
+    "lastModified" : "2024-02-12T13:30:51.435Z"
+  }, {
+    "path" : "Archetypes/openEHR-EHR-CLUSTER.identifier_cc.v0.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-CLUSTER.identifier_cc.v0",
+    "sourceId" : "acp-6pc",
+    "lastModified" : "2023-12-19T09:24:42.788Z"
+  }, {
+    "path" : "Archetypes/openEHR-EHR-CLUSTER.problem_qualifier.v2.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-CLUSTER.problem_qualifier.v2",
+    "sourceId" : "acp-6pc",
+    "lastModified" : "2024-02-05T14:12:44.667Z"
+  }, {
+    "path" : "Archetypes/openEHR-EHR-COMPOSITION.care_plan.v0.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-COMPOSITION.care_plan.v0",
+    "sourceId" : "acp-6pc",
+    "lastModified" : "2024-06-26T11:37:49.087Z"
+  }, {
+    "path" : "Archetypes/openEHR-EHR-CLUSTER.telecom_cc.v0.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-CLUSTER.telecom_cc.v0",
+    "sourceId" : "acp-6pc",
+    "lastModified" : "2023-12-15T08:13:06.834Z"
+  }, {
+    "path" : "Archetypes/openEHR-EHR-CLUSTER.person_name.v0.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-CLUSTER.person_name.v0",
+    "sourceId" : "acp-6pc",
+    "lastModified" : "2023-12-15T08:18:51.631Z"
+  }, {
+    "path" : "Archetypes/openEHR-EHR-EVALUATION.goal.v1.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-EVALUATION.goal.v1",
+    "sourceId" : "acp-6pc",
+    "lastModified" : "2023-10-16T16:00:33.400Z"
+  }, {
+    "path" : "Archetypes/openEHR-EHR-EVALUATION.care_preference_uk.v0.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-EVALUATION.care_preference_uk.v0",
+    "sourceId" : "acp-6pc",
+    "lastModified" : "2023-10-19T07:21:52.549Z"
+  }, {
+    "path" : "Archetypes/openEHR-EHR-CLUSTER.organisation_cc.v0.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-CLUSTER.organisation_cc.v0",
+    "sourceId" : "acp-6pc",
+    "lastModified" : "2023-12-15T08:13:07.146Z"
+  }, {
+    "path" : "Archetypes/openEHR-EHR-EVALUATION.advance_care_directive.v2.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-EVALUATION.advance_care_directive.v2",
+    "sourceId" : "acp-6pc",
+    "lastModified" : "2023-10-16T13:16:06.046Z"
+  }, {
+    "path" : "Archetypes/openEHR-EHR-ADMIN_ENTRY.organ_donation_preferences.v0.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-ADMIN_ENTRY.organ_donation_preferences.v0",
+    "sourceId" : "acp-6pc",
+    "lastModified" : "2023-11-09T20:00:51.149Z"
+  }, {
+    "path" : "Archetypes/openEHR-EHR-CLUSTER.anatomical_location.v1.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-CLUSTER.anatomical_location.v1",
+    "sourceId" : "acp-6pc",
+    "lastModified" : "2024-06-26T11:37:45.031Z"
+  }, {
+    "path" : "Archetypes/openEHR-EHR-SECTION.adhoc.v1.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-SECTION.adhoc.v1",
+    "sourceId" : "acp-6pc",
+    "lastModified" : "2023-10-16T15:51:33.758Z"
+  }, {
+    "path" : "Archetypes/openEHR-EHR-EVALUATION.advance_intervention_decisions.v1.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-EVALUATION.advance_intervention_decisions.v1",
+    "sourceId" : "acp-6pc",
+    "lastModified" : "2023-10-16T13:22:46.495Z"
+  }, {
+    "path" : "Archetypes/openEHR-EHR-CLUSTER.address.v1.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-CLUSTER.address.v1",
+    "sourceId" : "acp-6pc",
+    "lastModified" : "2023-10-16T15:55:05.103Z"
+  }, {
+    "path" : "Archetypes/openEHR-EHR-CLUSTER.care_team.v0.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-CLUSTER.care_team.v0",
+    "sourceId" : "acp-6pc",
+    "lastModified" : "2023-11-09T19:58:19.409Z"
+  }, {
+    "path" : "Archetypes/openEHR-EHR-CLUSTER.practitioner_cc.v0.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-CLUSTER.practitioner_cc.v0",
+    "sourceId" : "acp-6pc",
+    "lastModified" : "2023-12-19T09:32:26.617Z"
+  }, {
+    "path" : "Archetypes/openEHR-EHR-ADMIN_ENTRY.consent_to_share.v1.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-ADMIN_ENTRY.consent_to_share.v1",
+    "sourceId" : "acp-6pc",
+    "lastModified" : "2024-02-12T13:53:30.332Z"
+  }, {
+    "path" : "Archetypes/openEHR-EHR-CLUSTER.organisation.v1.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-CLUSTER.organisation.v1",
+    "sourceId" : "acp-6pc",
+    "lastModified" : "2023-10-16T13:11:05.296Z"
+  }, {
+    "path" : "Archetypes/openEHR-EHR-CLUSTER.device.v1.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-CLUSTER.device.v1",
+    "sourceId" : "acp-6pc",
+    "lastModified" : "2024-06-26T11:37:53.135Z"
+  } ]
+}
