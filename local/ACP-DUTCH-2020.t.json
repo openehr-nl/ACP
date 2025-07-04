@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "35.0.0",
+      "sem_ver" : "35.1.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "f753bbf21d85b05ca8602594b095dc3c",
+      "MD5-CAM-1.0.1" : "2e1ee7051e3122f8efabcc5cb5ac8c1f",
       "PARENT:MD5-CAM-1.0.1" : "13D55DE5073CB5A79B7527DCB7E65582"
     },
     "details" : {
@@ -222,7 +222,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "Individueel zorgplan palliatieve zorg",
+          "text" : "Individueel zorgplan palliatieve zorg 2020",
           "description" : "A persistent and managed list of any combination of archetypes that will support the accurate recording of a Care plan."
         }
       },
