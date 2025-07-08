@@ -1,0 +1,66 @@
+grammar: FHIRConnect/v0.0.1
+type: model
+metadata:
+  name: "EVALUATION.advance_intervention_decisions.v1"
+  version: 0.0.1a
+spec:
+  system: FHIR
+  version: R4
+  openEhrConfig:
+    archetype: "openEHR-EHR-EVALUATION.advance_intervention_decisions.v1"
+  fhirConfig:
+    structureDefinition: http://hl7.org/fhir/StructureDefinition/Consent
+
+preprocessor:
+  fhirConditions:
+    - targetRoot: "$resource"
+      targetAttribute: "meta.profile"
+      operator: "one of"
+      criteria: "http://nictiz.nl/fhir/StructureDefinition/nl-core-TreatmentDirective2" #to be updated with the canonical of the profile from the ACP information standard
+
+mappings:
+
+  - name: "treatment"
+    with:
+      fhir: "$resource.provision.code"
+      openehr: "$archetype/data[at0001]/items[at0014]/items[at0015]" #type toevoegen noodzakelijk? Hoe maak je hier meerdere FHIR-resources van omdat in openEHR je meerdere interenties hebt maar in FHIR maar 0.1
+
+   # fhirCondition: Moeten we deze mapping maken gezien de codes al gelijk zijn met het template. 
+   #   targetRoot: "$resource.extension"
+   #   targetAttribute: "url"
+   #   operator: "one of"
+   #   criteria: "[http://nictiz.nl/fhir/StructureDefinition/zib-TreatmentDirective-Treatment]"
+   # terminology:
+   #   type: "local"
+   #   conceptmap: "acp_context_map"
+    
+
+  - name: "CPR"
+    with:
+      fhir: "$resource.provision.code"
+      openehr: "$archetype/data[at0001]/items[at0009]" #naam CPR moet een code krijgen, conform the value set aan de FHIR-profiel kant. En die moet in de provicion.code terecht komen.   
+
+  - name: "decision"
+    with:
+      fhir: "$resource.provision.type" # Hoe om te gaan met OTH als aparte modifierExtension in het FHIR-profiel.
+      openehr: "$archetype/data[at0001]/items[at0014]/items[at0034]"
+
+    fhirCondition:
+      targetRoot: "$resource.modifierExtension"
+      targetAttribute: "url"
+      operator: "one of"
+      criteria: "[http://nictiz.nl/fhir/StructureDefinition/zib-TreatmentDirective-TreatmentPermitted]"
+    terminology:
+      type: "local"
+      conceptmap: "acp_context_map"
+
+  - name: "comment"
+    with:
+      fhir: "$resource.extension.value"
+      openehr: "$archetype/data[at0001]/items[at0014]/items[at0040]"
+
+    fhirCondition:
+      targetRoot: "$resource.extension"
+      targetAttribute: "url"
+      operator: "one of"
+      criteria: "[http://nictiz.nl/fhir/StructureDefinition/Comment]"

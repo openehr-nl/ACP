@@ -1,0 +1,123 @@
+grammar: FHIRConnect/v0.0.1
+type: model
+metadata:
+  name: "EVALUATION.advance_intervention_decisions.v1"
+  version: 0.0.1a
+spec:
+  system: FHIR
+  version: R4
+  openEhrConfig:
+    archetype: "openEHR-EHR-EVALUATION.advance_intervention_decisions.v1"
+  fhirConfig:
+    structureDefinition: http://hl7.org/fhir/StructureDefinition/Consent
+    multiple: true
+
+preprocessor:
+  fhirConditions:
+    - targetRoot: "$resource"
+      targetAttribute: "meta.profile"
+      operator: "one of"
+      criteria: "http://nictiz.nl/fhir/StructureDefinition/nl-core-TreatmentDirective2" 
+
+mappings:
+
+  - name: provision
+    with:
+      fhir: "$resource.provision"
+      openehr: "$archetype"
+      type: "NONE"
+    followedBy:
+      mappings:
+        - name: code
+          with:
+            fhir: "code"
+            openehr: "data[at0001]/items[at0014]/items[at0015]"
+            type: CODEABLECONCEPT
+       
+        - name: type
+          with:
+            fhir: "type"
+            openehr: "data[at0001]/items[at0014]/items[at0034]"
+            type: CODING      
+
+  - name: id
+    with:
+      fhir: "$resource"
+      openehr: "$archetype"
+    manual:
+      - name: "id"
+        fhir:
+          - path: "id"
+            value: "nl-core-TreatmentDirective-ACP"
+
+  - name: meta
+    with:
+      fhir: "$resource.meta"
+      openehr: "$archetype"
+    manual:
+      - name: meta.profile
+        fhir:
+          - path: "profile"
+            value: "http://nictiz.nl/fhir/StructureDefinition/nl-core-TreatmentDirective2"
+
+  - name: fhirStatus
+    with:
+      fhir: "$resource"
+      openehr: "$archetype"
+    manual:
+      - name: status
+        fhir:
+          - path: "status"
+            value: "active"
+
+  - name: fhirscope
+    with:
+      fhir: "$resource.scope.coding"
+      openehr: "$archetype"
+    manual:
+      - name: scope
+        fhir:
+          - path: "system"
+            value: "http://terminology.hl7.org/CodeSystem/consentscope"
+          - path: "code"
+            value: "treatment"
+          - path: "display"
+            value: "Treatment"
+
+  - name: consentCategory
+    with:
+      fhir: "$resource.category.coding"
+      openehr: "$archetype"
+    manual:
+      - name: "category"
+        fhir:
+          - path: "system"
+            value: "http://snomed.info/sct"
+          - path: "code"
+            value: "129125009"
+          - path: "display"
+            value: "verrichting met expliciete context"     
+
+  - name: agreementParty
+    with:
+      fhir: "$resource.provision.actor.reference"
+      openehr: "$reference"
+    reference:
+      resourceType: "Practitioner"
+      mappings: 
+        - name: PractitionerReference
+          with:
+            fhir: "$fhirRoot"
+            openehr: "$archetype/data[at0001]/items[at0041]/items[openEHR-EHR-CLUSTER.practitioner_cc.v0]" 
+          slotArchetype: "CLUSTER.practitioner_cc.v0"
+
+  - name: comment
+    with:
+      fhir: "$resource.extension.value"
+      openehr: "$archetype/data[at0001]/items[at0044]"
+      type: STRING
+    fhirCondition:
+      targetRoot: "$resource.extension"
+      targetAttribute: "url"
+      operator: one of
+      criteria: "http://nictiz.nl/fhir/StructureDefinition/ext-Comment"
