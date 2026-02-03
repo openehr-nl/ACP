@@ -1,0 +1,3497 @@
+{
+  "@type" : "TEMPLATE",
+  "uid" : "759b68aa-27cd-4bb1-8f10-189299056462",
+  "description" : {
+    "@type" : "RESOURCE_DESCRIPTION",
+    "originalAuthor" : {
+      "name" : "Marc van Aalten",
+      "organisation" : "Interoplab",
+      "email" : "marc.vanaalten@interoplab.eu",
+      "date" : "2025-08-08"
+    },
+    "otherContributors" : [ ],
+    "lifecycleState" : {
+      "codeString" : "unmanaged"
+    },
+    "ipAcknowledgements" : { },
+    "references" : { },
+    "conversionDetails" : { },
+    "otherDetails" : {
+      "licence" : "",
+      "custodian_organisation" : "",
+      "original_namespace" : "",
+      "original_publisher" : "",
+      "custodian_namespace" : "",
+      "sem_ver" : "14.0.0",
+      "build_uid" : "",
+      "MD5-CAM-1.0.1" : "5079ae757eafa99e1d2940ab96ac9f7e",
+      "PARENT:MD5-CAM-1.0.1" : "13D55DE5073CB5A79B7527DCB7E65582"
+    },
+    "details" : {
+      "nb" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "nb"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "en" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "en"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "nl" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "nl"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      }
+    }
+  },
+  "parentArchetypeId" : "openEHR-EHR-COMPOSITION.care_plan.v0",
+  "differential" : true,
+  "archetypeId" : {
+    "@type" : "ARCHETYPE_HRID",
+    "value" : "openEHR-EHR-COMPOSITION.t_care_plan.v0"
+  },
+  "definition" : {
+    "@type" : "C_COMPLEX_OBJECT",
+    "rmTypeName" : "COMPOSITION",
+    "nodeId" : "at0000.1",
+    "attributes" : [ {
+      "@type" : "C_ATTRIBUTE",
+      "rmAttributeName" : "context",
+      "children" : [ {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "EVENT_CONTEXT",
+        "attributes" : [ {
+          "@type" : "C_ATTRIBUTE",
+          "rmAttributeName" : "other_context",
+          "children" : [ {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ITEM_TREE",
+            "nodeId" : "at0001",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "items",
+              "children" : [ {
+                "@type" : "C_ARCHETYPE_ROOT",
+                "rmTypeName" : "CLUSTER",
+                "occurrences" : "0..1",
+                "nodeId" : "at0002.1",
+                "attributes" : [ ],
+                "attributeTuples" : [ ],
+                "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-contact_cc-003.v0",
+                "referenceType" : "archetypeOverlay"
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          } ]
+        } ],
+        "attributeTuples" : [ ]
+      } ]
+    }, {
+      "@type" : "C_ATTRIBUTE",
+      "rmAttributeName" : "content",
+      "existence" : "0..1",
+      "cardinality" : {
+        "@type" : "CARDINALITY",
+        "interval" : "1..*",
+        "ordered" : false,
+        "unique" : false
+      },
+      "children" : [ {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "EVALUATION",
+        "occurrences" : "0..1",
+        "nodeId" : "at0.11",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-advance_intervention_decisions-001.v1",
+        "referenceType" : "archetypeOverlay"
+      }, {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "EVALUATION",
+        "occurrences" : "0..1",
+        "nodeId" : "at0.17",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-advance_care_directive-001.v2",
+        "referenceType" : "archetypeOverlay"
+      }, {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "EVALUATION",
+        "occurrences" : "0..1",
+        "nodeId" : "at0.19",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-care_preference_uk-001.v0",
+        "referenceType" : "archetypeOverlay"
+      }, {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "EVALUATION",
+        "occurrences" : "0..1",
+        "nodeId" : "at0.21",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-care_preference_uk-002.v0",
+        "referenceType" : "archetypeOverlay"
+      }, {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "EVALUATION",
+        "occurrences" : "0..1",
+        "nodeId" : "at0.23",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-care_preference_uk-003.v0",
+        "referenceType" : "archetypeOverlay"
+      } ]
+    } ],
+    "attributeTuples" : [ ],
+    "attributeCustomizations" : {
+      "composer" : {
+        "aliases" : {
+          "en" : "composer"
+        }
+      }
+    }
+  },
+  "terminology" : {
+    "@type" : "ARCHETYPE_TERMINOLOGY",
+    "conceptCode" : "at0000",
+    "termDefinitions" : {
+      "en" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Proactieve Zorgplanning",
+          "description" : "A persistent and managed list of any combination of archetypes that will support the accurate recording of a Care plan."
+        }
+      },
+      "nl" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Proactieve Zorgplanning",
+          "description" : "Een persistente en beheerde lijst van elke combinatie van archetypen die de nauwkeurige vastlegging van een Zorgplan ondersteunt."
+        }
+      },
+      "nb" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Proactieve Zorgplanning",
+          "description" : "Et rammeverk for støtte registrering av alle aspekter av en behandlingsplan."
+        }
+      }
+    },
+    "termBindings" : { },
+    "terminologyExtracts" : { },
+    "valueSets" : { }
+  },
+  "adlVersion" : "1.4",
+  "buildUid" : "31a1cb98-fd9b-3b48-8064-579db7bed50c",
+  "rmName" : "openehr",
+  "rmRelease" : "1.1.0",
+  "generated" : true,
+  "templateId" : "Proactieve Zorgplanning",
+  "otherMetaData" : { },
+  "templateOverlays" : [ {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "92bccd5d-c1e2-404c-a8c2-52128ef5b788",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "FEF12ACA9033560751C7E28A75C5EF54"
+      },
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Zur Aufzeichnung vorausschauender Entscheidungen über die Gesamtabsicht der Pflege und mögliche Interventionen, die in der Regel von einem Kliniker durchgeführt werden.\r\n",
+          "keywords" : [ "DNR", "DNAR", "DNACPR", "NFR", "Reanimation", "Wiederbelebung", "EoL", "Lebensende", "Richtlinie", "Präferenz", "Ziel", "Pflege", "Eingriff", "Intervention", "Höchstgrenze", "Grenze", "Begrenzung", "Behandlung", "Umfang", "Eskalation", "Absicht", "EOLC", "lebensverlängernd", "lebensrettend", "palliativ", "Entscheidung", "Richtung" ],
+          "use" : "Dient zur Aufzeichnung von vorausschauenden Entscheidungen über die Gesamtabsicht der Pflege und mögliche Interventionen für eine Person. Die Entscheidungen unterstützen Kliniker, indem sie Hinweise auf mögliche Behandlungen, Aktivitäten und diagnostische oder therapeutische Verfahren geben, die lebensrettend oder lebensverlängernd sein können oder unerwünschte Nebenwirkungen verursachen. \r\n\r\nDieser Archetyp soll als Teil einer integrierten Pflege- oder Lebensendplanung verwendet werden und nicht als Reaktion auf eine akute oder Notfallsituation. Jede Entscheidung sollte als Reaktion auf den allgemeinen Gesundheitszustand und die allgemeinen Umstände der Person getroffen werden und wird in der Regel von einem Arzt nach Berücksichtigung der Patientenverfügung oder der erklärten Präferenzen der Person durchgesetzt.\r\n\r\nEs kann unter bestimmten Umständen notwendig sein vorübergehende Überschreitungen der üblichen Vorausverfügungen zu erfassen, z. B. während einer Schwangerschaft oder präoperativ. In dieser Situation wird es notwendig sein eine separate Instanz dieses Archetyps aufzuzeichnen, unter Verwendung einer Kombination aus relevanten Gültigkeits- und Überprüfungsdaten.\r\n",
+          "misuse" : "Nicht zur Aufzeichnung einer \"Patientenverfügung\" oder der Präferenzen der Person für die Pflege verwenden - verwenden Sie zu diesem Zweck EVALUATION.advance_care_directive.\r\n\r\nNicht zu verwenden für die Aufzeichnung von Anordnungen, die als Folge der getroffenen und mit diesem Archetyp aufgezeichneten Entscheidungen erforderlich sind. Verwenden Sie für diesen Zweck spezifische Archetypen INSTRUCTION oder ACTION.\r\n\r\n",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere en forhåndsbeslutning om den overordnede intensjonen med omsorg/behandling, samt hensiktsmessig behandling eller intervensjoner for et individ. Disse bestemmelsene er vanligvis tatt av en eller flere klinikere.",
+          "keywords" : [ "HLR-minus, R minus, resucitering, DNR, Do not resucitate, EoL, end of life, direktiv, behandlingsmål, intervensjon, beslutning, livsforlengende, palliativ, gjenoppliving, forhåndssamtale, forberedende samtale" ],
+          "use" : "For å registrere en forhåndsbeslutning om den overordnede intensjonen med omsorg/behandling, samt hensiktsmessige intervensjoner (inkludert behandling og tiltak) for et individ. Beslutningene vil støtte klinikere ved å fungere som retningslinjer knyttet til mulige behandlinger, tiltak og diagnostiske eller terapeutiske prosedyrer som kan være livreddende, livsforlengende eller føre til uønskede konsekvenser for individet.\r\n\r\nDenne arketypen er tenkt brukt som en del av behandlingsplan eller plan for omsorg i livets sluttfase, og ikke gjort under tidspress i en akutt- eller nødsituasjon. De enkelte beslutningene bør være tilpasset individets overordnede helse og situasjon. Beslutningene blir vanligvis tatt av en eller flere klinikere, etter også å ha tatt hensyn til individets og/eller pårørendes ønsker i form av livstestamente eller andre oppgitte preferanser.\r\n\r\nDet kan være nødvendig å gjøre midlertidige avvik fra beslutningene i spesielle tilfeller, for eksempel ved svangerskap eller i forbindelse med en operasjon. Da vil det være nødvendig å lage separate instanser av denne arketypen, og sette de relevante gyldighetsdatoene i Protokoll-delen.",
+          "misuse" : "Skal ikke brukes for å registrere individets livstestament eller andre personlige ønsker, bruk i stedet arketypen \"Fremtidig behandlingsvalg\" (EVALUATION.advance_care_directive).\r\n\r\nSkal ikke brukes for å forordne eller gjøre endringer i igangsatte tiltak, basert på bestemmelser gjort i denne arketypen. Bruk spesifikke INSTRUCTION- eller ACTION-arketyper til dette.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record anticipatory decisions about the overall intent of care and possible interventions, usually asserted by a clinician.",
+          "keywords" : [ "DNR", "DNAR", "DNACPR", "NFR", "resuscitation", "resuscitate", "EoL", "end of life", "directive", "preference", "goal", "care", "intervention", "ceiling", "limit", "limitation", "treatment", "scope", "escalation", "intent", "EOLC", "life-prolonging", "life-saving", "palliative", "decision", "direction" ],
+          "use" : "Use to record anticipatory decisions about the overall intent of care and possible interventions for an individual. The decisions will support clinicians by providing guidance regarding possible treatments, activities, and diagnostic or therapeutic procedures that may be life-saving, life-prolonging or cause undesirable side effects. \r\n\r\nThis archetype is intended to be used as part of integrated care or end-of-life planning, and not as a reaction to an acute or emergency situation. Each decision should be made in response to the individual's overall health and general circumstances, and usually asserted by a clinician after consideration of the individual's advance care directives or stated preferences.\r\n\r\nIt may be necessary to record temporary overrides to usual advance intervention decisions in specific circumstances, for example during pregnancy or preoperatively. In this situation it will be necessary to record a separate instance of this archetype, using a combination of relevant validity and review dates.",
+          "misuse" : "Not to be used to record an 'Advance care directive' or the individual's preferences for care - use EVALUATION.advance_care_directive for this purpose.\r\n\r\nNot to be used to record the orders required as a consequence of the decisions made and recorded using this archetype. Use specific INSTRUCTION or ACTION archetypes for this purpose.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
+    },
+    "parentArchetypeId" : "openEHR-EHR-EVALUATION.advance_intervention_decisions.v1",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-EVALUATION.ovl-advance_intervention_decisions-001.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "EVALUATION",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "data",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ITEM_TREE",
+          "nodeId" : "at0001",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0002.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "CODE_PHRASE",
+                      "occurrences" : "1..1",
+                      "terminologyId" : {
+                        "value" : "local"
+                      },
+                      "constraint" : [ "at0003", "at0004", "at0005", "at0006", "at0007" ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "CLUSTER",
+              "nodeId" : "at0014",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "items",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "nodeId" : "at0015.1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_CODED_TEXT",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "defining_code",
+                        "children" : [ {
+                          "@type" : "C_TERMINOLOGY_CODE",
+                          "rmTypeName" : "TERMINOLOGY_CODE",
+                          "occurrences" : "1..1",
+                          "terminologyId" : {
+                            "value" : "http://snomed.info/sct"
+                          },
+                          "constraint" : [ ],
+                          "selectedTerminologies" : [ "http://snomed.info/sct" ],
+                          "includedExternalTerminologyCodes" : [ {
+                            "terminologyId" : "http://snomed.info/sct",
+                            "code" : "305351004",
+                            "value" : "opname op intensive care",
+                            "translations" : {
+                              "en" : "opname op intensive care"
+                            }
+                          }, {
+                            "terminologyId" : "http://snomed.info/sct",
+                            "code" : "40617009",
+                            "value" : "kunstmatige beademing",
+                            "translations" : {
+                              "en" : "kunstmatige beademing"
+                            }
+                          }, {
+                            "terminologyId" : "http://snomed.info/sct",
+                            "code" : "116762002",
+                            "value" : "toediening van bloedproduct",
+                            "translations" : {
+                              "en" : "toediening van bloedproduct"
+                            }
+                          }, {
+                            "terminologyId" : "http://snomed.info/sct",
+                            "code" : "281789004",
+                            "value" : "antibiotische therapie",
+                            "translations" : {
+                              "en" : "antibiotische therapie"
+                            }
+                          }, {
+                            "terminologyId" : "http://snomed.info/sct",
+                            "code" : "32485007",
+                            "value" : "opname in ziekenhuis",
+                            "translations" : {
+                              "en" : "opname in ziekenhuis"
+                            }
+                          } ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_TEXT",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "nodeId" : "at0034.1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_CODED_TEXT",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "defining_code",
+                        "children" : [ {
+                          "@type" : "C_TERMINOLOGY_CODE",
+                          "rmTypeName" : "TERMINOLOGY_CODE",
+                          "occurrences" : "1..1",
+                          "terminologyId" : {
+                            "value" : "http://hl7.org/fhir/consent-provision-type"
+                          },
+                          "constraint" : [ ],
+                          "selectedTerminologies" : [ "http://hl7.org/fhir/consent-provision-type" ],
+                          "includedExternalTerminologyCodes" : [ {
+                            "terminologyId" : "http://hl7.org/fhir/consent-provision-type",
+                            "code" : "deny",
+                            "value" : "Opt Out",
+                            "translations" : {
+                              "en" : "Opt Out"
+                            }
+                          }, {
+                            "terminologyId" : "http://hl7.org/fhir/consent-provision-type",
+                            "code" : "permit",
+                            "value" : "Opt In",
+                            "translations" : {
+                              "en" : "Opt In"
+                            }
+                          } ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : {
+          "at0034.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0034.1",
+            "text" : "Behandelbesluit",
+            "description" : "Decision about the identified intervention."
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Belangrijkste overeengekomen doel van medische behandeling",
+            "description" : "The overall intent for future care and treatment for the individual.",
+            "comment" : "The proposed value set is based on the MJA reference. \r\nCoding the intent of care with an external terminology is preferred, where possible."
+          }
+        },
+        "nb" : { },
+        "de" : { }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : {
+        "ac0.2" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.2",
+          "members" : [ "at0035", "at0036", "at0037", "at0038" ]
+        },
+        "ac0.3" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.3",
+          "members" : [ ]
+        },
+        "ac0.4" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.4",
+          "members" : [ ]
+        },
+        "ac0.6" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.6",
+          "members" : [ "at0016", "at0017", "at0018", "at0019", "at0020", "at0021", "at0022", "at0023", "at0024", "at0025", "at0026", "at0027", "at0028", "at0029", "at0030", "at0031", "at0032", "at0033" ]
+        },
+        "ac0.7" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.7",
+          "members" : [ ]
+        },
+        "ac0.8" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.8",
+          "members" : [ ]
+        },
+        "ac0.9" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.9",
+          "members" : [ "at0003", "at0004", "at0005", "at0007" ]
+        },
+        "ac0.11" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.11",
+          "members" : [ "at0003", "at0004", "at0005", "at0007" ]
+        }
+      }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "3d99df16-8886-4c9a-b00d-7e1cbc9bd825",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Alina Rehberg",
+        "organisation" : "Medizinische Hochschule Hannover",
+        "email" : "rehberg.alina@mh-hannover.de"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "Vebjørn Arntzen, John Tore Valand",
+        "organisation" : "Oslo University Hospital, Helse Bergen",
+        "email" : "varntzen@ous-hf.no, john.tore.valand@helse-bergen.no"
+      },
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "963468b3-819c-4e2d-a563-8777b3ab9061",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "0F2278EB4C693598F238975E2D5A327F"
+      },
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Zur Repräsentation der Präferenzen einer Person für zukünftige medizinische Behandlung und Pflege.",
+          "keywords" : [ "Leben, Testament, Entscheidung, Richtlinie, Verfügung, Recht, Präferenz, EoL, DNR, DNACPR, Reanimation" ],
+          "use" : "Zur Repräsentation der Präferenzen einer Person für zukünftige medizinische Behandlung und Pflege.\r\n\r\nDie Anordnung zur medizinischen Versorgung kann auch als Patientenverfügung, Patientenanordnung, Patientenentscheidung, Patientenverweigerung, persönliche Anordnung, Patientenverfügung zur medizinischen Versorgung oder medizinische Anordnung bezeichnet werden. Eine Patientenverfügung wird üblicherweise verwendet, um eine lebenserhaltende Behandlung zu verweigern, die unter anderem Folgendes umfassen kann: Herz-Lungen-Wiederbelebung (HLW), klinisch unterstützte Ernährung und Flüssigkeitszufuhr, unterstützte Beatmung und Antibiotika bei lebensbedrohlichen Infektionen. Sie könnte auch positive Präferenzen und Anweisungen für zukünftige Prioritäten in der Gesundheitsversorgung, bei den Lebensumständen und in persönlichen Angelegenheiten beinhalten. Eine fähige Person kann eine Richtlinie zur medizinischen Vorabversorgung erstellen, um ihre Präferenzen für die medizinische Versorgung und Behandlung im Voraus festzuhalten, die als Leitfaden für die Entscheidungsfindung in zukünftigen Situationen dienen soll, in denen die Person nicht in der Lage ist, Entscheidungen zu treffen oder mitzuteilen. \r\n\r\nDieser Archetyp wurde speziell als Rahmen oder Struktur entwickelt, die für die komplexe Vielfalt von Anwendungsfällen und lokalen Anforderungen erweitert werden kann, indem eine Vielzahl möglicher CLUSTER-Archetypen verschachtelt wird, die je nach nationalen oder anderen lokalen Anforderungen spezifische Angaben enthalten. \r\n\r\nIn einigen Ländern ist eine Patientenverfügung rechtlich überzeugend, ohne einen offiziellen Rechtsstatus zu haben. In anderen Ländern handelt es sich um ein rechtsverbindliches Dokument und es MUSS sichergestellt werden, dass der Archetyp der Patientenverfügung und alle verschachtelten Archetypen den einschlägigen rechtlichen Anforderungen entsprechen.\r\n",
+          "misuse" : "*Not to be used to record organ donation preferences. Use a specific archetype for this purpose.\r\n\r\nNot to be used to record details about a Power of Attorney or other legal representative/proxy. Use a specific archetype for this purpose.\r\n\r\nNot to be used to record anticipatory decisions about CPR decisions, other possible intervention decisions, and intent of care as asserted by a clinician in a health record. Use the EVALUATION.advance_intervention_decisions archetype for this purpose. (en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere et individs viljeserklæring i forbindelse medisinsk fremtidig behandling og omsorg.",
+          "keywords" : [ "livstestament, EoL, End-of-life, R-, Res minus, livsforlengende, behandlingsreservasjon" ],
+          "use" : "Bruk som et rammeverk for å kommunisere et individs vilje i forbindelse med fremtidig medisinsk behandling og omsorg.\r\n\r\nEt individ som har mental kapasitet til det kan lage en viljesrerklæring som uttrykker sine ønsker knyttet til fremtidig medisinsk behandling og omsorg. Dette har til hensikt å veilede beslutninger i fremtidige situasjoner der individet er ute av stand til å gjøre, eller formidle egne valg. Et fremtidig behandlingsvalg blir normalt brukt til å motsette seg livsforlengende behandling som kan, men er ikke begrenset til, hjerte- lungeredning (HLR), kunstig tilført ernæring og væske, invasiv- og non-invasiv ventilasjonsstøtte, og antibiotikabehandling av livstruende infeksjoner. I tillegg kan det inneholde ønsker og instrukser av ikke-restriktiv art for fremtidig behandling, boform eller personlige forhold. For eksempel å prioritere god smertelindring til tross for at dette kan forkorte livet.\r\n\r\nDenne arketypen har blitt designet som et rammeverk for å kunne dekke et vidt spekter av brukssituasjoner ved å nøste inn en eller flere CLUSTER-arketyper med spesifikke detaljer og nasjonale eller lokale krav. \r\n\r\nI noen land er et et fremtidig behandlingsvalg retningsgivende uten å være et offisielt juridisk dokument. I andre land er det juridisk bindende, og det må da sikres at arketypen \"Fremtidig behandlingsvalg\" og eventuelle arketyper som nøstes inn i denne, tilfredsstiller de juridiske krav som stilles lokalt.",
+          "misuse" : "\t\r\nSkal ikke brukes for å registrere ønsker knyttet til organdonasjon. Bruk spesifikke arketyper for dette formålet.\r\n\r\nSkal ikke brukes for å registrere stedfortredende beslutningstaker eller annen juridisk representant, som for eksempel verge, for individet. Bruk spesifikke arketyper for dette formålet.\r\n\r\nSkal ikke brukes for å dokumentere selve beslutningen tatt i et behandlingsforløp om å avslutte eller begrense medisinsk behandling eller omsorg. Bruk EVALUATION.advance_intervention_decisions aspesifikke for dette formålet.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Para documentar as preferências de um indivíduo para futuros tratamentos e cuidados médicos.",
+          "keywords" : [ "testamento vital", "diretivas avançadas", "diretrizes avançadas", "decisões avançadas", "diretivas antecipadas", "diretrizes antecipadas", "decisões antecipadas", "preferências de fim de vida", "fim de vida", "não ressuscitar", "ressucitação" ],
+          "use" : "Usar para documentar as preferências de um indivíduo para tratamento e cuidados médicos futuros.\r\n\r\nA diretriz antecipada de cuidados também pode ser conhecida como testamento vital, diretiva antecipada, decisão antecipada, decisão antecipada de recusa de tratamento, diretiva pessoal, diretiva antecipada de saúde ou diretiva médica. Uma diretriz de cuidado antecipado é comumente usada para recusar o tratamento de suporte à vida que pode incluir, mas não está limitado a: ressuscitação cardiopulmonar (RCP); nutrição e hidratação clinicamente assistida; ventilação assistida; e antibióticos para infecções potencialmente fatais. Também pode incluir preferências e instruções para futuras prioridades de cuidados de saúde, condições de vida e assuntos pessoais. Um indivíduo com capacidade pode criar uma diretriz de atendimento antecipado para registrar suas preferências por atendimento médico e tratamento com antecedência, com o objetivo de orientar a tomada de decisões em situações futuras em que o indivíduo seja incapaz de tomar ou comunicar decisões.\r\n\r\nEsse arquétipo foi projetado especificamente como um framework ou estrutura que pode ser estendida para a gama complexa de casos de uso e requisitos locais, acomodando uma variedade de arquétipos CLUSTER possíveis que conterão detalhes específicos de acordo com os requisitos nacionais ou locais.\r\n\r\nEm alguns países, uma diretiva de atendimento antecipado é legalmente persuasiva mesmo sem ter um status legal oficial. Em outros, é um documento juridicamente vinculativo e DEVE ser garantido que o arquétipo da diretiva de atendimento antecipado e quaisquer arquétipos relacionados cumpram os requisitos legais relevantes.",
+          "misuse" : "Não deve ser usado para documentar preferências de doação de órgãos. Use um arquétipo específico para esse propósito.\r\n\r\nNão deve ser usado para registrar detalhes sobre uma procuração ou outro representante legal / procurador. Use um arquétipo específico para esse propósito.\r\n\r\nNão deve ser usado para registrar decisões antecipatórias sobre decisões de RCP, outras decisões de intervenção possíveis e intenção de cuidado, conforme declarado por um médico em um prontuário de saúde. Use o arquétipo EVALUATION.advance_intervention_decisions para esse propósito.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record the preferences of an individual for future medical treatment and care.",
+          "keywords" : [ "living, will, advance, advanced, directive, decision, legal, preference, EoL, DNR, DNACPR, resuscitation," ],
+          "use" : "Use to record the preferences of an individual for future medical treatment and care.\r\n\r\nAdvance care directive may also be known as living will, advance directive, advance decision, advance decision to refuse treatment, personal directive, advance healthcare directive, or medical directive. An advance care directive is commonly used to refuse life-sustaining treatment which may include, but is not limited to: cardiopulmonary resuscitation (CPR); clinically assisted nutrition and hydration; assisted ventilation; and antibiotics for life-threatening infections. It could also include positive preferences and instructions for future health care priorities, living arrangements and personal matters. An individual with capacity may create an advance care directive to record their preferences for medical care and treatment in advance, which is intended to guide decision-making in future situations in which the individual is unable to make or communicate decisions. \r\n\r\nThis archetype has been specifically designed as a framework or structure that can be extended for the complex range of use cases and local requirements by nesting a variety of possible CLUSTER archetypes which will contain specific details as per national or other local requirements. \r\n\r\nIn some countries, an advance care directive is legally persuasive without having an official legal status. In others it is a legally-binding document, and it MUST be ensured that the advance care directive archetype and any nested archetypes adhere to relevant legal requirements.",
+          "misuse" : "Not to be used to record organ donation preferences. Use a specific archetype for this purpose.\r\n\r\nNot to be used to record details about a Power of Attorney or other legal representative/proxy. Use a specific archetype for this purpose.\r\n\r\nNot to be used to record anticipatory decisions about CPR decisions, other possible intervention decisions, and intent of care as asserted by a clinician in a health record. Use the EVALUATION.advance_intervention_decisions archetype for this purpose.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nl" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nl"
+          },
+          "purpose" : "Voor het vastleggen van de voorkeuren van een individu voor toekomstige medische zorg en behandeling.",
+          "keywords" : [ "Wilsverklaring, reanimatieverklaring, behandelverbod, beslissing, juridisch, voorkeur, levenseinde, reanimeren, NTBR." ],
+          "use" : "Te gebruiken voor het vastleggen van de voorkeuren van een individu voor toekomstige medische zorg en behandeling.\r\n\r\n\"Advance care directive\" kan ook bekend staan als o.a. wilsverklaring of behandelverbod.\r\nEen wilsverklaring wordt vaak gebruikt om levensreddende behandeling te weigeren waaronder, maar niet beperkt tot reanimatie, kunstmatige voeding en vocht toediening, kunstmatige beademing, en antibiotica voor levensbedreigende infecties. Het kan ook positieve voorkeuren of instructies bevatten voor toekomstige prioriteiten van gezondheidszorg, woonsituatie en persoonlijke aangelegenheden. \r\n* (en) \r\nAn individual with capacity may create an advance care directive to record their preferences for medical care and treatment in advance, which is intended to guide decision-making in future situations in which the individual is unable to make or communicate decisions. \r\n\r\nThis archetype has been specifically designed as a framework or structure that can be extended for the complex range of use cases and local requirements by nesting a variety of possible CLUSTER archetypes which will contain specific details as per national or other local requirements. \r\n\r\nIn some countries, an advance care directive is legally persuasive without having an official legal status. In others it is a legally-binding document, and it MUST be ensured that the advance care directive archetype and any nested archetypes adhere to relevant legal requirements.",
+          "misuse" : "*Not to be used to record organ donation preferences. Use a specific archetype for this purpose.\r\n\r\nNot to be used to record details about a Power of Attorney or other legal representative/proxy. Use a specific archetype for this purpose.\r\n\r\nNot to be used to record anticipatory decisions about CPR decisions, other possible intervention decisions, and intent of care as asserted by a clinician in a health record. Use the EVALUATION.advance_intervention_decisions archetype for this purpose.(en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
+    },
+    "parentArchetypeId" : "openEHR-EHR-EVALUATION.advance_care_directive.v2",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-EVALUATION.ovl-advance_care_directive-001.v2"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "EVALUATION",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "data",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ITEM_TREE",
+          "nodeId" : "at0001",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0005.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "0..1",
+                      "terminologyId" : {
+                        "value" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.14.1"
+                      },
+                      "constraint" : [ ],
+                      "selectedTerminologies" : [ "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.14.1" ],
+                      "limitToList" : false,
+                      "includedExternalTerminologyCodes" : [ {
+                        "terminologyId" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.14.1",
+                        "code" : "NR",
+                        "value" : "Niet reanimeren verklaring",
+                        "translations" : { }
+                      }, {
+                        "terminologyId" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.14.1",
+                        "code" : "VOL",
+                        "value" : "Volmacht",
+                        "translations" : { }
+                      }, {
+                        "terminologyId" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.14.1",
+                        "code" : "VERB",
+                        "value" : "Behandelverbod",
+                        "translations" : { }
+                      }, {
+                        "terminologyId" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.14.1",
+                        "code" : "VERBVL",
+                        "value" : "Behandelverbod met aanvulling Voltooid Leven",
+                        "translations" : { }
+                      }, {
+                        "terminologyId" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.14.1",
+                        "code" : "MON",
+                        "value" : "Mondelinge afspraak",
+                        "translations" : { }
+                      }, {
+                        "terminologyId" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.14.1",
+                        "code" : "EU",
+                        "value" : "Euthanasieverzoek",
+                        "translations" : { }
+                      }, {
+                        "terminologyId" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.14.1",
+                        "code" : "EUD",
+                        "value" : "Euthanasieverzoek met aanvulling Dementie",
+                        "translations" : { }
+                      }, {
+                        "terminologyId" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.14.1",
+                        "code" : "LWH",
+                        "value" : "Levenswensverklaring",
+                        "translations" : { }
+                      }, {
+                        "terminologyId" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.14.1",
+                        "code" : "DO",
+                        "value" : "Verklaring donorschap",
+                        "translations" : { }
+                      }, {
+                        "terminologyId" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.14.1",
+                        "code" : "ZB",
+                        "value" : "Zelfbindingsverklaring",
+                        "translations" : { }
+                      } ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_ARCHETYPE_ROOT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..1",
+              "nodeId" : "at0052.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ],
+              "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-contact_cc-002.v0",
+              "referenceType" : "archetypeOverlay"
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : { },
+        "nb" : { },
+        "de" : { },
+        "nl" : { },
+        "pt-br" : { }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "680cdc05-99ef-439f-bc4d-24e6c94a24cc",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Sarah Ballout",
+        "organisation" : "MHH-Hannover",
+        "email" : "ballout.sarah@mh-hannover.de"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "Vebjørn Arntzen, Silje Ljosland Bakke, Liv Laugen, Marit Alice Venheim",
+        "organisation" : "Oslo University Hospital, Helse Vest IKT AS, ​Oslo University Hospital, Norway",
+        "email" : "varntzen@ous-hf.no, silje.ljosland.bakke@helse-vest-ikt.no, liv.laugen@ous-hf.no, marit.alice.venheim@helse-vest-ikt.no"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "pt-br"
+      },
+      "author" : {
+        "name" : "Vladimir Pizzo",
+        "organisation" : "Royal Philips",
+        "email" : "vrppizzo@gmail.com"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nl"
+      },
+      "author" : {
+        "name" : "Joost Holslag",
+        "organisation" : "Nedap",
+        "email" : "joost.holslag@nedap.com"
+      },
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "f3921664-fb3c-4b39-b035-5dc3797a4ada",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "A92FD95229E77F51F656499514C2F522"
+      },
+      "details" : {
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "For the purpose of capturing patient amd organisation contact information.",
+          "keywords" : [ ],
+          "use" : "Use to record patient contact information in line with the corresponding FHIR resource.\r\n\r\nThe slots for name, telecom, organisation and address should be filled with the appropriate FHIR resource-aligned cluster archetypes.",
+          "misuse" : "Do not use for recording practitioner information. Use the CLUSTER.fhir_practitioner for that purpose.",
+          "copyright" : "© Apperta Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.contact_cc.v0",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-contact_cc-002.v0"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : { }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "b8c22650-2ea2-4da8-a4f1-73970b2a83f4",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "c05ffd8d-dabf-49c0-85c4-2cc897b005af",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "40152D512B48468201F8792F0F35E147",
+        "ip_acknowledgements" : "This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org."
+      },
+      "details" : {
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record the patient's preferred locations of care, in the context of long-term condiitons or end of life care, and other special requests.",
+          "keywords" : [ ],
+          "copyright" : "© Apperta Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
+    },
+    "parentArchetypeId" : "openEHR-EHR-EVALUATION.care_preference_uk.v0",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-EVALUATION.ovl-care_preference_uk-001.v0"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "EVALUATION",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "data",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ITEM_TREE",
+          "nodeId" : "at0001",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0038.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0030.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0030.2",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0003.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "name",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "1..1",
+                      "terminologyId" : {
+                        "value" : "local"
+                      },
+                      "constraint" : [ "ac0.23" ],
+                      "selectedTerminologies" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              }, {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "1..1",
+                      "terminologyId" : {
+                        "value" : "local"
+                      },
+                      "constraint" : [ "ac0.24" ],
+                      "selectedTerminologies" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0034.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "name",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "1..1",
+                      "terminologyId" : {
+                        "value" : "local"
+                      },
+                      "constraint" : [ "ac0.26" ],
+                      "selectedTerminologies" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0015.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "name",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "1..1",
+                      "terminologyId" : {
+                        "value" : "local"
+                      },
+                      "constraint" : [ "ac0.74" ],
+                      "selectedTerminologies" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              }, {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "1..1",
+                      "terminologyId" : {
+                        "value" : "http://snomed.info/sct"
+                      },
+                      "constraint" : [ ],
+                      "selectedTerminologies" : [ "http://snomed.info/sct" ],
+                      "includedExternalTerminologyCodes" : [ {
+                        "terminologyId" : "http://snomed.info/sct",
+                        "code" : "264362003",
+                        "value" : "Thuis",
+                        "translations" : {
+                          "en" : "Thuis"
+                        }
+                      }, {
+                        "terminologyId" : "http://snomed.info/sct",
+                        "code" : "22232009",
+                        "value" : "Ziekenhuis",
+                        "translations" : {
+                          "en" : "Ziekenhuis"
+                        }
+                      }, {
+                        "terminologyId" : "http://snomed.info/sct",
+                        "code" : "108344006",
+                        "value" : "Verpleeghuis",
+                        "translations" : {
+                          "en" : "Verpleeghuis"
+                        }
+                      }, {
+                        "terminologyId" : "http://snomed.info/sct",
+                        "code" : "284546000",
+                        "value" : "Hospice",
+                        "translations" : {
+                          "en" : "Hospice"
+                        }
+                      } ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0036.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "name",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "1..1",
+                      "terminologyId" : {
+                        "value" : "local"
+                      },
+                      "constraint" : [ "ac0.46" ],
+                      "selectedTerminologies" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0039.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_COUNT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "magnitude",
+                    "children" : [ {
+                      "@type" : "C_INTEGER",
+                      "rmTypeName" : "INTEGER",
+                      "occurrences" : "1..1",
+                      "constraint" : [ {
+                        "lower" : 1,
+                        "upper" : 100,
+                        "lowerIncluded" : true,
+                        "upperIncluded" : true,
+                        "lowerUnbounded" : false,
+                        "upperUnbounded" : false
+                      } ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : {
+          "at0030.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0030.1",
+            "text" : "Wat zouden zorgverleners, volgens de patiënt, moeten weten om goede zorg te kunnen verlenen? Heeft deze patiënt specifieke wensen met betrekking tot zijn zorg? (incl. culturele/religieuze/sociale/spirituele aspecten)",
+            "description" : "Any other specifc personal request or preference, including cultural or religious preferences."
+          },
+          "ac0.23" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.23",
+            "description" : ""
+          },
+          "ac0.24" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.24",
+            "description" : ""
+          },
+          "ac0.26" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.26",
+            "description" : ""
+          },
+          "ac0.46" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.46",
+            "description" : ""
+          },
+          "at0030.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0030.2",
+            "text" : "Wat verder nog belangrijk is",
+            "description" : "Any other specifc personal request or preference, including cultural or religious preferences."
+          },
+          "ac0.74" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.74",
+            "description" : ""
+          }
+        }
+      },
+      "termBindings" : {
+        "SNOMED-CT" : {
+          "at0015.1" : "term:SNOMED-CT::395091006"
+        }
+      },
+      "terminologyExtracts" : { },
+      "valueSets" : {
+        "ac0.2" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.2",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.3" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.3",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.4" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.4",
+          "members" : [ "at0016", "at0017", "at0018", "at0019", "at0020", "at0021", "at0022", "at0023", "at0024", "at0025", "at0032", "at0033" ]
+        },
+        "ac0.5" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.5",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.6" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.6",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.7" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.7",
+          "members" : [ ]
+        },
+        "ac0.8" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.8",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.9" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.9",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.10" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.10",
+          "members" : [ ]
+        },
+        "ac0.11" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.11",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.12" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.12",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.13" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.13",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.14" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.14",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.15" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.15",
+          "members" : [ "ac0.1" ]
+        },
+        "ac0.16" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.16",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.17" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.17",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.18" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.18",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.19" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.19",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.20" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.20",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.21" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.21",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.22" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.22",
+          "members" : [ "at0004", "at0005" ]
+        },
+        "ac0.23" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.23",
+          "members" : [ "at0004", "at0005" ]
+        },
+        "ac0.24" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.24",
+          "members" : [ "at0006", "at0007", "at0008", "at0009", "at0010", "at0011", "at0012", "at0013", "at0014" ]
+        },
+        "ac0.25" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.25",
+          "members" : [ "at0034", "at0035" ]
+        },
+        "ac0.26" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.26",
+          "members" : [ "at0034", "at0035" ]
+        },
+        "ac0.27" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.27",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.28" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.28",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.29" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.29",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.30" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.30",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.31" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.31",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.32" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.32",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.33" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.33",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.34" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.34",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.35" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.35",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.36" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.36",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.37" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.37",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.38" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.38",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.39" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.39",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.40" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.40",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.41" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.41",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.42" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.42",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.43" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.43",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.44" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.44",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.45" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.45",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.46" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.46",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.47" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.47",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.48" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.48",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.49" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.49",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.50" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.50",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.51" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.51",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.52" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.52",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.53" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.53",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.54" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.54",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.55" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.55",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.56" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.56",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.57" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.57",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.58" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.58",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.59" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.59",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.60" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.60",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.61" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.61",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.62" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.62",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.63" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.63",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.64" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.64",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.65" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.65",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.66" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.66",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.67" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.67",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.68" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.68",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.69" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.69",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.70" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.70",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.71" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.71",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.72" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.72",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.73" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.73",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.74" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.74",
+          "members" : [ "at0027", "at0028" ]
+        }
+      }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "a496e1f2-d585-4e2f-9a91-91ac399e8429",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "7823c663-b00a-4ea2-9c23-cfc7f724a2c1",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "A92FD95229E77F51F656499514C2F522"
+      },
+      "details" : {
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "For the purpose of capturing patient amd organisation contact information.",
+          "keywords" : [ ],
+          "use" : "Use to record patient contact information in line with the corresponding FHIR resource.\r\n\r\nThe slots for name, telecom, organisation and address should be filled with the appropriate FHIR resource-aligned cluster archetypes.",
+          "misuse" : "Do not use for recording practitioner information. Use the CLUSTER.fhir_practitioner for that purpose.",
+          "copyright" : "© Apperta Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.contact_cc.v0",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-contact_cc-003.v0"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "items",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0001.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "occurrences" : "1..1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "0..1",
+                  "terminologyId" : {
+                    "value" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode"
+                  },
+                  "constraint" : [ ],
+                  "selectedTerminologies" : [ "http://terminology.hl7.org/CodeSystem/v3-RoleCode" ],
+                  "limitToList" : false,
+                  "includedExternalTerminologyCodes" : [ {
+                    "terminologyId" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+                    "code" : "ADOPTF",
+                    "value" : "Adoptive father",
+                    "translations" : { }
+                  }, {
+                    "terminologyId" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+                    "code" : "ADOPTM",
+                    "value" : "Adoptive mother",
+                    "translations" : { }
+                  }, {
+                    "terminologyId" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+                    "code" : "AUNT",
+                    "value" : "Aunt",
+                    "translations" : { }
+                  }, {
+                    "terminologyId" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+                    "code" : "BRO",
+                    "value" : "Brother",
+                    "translations" : { }
+                  }, {
+                    "terminologyId" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+                    "code" : "BROINLAW",
+                    "value" : "Brother-in-law",
+                    "translations" : { }
+                  }, {
+                    "terminologyId" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+                    "code" : "COUSN",
+                    "value" : "Cousin",
+                    "translations" : { }
+                  }, {
+                    "terminologyId" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+                    "code" : "DAUC",
+                    "value" : "Daughter",
+                    "translations" : { }
+                  }, {
+                    "terminologyId" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+                    "code" : "DAUINLAW",
+                    "value" : "Daughter in-law",
+                    "translations" : { }
+                  }, {
+                    "terminologyId" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+                    "code" : "DOMPART",
+                    "value" : "Domestic partner",
+                    "translations" : { }
+                  }, {
+                    "terminologyId" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+                    "code" : "FTH",
+                    "value" : "Father",
+                    "translations" : { }
+                  }, {
+                    "terminologyId" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+                    "code" : "FTHINLAW",
+                    "value" : "Father-in-law",
+                    "translations" : { }
+                  }, {
+                    "terminologyId" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+                    "code" : "DAUFOST",
+                    "value" : "Foster daughter",
+                    "translations" : { }
+                  }, {
+                    "terminologyId" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+                    "code" : "FTHFOST",
+                    "value" : "Foster father",
+                    "translations" : { }
+                  }, {
+                    "terminologyId" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+                    "code" : "MTHFOST",
+                    "value" : "Foster mother",
+                    "translations" : { }
+                  }, {
+                    "terminologyId" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+                    "code" : "SONFOST",
+                    "value" : "Foster son",
+                    "translations" : { }
+                  }, {
+                    "terminologyId" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+                    "code" : "GRNDDAU",
+                    "value" : "Granddaughter",
+                    "translations" : { }
+                  }, {
+                    "terminologyId" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+                    "code" : "GRFTH",
+                    "value" : "Grandfather",
+                    "translations" : { }
+                  }, {
+                    "terminologyId" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+                    "code" : "GRMTH",
+                    "value" : "Grandmother",
+                    "translations" : { }
+                  }, {
+                    "terminologyId" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+                    "code" : "GRNDSON",
+                    "value" : "Grandson",
+                    "translations" : { }
+                  }, {
+                    "terminologyId" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+                    "code" : "GGRFTH",
+                    "value" : "Great grandfather",
+                    "translations" : { }
+                  }, {
+                    "terminologyId" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+                    "code" : "GGRMTH",
+                    "value" : "Great grandmother",
+                    "translations" : { }
+                  }, {
+                    "terminologyId" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+                    "code" : "HUSB",
+                    "value" : "Husband",
+                    "translations" : { }
+                  }, {
+                    "terminologyId" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+                    "code" : "MTH",
+                    "value" : "Mother",
+                    "translations" : { }
+                  }, {
+                    "terminologyId" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+                    "code" : "MTHINLAW",
+                    "value" : "Mother-in-law",
+                    "translations" : { }
+                  }, {
+                    "terminologyId" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+                    "code" : "NEPHEW",
+                    "value" : "Nephew",
+                    "translations" : { }
+                  }, {
+                    "terminologyId" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+                    "code" : "NIECE",
+                    "value" : "Niece",
+                    "translations" : { }
+                  }, {
+                    "terminologyId" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+                    "code" : "SIS",
+                    "value" : "Sister",
+                    "translations" : { }
+                  }, {
+                    "terminologyId" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+                    "code" : "SISINLAW",
+                    "value" : "Sister-in-law",
+                    "translations" : { }
+                  }, {
+                    "terminologyId" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+                    "code" : "SONC",
+                    "value" : "Son",
+                    "translations" : { }
+                  }, {
+                    "terminologyId" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+                    "code" : "SONINLAW",
+                    "value" : "Son in-law",
+                    "translations" : { }
+                  }, {
+                    "terminologyId" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+                    "code" : "STPFTH",
+                    "value" : "Stepfather",
+                    "translations" : { }
+                  }, {
+                    "terminologyId" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+                    "code" : "STPMTH",
+                    "value" : "Stepmother",
+                    "translations" : { }
+                  }, {
+                    "terminologyId" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+                    "code" : "UNCLE",
+                    "value" : "Uncle",
+                    "translations" : { }
+                  }, {
+                    "terminologyId" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+                    "code" : "WIFE",
+                    "value" : "Wife",
+                    "translations" : { }
+                  } ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0013.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "occurrences" : "1..1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "0..1",
+                  "terminologyId" : {
+                    "value" : "urn:oid:2.16.840.1.113883.2.4.3.11.22.472"
+                  },
+                  "constraint" : [ ],
+                  "selectedTerminologies" : [ "urn:oid:2.16.840.1.113883.2.4.3.11.22.472" ],
+                  "limitToList" : false,
+                  "includedExternalTerminologyCodes" : [ {
+                    "terminologyId" : "urn:oid:2.16.840.1.113883.2.4.3.11.22.472",
+                    "code" : "01",
+                    "value" : "Eerste relatie/contactpersoon",
+                    "translations" : { }
+                  }, {
+                    "terminologyId" : "urn:oid:2.16.840.1.113883.2.4.3.11.22.472",
+                    "code" : "02",
+                    "value" : "Tweede relatie/contactpersoon",
+                    "translations" : { }
+                  }, {
+                    "terminologyId" : "urn:oid:2.16.840.1.113883.2.4.3.11.22.472",
+                    "code" : "03",
+                    "value" : "Curator (juridisch)",
+                    "translations" : { }
+                  }, {
+                    "terminologyId" : "urn:oid:2.16.840.1.113883.2.4.3.11.22.472",
+                    "code" : "04",
+                    "value" : "Financieel (gemachtigd)",
+                    "translations" : { }
+                  }, {
+                    "terminologyId" : "urn:oid:2.16.840.1.113883.2.4.3.11.22.472",
+                    "code" : "05",
+                    "value" : "Financieel (toetsing)",
+                    "translations" : { }
+                  }, {
+                    "terminologyId" : "urn:oid:2.16.840.1.113883.2.4.3.11.22.472",
+                    "code" : "06",
+                    "value" : "Leefeenheid",
+                    "translations" : { }
+                  }, {
+                    "terminologyId" : "urn:oid:2.16.840.1.113883.2.4.3.11.22.472",
+                    "code" : "07",
+                    "value" : "Hulpverlener",
+                    "translations" : { }
+                  }, {
+                    "terminologyId" : "urn:oid:2.16.840.1.113883.2.4.3.11.22.472",
+                    "code" : "09",
+                    "value" : "Anders",
+                    "translations" : { }
+                  }, {
+                    "terminologyId" : "urn:oid:2.16.840.1.113883.2.4.3.11.22.472",
+                    "code" : "11",
+                    "value" : "Voogd",
+                    "translations" : { }
+                  }, {
+                    "terminologyId" : "urn:oid:2.16.840.1.113883.2.4.3.11.22.472",
+                    "code" : "14",
+                    "value" : "Bewindvoerder",
+                    "translations" : { }
+                  }, {
+                    "terminologyId" : "urn:oid:2.16.840.1.113883.2.4.3.11.22.472",
+                    "code" : "15",
+                    "value" : "Mentor",
+                    "translations" : { }
+                  }, {
+                    "terminologyId" : "urn:oid:2.16.840.1.113883.2.4.3.11.22.472",
+                    "code" : "19",
+                    "value" : "Buur",
+                    "translations" : { }
+                  }, {
+                    "terminologyId" : "urn:oid:2.16.840.1.113883.2.4.3.11.22.472",
+                    "code" : "20",
+                    "value" : "Vriend(in)/kennis",
+                    "translations" : { }
+                  }, {
+                    "terminologyId" : "urn:oid:2.16.840.1.113883.2.4.3.11.22.472",
+                    "code" : "21",
+                    "value" : "Cliëntondersteuner",
+                    "translations" : { }
+                  }, {
+                    "terminologyId" : "urn:oid:2.16.840.1.113883.2.4.3.11.22.472",
+                    "code" : "23",
+                    "value" : "Contactpersoon",
+                    "translations" : { }
+                  }, {
+                    "terminologyId" : "urn:oid:2.16.840.1.113883.2.4.3.11.22.472",
+                    "code" : "24",
+                    "value" : "Wettelijke vertegenwoordiger",
+                    "translations" : { }
+                  } ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : { }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "b8c22650-2ea2-4da8-a4f1-73970b2a83f4",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "c05ffd8d-dabf-49c0-85c4-2cc897b005af",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "40152D512B48468201F8792F0F35E147",
+        "ip_acknowledgements" : "This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org."
+      },
+      "details" : {
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record the patient's preferred locations of care, in the context of long-term condiitons or end of life care, and other special requests.",
+          "keywords" : [ ],
+          "copyright" : "© Apperta Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
+    },
+    "parentArchetypeId" : "openEHR-EHR-EVALUATION.care_preference_uk.v0",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-EVALUATION.ovl-care_preference_uk-002.v0"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "EVALUATION",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "data",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ITEM_TREE",
+          "nodeId" : "at0001",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0038.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0030.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0030.2",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0003.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "name",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "1..1",
+                      "terminologyId" : {
+                        "value" : "local"
+                      },
+                      "constraint" : [ "ac0.23" ],
+                      "selectedTerminologies" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              }, {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "1..1",
+                      "terminologyId" : {
+                        "value" : "local"
+                      },
+                      "constraint" : [ "ac0.24" ],
+                      "selectedTerminologies" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0034.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "name",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "1..1",
+                      "terminologyId" : {
+                        "value" : "local"
+                      },
+                      "constraint" : [ "ac0.26" ],
+                      "selectedTerminologies" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0015.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "name",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "1..1",
+                      "terminologyId" : {
+                        "value" : "local"
+                      },
+                      "constraint" : [ "ac0.62" ],
+                      "selectedTerminologies" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              }, {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "1..1",
+                      "terminologyId" : {
+                        "value" : "http://snomed.info/sct"
+                      },
+                      "constraint" : [ ],
+                      "selectedTerminologies" : [ "http://snomed.info/sct" ],
+                      "includedExternalTerminologyCodes" : [ {
+                        "terminologyId" : "http://snomed.info/sct",
+                        "code" : "264362003",
+                        "value" : "Thuis",
+                        "translations" : {
+                          "en" : "Thuis"
+                        }
+                      }, {
+                        "terminologyId" : "http://snomed.info/sct",
+                        "code" : "22232009",
+                        "value" : "Ziekenhuis",
+                        "translations" : {
+                          "en" : "Ziekenhuis"
+                        }
+                      }, {
+                        "terminologyId" : "http://snomed.info/sct",
+                        "code" : "108344006",
+                        "value" : "Verpleeghuis",
+                        "translations" : {
+                          "en" : "Verpleeghuis"
+                        }
+                      }, {
+                        "terminologyId" : "http://snomed.info/sct",
+                        "code" : "284546000",
+                        "value" : "Hospice",
+                        "translations" : {
+                          "en" : "Hospice"
+                        }
+                      } ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0036.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "name",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "1..1",
+                      "terminologyId" : {
+                        "value" : "local"
+                      },
+                      "constraint" : [ "ac0.46" ],
+                      "selectedTerminologies" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0039.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_COUNT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "magnitude",
+                    "children" : [ {
+                      "@type" : "C_INTEGER",
+                      "rmTypeName" : "INTEGER",
+                      "occurrences" : "1..1",
+                      "constraint" : [ {
+                        "lower" : 1,
+                        "upper" : 100,
+                        "lowerIncluded" : true,
+                        "upperIncluded" : true,
+                        "lowerUnbounded" : false,
+                        "upperUnbounded" : false
+                      } ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : {
+          "at0030.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0030.1",
+            "text" : "Wat zouden zorgverleners, volgens de patiënt, moeten weten om goede zorg te kunnen verlenen? Heeft deze patiënt specifieke wensen met betrekking tot zijn zorg? (incl. culturele/religieuze/sociale/spirituele aspecten)",
+            "description" : "Any other specifc personal request or preference, including cultural or religious preferences."
+          },
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Preferred priorities of care (2)",
+            "description" : "The subject's preferred priorities of care and 'What matters'."
+          },
+          "ac0.23" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.23",
+            "description" : ""
+          },
+          "ac0.24" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.24",
+            "description" : ""
+          },
+          "ac0.26" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.26",
+            "description" : ""
+          },
+          "ac0.46" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.46",
+            "description" : ""
+          },
+          "at0030.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0030.2",
+            "text" : "Wat verder nog belangrijk is",
+            "description" : "Any other specifc personal request or preference, including cultural or religious preferences."
+          },
+          "ac0.62" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.62",
+            "description" : ""
+          }
+        }
+      },
+      "termBindings" : {
+        "SNOMED-CT" : {
+          "at0015.1" : "term:SNOMED-CT::395091006"
+        }
+      },
+      "terminologyExtracts" : { },
+      "valueSets" : {
+        "ac0.2" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.2",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.3" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.3",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.4" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.4",
+          "members" : [ "at0016", "at0017", "at0018", "at0019", "at0020", "at0021", "at0022", "at0023", "at0024", "at0025", "at0032", "at0033" ]
+        },
+        "ac0.5" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.5",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.6" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.6",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.7" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.7",
+          "members" : [ ]
+        },
+        "ac0.8" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.8",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.9" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.9",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.10" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.10",
+          "members" : [ ]
+        },
+        "ac0.11" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.11",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.12" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.12",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.13" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.13",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.14" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.14",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.15" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.15",
+          "members" : [ "ac0.1" ]
+        },
+        "ac0.16" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.16",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.17" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.17",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.18" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.18",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.19" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.19",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.20" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.20",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.21" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.21",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.22" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.22",
+          "members" : [ "at0004", "at0005" ]
+        },
+        "ac0.23" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.23",
+          "members" : [ "at0004", "at0005" ]
+        },
+        "ac0.24" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.24",
+          "members" : [ "at0006", "at0007", "at0008", "at0009", "at0010", "at0011", "at0012", "at0013", "at0014" ]
+        },
+        "ac0.25" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.25",
+          "members" : [ "at0034", "at0035" ]
+        },
+        "ac0.26" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.26",
+          "members" : [ "at0034", "at0035" ]
+        },
+        "ac0.27" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.27",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.28" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.28",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.29" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.29",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.30" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.30",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.31" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.31",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.32" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.32",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.33" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.33",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.34" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.34",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.35" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.35",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.36" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.36",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.37" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.37",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.38" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.38",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.39" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.39",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.40" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.40",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.41" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.41",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.42" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.42",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.43" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.43",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.44" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.44",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.45" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.45",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.46" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.46",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.47" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.47",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.48" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.48",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.49" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.49",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.50" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.50",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.51" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.51",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.52" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.52",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.53" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.53",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.54" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.54",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.55" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.55",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.56" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.56",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.57" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.57",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.58" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.58",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.59" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.59",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.60" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.60",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.61" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.61",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.62" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.62",
+          "members" : [ "at0027", "at0028" ]
+        }
+      }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "a496e1f2-d585-4e2f-9a91-91ac399e8429",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "c05ffd8d-dabf-49c0-85c4-2cc897b005af",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "40152D512B48468201F8792F0F35E147",
+        "ip_acknowledgements" : "This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org."
+      },
+      "details" : {
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record the patient's preferred locations of care, in the context of long-term condiitons or end of life care, and other special requests.",
+          "keywords" : [ ],
+          "copyright" : "© Apperta Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
+    },
+    "parentArchetypeId" : "openEHR-EHR-EVALUATION.care_preference_uk.v0",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-EVALUATION.ovl-care_preference_uk-003.v0"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "EVALUATION",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "data",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ITEM_TREE",
+          "nodeId" : "at0001",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0038.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0030.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0030.2",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0003.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "name",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "1..1",
+                      "terminologyId" : {
+                        "value" : "local"
+                      },
+                      "constraint" : [ "ac0.23" ],
+                      "selectedTerminologies" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              }, {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "1..1",
+                      "terminologyId" : {
+                        "value" : "local"
+                      },
+                      "constraint" : [ "ac0.24" ],
+                      "selectedTerminologies" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0034.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "name",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "1..1",
+                      "terminologyId" : {
+                        "value" : "local"
+                      },
+                      "constraint" : [ "ac0.26" ],
+                      "selectedTerminologies" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0015.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "name",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "1..1",
+                      "terminologyId" : {
+                        "value" : "local"
+                      },
+                      "constraint" : [ "ac0.74" ],
+                      "selectedTerminologies" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              }, {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "1..1",
+                      "terminologyId" : {
+                        "value" : "http://snomed.info/sct"
+                      },
+                      "constraint" : [ ],
+                      "selectedTerminologies" : [ "http://snomed.info/sct" ],
+                      "includedExternalTerminologyCodes" : [ {
+                        "terminologyId" : "http://snomed.info/sct",
+                        "code" : "264362003",
+                        "value" : "Thuis",
+                        "translations" : {
+                          "en" : "Thuis"
+                        }
+                      }, {
+                        "terminologyId" : "http://snomed.info/sct",
+                        "code" : "22232009",
+                        "value" : "Ziekenhuis",
+                        "translations" : {
+                          "en" : "Ziekenhuis"
+                        }
+                      }, {
+                        "terminologyId" : "http://snomed.info/sct",
+                        "code" : "108344006",
+                        "value" : "Verpleeghuis",
+                        "translations" : {
+                          "en" : "Verpleeghuis"
+                        }
+                      }, {
+                        "terminologyId" : "http://snomed.info/sct",
+                        "code" : "284546000",
+                        "value" : "Hospice",
+                        "translations" : {
+                          "en" : "Hospice"
+                        }
+                      } ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0036.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "name",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "1..1",
+                      "terminologyId" : {
+                        "value" : "local"
+                      },
+                      "constraint" : [ "ac0.46" ],
+                      "selectedTerminologies" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0039.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_COUNT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "magnitude",
+                    "children" : [ {
+                      "@type" : "C_INTEGER",
+                      "rmTypeName" : "INTEGER",
+                      "occurrences" : "1..1",
+                      "constraint" : [ {
+                        "lower" : 1,
+                        "upper" : 100,
+                        "lowerIncluded" : true,
+                        "upperIncluded" : true,
+                        "lowerUnbounded" : false,
+                        "upperUnbounded" : false
+                      } ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : {
+          "at0030.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0030.1",
+            "text" : "Wat zouden zorgverleners, volgens de patiënt, moeten weten om goede zorg te kunnen verlenen? Heeft deze patiënt specifieke wensen met betrekking tot zijn zorg? (incl. culturele/religieuze/sociale/spirituele aspecten)",
+            "description" : "Any other specifc personal request or preference, including cultural or religious preferences."
+          },
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Preferred priorities of care (3)",
+            "description" : "The subject's preferred priorities of care and 'What matters'."
+          },
+          "ac0.23" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.23",
+            "description" : ""
+          },
+          "ac0.24" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.24",
+            "description" : ""
+          },
+          "ac0.26" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.26",
+            "description" : ""
+          },
+          "ac0.46" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.46",
+            "description" : ""
+          },
+          "at0030.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0030.2",
+            "text" : "Wat verder nog belangrijk is",
+            "description" : "Any other specifc personal request or preference, including cultural or religious preferences."
+          },
+          "ac0.74" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.74",
+            "description" : ""
+          }
+        }
+      },
+      "termBindings" : {
+        "SNOMED-CT" : {
+          "at0015.1" : "term:SNOMED-CT::395091006"
+        }
+      },
+      "terminologyExtracts" : { },
+      "valueSets" : {
+        "ac0.2" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.2",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.3" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.3",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.4" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.4",
+          "members" : [ "at0016", "at0017", "at0018", "at0019", "at0020", "at0021", "at0022", "at0023", "at0024", "at0025", "at0032", "at0033" ]
+        },
+        "ac0.5" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.5",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.6" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.6",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.7" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.7",
+          "members" : [ ]
+        },
+        "ac0.8" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.8",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.9" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.9",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.10" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.10",
+          "members" : [ ]
+        },
+        "ac0.11" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.11",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.12" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.12",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.13" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.13",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.14" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.14",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.15" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.15",
+          "members" : [ "ac0.1" ]
+        },
+        "ac0.16" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.16",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.17" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.17",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.18" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.18",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.19" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.19",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.20" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.20",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.21" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.21",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.22" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.22",
+          "members" : [ "at0004", "at0005" ]
+        },
+        "ac0.23" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.23",
+          "members" : [ "at0004", "at0005" ]
+        },
+        "ac0.24" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.24",
+          "members" : [ "at0006", "at0007", "at0008", "at0009", "at0010", "at0011", "at0012", "at0013", "at0014" ]
+        },
+        "ac0.25" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.25",
+          "members" : [ "at0034", "at0035" ]
+        },
+        "ac0.26" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.26",
+          "members" : [ "at0034", "at0035" ]
+        },
+        "ac0.27" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.27",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.28" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.28",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.29" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.29",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.30" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.30",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.31" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.31",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.32" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.32",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.33" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.33",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.34" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.34",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.35" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.35",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.36" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.36",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.37" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.37",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.38" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.38",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.39" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.39",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.40" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.40",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.41" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.41",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.42" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.42",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.43" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.43",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.44" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.44",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.45" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.45",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.46" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.46",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.47" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.47",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.48" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.48",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.49" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.49",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.50" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.50",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.51" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.51",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.52" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.52",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.53" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.53",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.54" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.54",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.55" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.55",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.56" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.56",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.57" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.57",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.58" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.58",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.59" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.59",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.60" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.60",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.61" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.61",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.62" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.62",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.63" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.63",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.64" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.64",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.65" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.65",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.66" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.66",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.67" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.67",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.68" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.68",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.69" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.69",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.70" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.70",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.71" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.71",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.72" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.72",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.73" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.73",
+          "members" : [ "at0027", "at0028" ]
+        },
+        "ac0.74" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.74",
+          "members" : [ "at0027", "at0028" ]
+        }
+      }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "a496e1f2-d585-4e2f-9a91-91ac399e8429",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ ]
+  } ],
+  "originalLanguage" : {
+    "terminologyId" : {
+      "value" : "ISO_639-1"
+    },
+    "codeString" : "en"
+  },
+  "translations" : [ {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "nb"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "nl"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  } ]
+}
