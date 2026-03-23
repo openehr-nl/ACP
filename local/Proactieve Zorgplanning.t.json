@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "14.0.0",
+      "sem_ver" : "14.1.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "5079ae757eafa99e1d2940ab96ac9f7e",
+      "MD5-CAM-1.0.1" : "34f52cdf0510482c63a7491a5c84e541",
       "PARENT:MD5-CAM-1.0.1" : "13D55DE5073CB5A79B7527DCB7E65582"
     },
     "details" : {
@@ -360,38 +360,23 @@
                           "includedExternalTerminologyCodes" : [ {
                             "terminologyId" : "http://snomed.info/sct",
                             "code" : "305351004",
-                            "value" : "opname op intensive care",
-                            "translations" : {
-                              "en" : "opname op intensive care"
-                            }
+                            "value" : "opname op intensive care"
                           }, {
                             "terminologyId" : "http://snomed.info/sct",
                             "code" : "40617009",
-                            "value" : "kunstmatige beademing",
-                            "translations" : {
-                              "en" : "kunstmatige beademing"
-                            }
+                            "value" : "kunstmatige beademing"
                           }, {
                             "terminologyId" : "http://snomed.info/sct",
                             "code" : "116762002",
-                            "value" : "toediening van bloedproduct",
-                            "translations" : {
-                              "en" : "toediening van bloedproduct"
-                            }
+                            "value" : "toediening van bloedproduct"
                           }, {
                             "terminologyId" : "http://snomed.info/sct",
                             "code" : "281789004",
-                            "value" : "antibiotische therapie",
-                            "translations" : {
-                              "en" : "antibiotische therapie"
-                            }
+                            "value" : "antibiotische therapie"
                           }, {
                             "terminologyId" : "http://snomed.info/sct",
                             "code" : "32485007",
-                            "value" : "opname in ziekenhuis",
-                            "translations" : {
-                              "en" : "opname in ziekenhuis"
-                            }
+                            "value" : "opname in ziekenhuis"
                           } ]
                         } ]
                       } ],
@@ -429,17 +414,11 @@
                           "includedExternalTerminologyCodes" : [ {
                             "terminologyId" : "http://hl7.org/fhir/consent-provision-type",
                             "code" : "deny",
-                            "value" : "Opt Out",
-                            "translations" : {
-                              "en" : "Opt Out"
-                            }
+                            "value" : "Opt Out"
                           }, {
                             "terminologyId" : "http://hl7.org/fhir/consent-provision-type",
                             "code" : "permit",
-                            "value" : "Opt In",
-                            "translations" : {
-                              "en" : "Opt In"
-                            }
+                            "value" : "Opt In"
                           } ]
                         } ]
                       } ],
@@ -471,7 +450,7 @@
           "at0002.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0002.1",
-            "text" : "Belangrijkste overeengekomen doel van medische behandeling",
+            "text" : "Belangrijkste overeengekomen doel van medisch beleid",
             "description" : "The overall intent for future care and treatment for the individual.",
             "comment" : "The proposed value set is based on the MJA reference. \r\nCoding the intent of care with an external terminology is preferred, where possible."
           }
@@ -704,53 +683,43 @@
                       "includedExternalTerminologyCodes" : [ {
                         "terminologyId" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.14.1",
                         "code" : "NR",
-                        "value" : "Niet reanimeren verklaring",
-                        "translations" : { }
+                        "value" : "Niet reanimeren verklaring"
                       }, {
                         "terminologyId" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.14.1",
                         "code" : "VOL",
-                        "value" : "Volmacht",
-                        "translations" : { }
+                        "value" : "Volmacht"
                       }, {
                         "terminologyId" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.14.1",
                         "code" : "VERB",
-                        "value" : "Behandelverbod",
-                        "translations" : { }
+                        "value" : "Behandelverbod"
                       }, {
                         "terminologyId" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.14.1",
                         "code" : "VERBVL",
-                        "value" : "Behandelverbod met aanvulling Voltooid Leven",
-                        "translations" : { }
+                        "value" : "Behandelverbod met aanvulling Voltooid Leven"
                       }, {
                         "terminologyId" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.14.1",
                         "code" : "MON",
-                        "value" : "Mondelinge afspraak",
-                        "translations" : { }
+                        "value" : "Mondelinge afspraak"
                       }, {
                         "terminologyId" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.14.1",
                         "code" : "EU",
-                        "value" : "Euthanasieverzoek",
-                        "translations" : { }
+                        "value" : "Euthanasieverzoek"
                       }, {
                         "terminologyId" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.14.1",
                         "code" : "EUD",
-                        "value" : "Euthanasieverzoek met aanvulling Dementie",
-                        "translations" : { }
+                        "value" : "Euthanasieverzoek met aanvulling Dementie"
                       }, {
                         "terminologyId" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.14.1",
                         "code" : "LWH",
-                        "value" : "Levenswensverklaring",
-                        "translations" : { }
+                        "value" : "Levenswensverklaring"
                       }, {
                         "terminologyId" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.14.1",
                         "code" : "DO",
-                        "value" : "Verklaring donorschap",
-                        "translations" : { }
+                        "value" : "Verklaring donorschap"
                       }, {
                         "terminologyId" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.14.1",
                         "code" : "ZB",
-                        "value" : "Zelfbindingsverklaring",
-                        "translations" : { }
+                        "value" : "Zelfbindingsverklaring"
                       } ]
                     } ]
                   } ],
@@ -1124,31 +1093,19 @@
                       "includedExternalTerminologyCodes" : [ {
                         "terminologyId" : "http://snomed.info/sct",
                         "code" : "264362003",
-                        "value" : "Thuis",
-                        "translations" : {
-                          "en" : "Thuis"
-                        }
+                        "value" : "Thuis"
                       }, {
                         "terminologyId" : "http://snomed.info/sct",
                         "code" : "22232009",
-                        "value" : "Ziekenhuis",
-                        "translations" : {
-                          "en" : "Ziekenhuis"
-                        }
+                        "value" : "Ziekenhuis"
                       }, {
                         "terminologyId" : "http://snomed.info/sct",
                         "code" : "108344006",
-                        "value" : "Verpleeghuis",
-                        "translations" : {
-                          "en" : "Verpleeghuis"
-                        }
+                        "value" : "Verpleeghuis"
                       }, {
                         "terminologyId" : "http://snomed.info/sct",
                         "code" : "284546000",
-                        "value" : "Hospice",
-                        "translations" : {
-                          "en" : "Hospice"
-                        }
+                        "value" : "Hospice"
                       } ]
                     } ]
                   } ],
@@ -1208,8 +1165,8 @@
                         "upper" : 100,
                         "lowerIncluded" : true,
                         "upperIncluded" : true,
-                        "lowerUnbounded" : false,
-                        "upperUnbounded" : false
+                        "upperUnbounded" : false,
+                        "lowerUnbounded" : false
                       } ]
                     } ]
                   } ],
@@ -1732,173 +1689,139 @@
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
                     "code" : "ADOPTF",
-                    "value" : "Adoptive father",
-                    "translations" : { }
+                    "value" : "Adoptive father"
                   }, {
                     "terminologyId" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
                     "code" : "ADOPTM",
-                    "value" : "Adoptive mother",
-                    "translations" : { }
+                    "value" : "Adoptive mother"
                   }, {
                     "terminologyId" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
                     "code" : "AUNT",
-                    "value" : "Aunt",
-                    "translations" : { }
+                    "value" : "Aunt"
                   }, {
                     "terminologyId" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
                     "code" : "BRO",
-                    "value" : "Brother",
-                    "translations" : { }
+                    "value" : "Brother"
                   }, {
                     "terminologyId" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
                     "code" : "BROINLAW",
-                    "value" : "Brother-in-law",
-                    "translations" : { }
+                    "value" : "Brother-in-law"
                   }, {
                     "terminologyId" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
                     "code" : "COUSN",
-                    "value" : "Cousin",
-                    "translations" : { }
+                    "value" : "Cousin"
                   }, {
                     "terminologyId" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
                     "code" : "DAUC",
-                    "value" : "Daughter",
-                    "translations" : { }
+                    "value" : "Daughter"
                   }, {
                     "terminologyId" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
                     "code" : "DAUINLAW",
-                    "value" : "Daughter in-law",
-                    "translations" : { }
+                    "value" : "Daughter in-law"
                   }, {
                     "terminologyId" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
                     "code" : "DOMPART",
-                    "value" : "Domestic partner",
-                    "translations" : { }
+                    "value" : "Domestic partner"
                   }, {
                     "terminologyId" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
                     "code" : "FTH",
-                    "value" : "Father",
-                    "translations" : { }
+                    "value" : "Father"
                   }, {
                     "terminologyId" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
                     "code" : "FTHINLAW",
-                    "value" : "Father-in-law",
-                    "translations" : { }
+                    "value" : "Father-in-law"
                   }, {
                     "terminologyId" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
                     "code" : "DAUFOST",
-                    "value" : "Foster daughter",
-                    "translations" : { }
+                    "value" : "Foster daughter"
                   }, {
                     "terminologyId" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
                     "code" : "FTHFOST",
-                    "value" : "Foster father",
-                    "translations" : { }
+                    "value" : "Foster father"
                   }, {
                     "terminologyId" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
                     "code" : "MTHFOST",
-                    "value" : "Foster mother",
-                    "translations" : { }
+                    "value" : "Foster mother"
                   }, {
                     "terminologyId" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
                     "code" : "SONFOST",
-                    "value" : "Foster son",
-                    "translations" : { }
+                    "value" : "Foster son"
                   }, {
                     "terminologyId" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
                     "code" : "GRNDDAU",
-                    "value" : "Granddaughter",
-                    "translations" : { }
+                    "value" : "Granddaughter"
                   }, {
                     "terminologyId" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
                     "code" : "GRFTH",
-                    "value" : "Grandfather",
-                    "translations" : { }
+                    "value" : "Grandfather"
                   }, {
                     "terminologyId" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
                     "code" : "GRMTH",
-                    "value" : "Grandmother",
-                    "translations" : { }
+                    "value" : "Grandmother"
                   }, {
                     "terminologyId" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
                     "code" : "GRNDSON",
-                    "value" : "Grandson",
-                    "translations" : { }
+                    "value" : "Grandson"
                   }, {
                     "terminologyId" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
                     "code" : "GGRFTH",
-                    "value" : "Great grandfather",
-                    "translations" : { }
+                    "value" : "Great grandfather"
                   }, {
                     "terminologyId" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
                     "code" : "GGRMTH",
-                    "value" : "Great grandmother",
-                    "translations" : { }
+                    "value" : "Great grandmother"
                   }, {
                     "terminologyId" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
                     "code" : "HUSB",
-                    "value" : "Husband",
-                    "translations" : { }
+                    "value" : "Husband"
                   }, {
                     "terminologyId" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
                     "code" : "MTH",
-                    "value" : "Mother",
-                    "translations" : { }
+                    "value" : "Mother"
                   }, {
                     "terminologyId" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
                     "code" : "MTHINLAW",
-                    "value" : "Mother-in-law",
-                    "translations" : { }
+                    "value" : "Mother-in-law"
                   }, {
                     "terminologyId" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
                     "code" : "NEPHEW",
-                    "value" : "Nephew",
-                    "translations" : { }
+                    "value" : "Nephew"
                   }, {
                     "terminologyId" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
                     "code" : "NIECE",
-                    "value" : "Niece",
-                    "translations" : { }
+                    "value" : "Niece"
                   }, {
                     "terminologyId" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
                     "code" : "SIS",
-                    "value" : "Sister",
-                    "translations" : { }
+                    "value" : "Sister"
                   }, {
                     "terminologyId" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
                     "code" : "SISINLAW",
-                    "value" : "Sister-in-law",
-                    "translations" : { }
+                    "value" : "Sister-in-law"
                   }, {
                     "terminologyId" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
                     "code" : "SONC",
-                    "value" : "Son",
-                    "translations" : { }
+                    "value" : "Son"
                   }, {
                     "terminologyId" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
                     "code" : "SONINLAW",
-                    "value" : "Son in-law",
-                    "translations" : { }
+                    "value" : "Son in-law"
                   }, {
                     "terminologyId" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
                     "code" : "STPFTH",
-                    "value" : "Stepfather",
-                    "translations" : { }
+                    "value" : "Stepfather"
                   }, {
                     "terminologyId" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
                     "code" : "STPMTH",
-                    "value" : "Stepmother",
-                    "translations" : { }
+                    "value" : "Stepmother"
                   }, {
                     "terminologyId" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
                     "code" : "UNCLE",
-                    "value" : "Uncle",
-                    "translations" : { }
+                    "value" : "Uncle"
                   }, {
                     "terminologyId" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
                     "code" : "WIFE",
-                    "value" : "Wife",
-                    "translations" : { }
+                    "value" : "Wife"
                   } ]
                 } ]
               } ],
@@ -1933,83 +1856,67 @@
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "urn:oid:2.16.840.1.113883.2.4.3.11.22.472",
                     "code" : "01",
-                    "value" : "Eerste relatie/contactpersoon",
-                    "translations" : { }
+                    "value" : "Eerste relatie/contactpersoon"
                   }, {
                     "terminologyId" : "urn:oid:2.16.840.1.113883.2.4.3.11.22.472",
                     "code" : "02",
-                    "value" : "Tweede relatie/contactpersoon",
-                    "translations" : { }
+                    "value" : "Tweede relatie/contactpersoon"
                   }, {
                     "terminologyId" : "urn:oid:2.16.840.1.113883.2.4.3.11.22.472",
                     "code" : "03",
-                    "value" : "Curator (juridisch)",
-                    "translations" : { }
+                    "value" : "Curator (juridisch)"
                   }, {
                     "terminologyId" : "urn:oid:2.16.840.1.113883.2.4.3.11.22.472",
                     "code" : "04",
-                    "value" : "Financieel (gemachtigd)",
-                    "translations" : { }
+                    "value" : "Financieel (gemachtigd)"
                   }, {
                     "terminologyId" : "urn:oid:2.16.840.1.113883.2.4.3.11.22.472",
                     "code" : "05",
-                    "value" : "Financieel (toetsing)",
-                    "translations" : { }
+                    "value" : "Financieel (toetsing)"
                   }, {
                     "terminologyId" : "urn:oid:2.16.840.1.113883.2.4.3.11.22.472",
                     "code" : "06",
-                    "value" : "Leefeenheid",
-                    "translations" : { }
+                    "value" : "Leefeenheid"
                   }, {
                     "terminologyId" : "urn:oid:2.16.840.1.113883.2.4.3.11.22.472",
                     "code" : "07",
-                    "value" : "Hulpverlener",
-                    "translations" : { }
+                    "value" : "Hulpverlener"
                   }, {
                     "terminologyId" : "urn:oid:2.16.840.1.113883.2.4.3.11.22.472",
                     "code" : "09",
-                    "value" : "Anders",
-                    "translations" : { }
+                    "value" : "Anders"
                   }, {
                     "terminologyId" : "urn:oid:2.16.840.1.113883.2.4.3.11.22.472",
                     "code" : "11",
-                    "value" : "Voogd",
-                    "translations" : { }
+                    "value" : "Voogd"
                   }, {
                     "terminologyId" : "urn:oid:2.16.840.1.113883.2.4.3.11.22.472",
                     "code" : "14",
-                    "value" : "Bewindvoerder",
-                    "translations" : { }
+                    "value" : "Bewindvoerder"
                   }, {
                     "terminologyId" : "urn:oid:2.16.840.1.113883.2.4.3.11.22.472",
                     "code" : "15",
-                    "value" : "Mentor",
-                    "translations" : { }
+                    "value" : "Mentor"
                   }, {
                     "terminologyId" : "urn:oid:2.16.840.1.113883.2.4.3.11.22.472",
                     "code" : "19",
-                    "value" : "Buur",
-                    "translations" : { }
+                    "value" : "Buur"
                   }, {
                     "terminologyId" : "urn:oid:2.16.840.1.113883.2.4.3.11.22.472",
                     "code" : "20",
-                    "value" : "Vriend(in)/kennis",
-                    "translations" : { }
+                    "value" : "Vriend(in)/kennis"
                   }, {
                     "terminologyId" : "urn:oid:2.16.840.1.113883.2.4.3.11.22.472",
                     "code" : "21",
-                    "value" : "Cliëntondersteuner",
-                    "translations" : { }
+                    "value" : "Cliëntondersteuner"
                   }, {
                     "terminologyId" : "urn:oid:2.16.840.1.113883.2.4.3.11.22.472",
                     "code" : "23",
-                    "value" : "Contactpersoon",
-                    "translations" : { }
+                    "value" : "Contactpersoon"
                   }, {
                     "terminologyId" : "urn:oid:2.16.840.1.113883.2.4.3.11.22.472",
                     "code" : "24",
-                    "value" : "Wettelijke vertegenwoordiger",
-                    "translations" : { }
+                    "value" : "Wettelijke vertegenwoordiger"
                   } ]
                 } ]
               } ],
@@ -2243,31 +2150,19 @@
                       "includedExternalTerminologyCodes" : [ {
                         "terminologyId" : "http://snomed.info/sct",
                         "code" : "264362003",
-                        "value" : "Thuis",
-                        "translations" : {
-                          "en" : "Thuis"
-                        }
+                        "value" : "Thuis"
                       }, {
                         "terminologyId" : "http://snomed.info/sct",
                         "code" : "22232009",
-                        "value" : "Ziekenhuis",
-                        "translations" : {
-                          "en" : "Ziekenhuis"
-                        }
+                        "value" : "Ziekenhuis"
                       }, {
                         "terminologyId" : "http://snomed.info/sct",
                         "code" : "108344006",
-                        "value" : "Verpleeghuis",
-                        "translations" : {
-                          "en" : "Verpleeghuis"
-                        }
+                        "value" : "Verpleeghuis"
                       }, {
                         "terminologyId" : "http://snomed.info/sct",
                         "code" : "284546000",
-                        "value" : "Hospice",
-                        "translations" : {
-                          "en" : "Hospice"
-                        }
+                        "value" : "Hospice"
                       } ]
                     } ]
                   } ],
@@ -2327,8 +2222,8 @@
                         "upper" : 100,
                         "lowerIncluded" : true,
                         "upperIncluded" : true,
-                        "lowerUnbounded" : false,
-                        "upperUnbounded" : false
+                        "upperUnbounded" : false,
+                        "lowerUnbounded" : false
                       } ]
                     } ]
                   } ],
@@ -2924,31 +2819,19 @@
                       "includedExternalTerminologyCodes" : [ {
                         "terminologyId" : "http://snomed.info/sct",
                         "code" : "264362003",
-                        "value" : "Thuis",
-                        "translations" : {
-                          "en" : "Thuis"
-                        }
+                        "value" : "Thuis"
                       }, {
                         "terminologyId" : "http://snomed.info/sct",
                         "code" : "22232009",
-                        "value" : "Ziekenhuis",
-                        "translations" : {
-                          "en" : "Ziekenhuis"
-                        }
+                        "value" : "Ziekenhuis"
                       }, {
                         "terminologyId" : "http://snomed.info/sct",
                         "code" : "108344006",
-                        "value" : "Verpleeghuis",
-                        "translations" : {
-                          "en" : "Verpleeghuis"
-                        }
+                        "value" : "Verpleeghuis"
                       }, {
                         "terminologyId" : "http://snomed.info/sct",
                         "code" : "284546000",
-                        "value" : "Hospice",
-                        "translations" : {
-                          "en" : "Hospice"
-                        }
+                        "value" : "Hospice"
                       } ]
                     } ]
                   } ],
@@ -3008,8 +2891,8 @@
                         "upper" : 100,
                         "lowerIncluded" : true,
                         "upperIncluded" : true,
-                        "lowerUnbounded" : false,
-                        "upperUnbounded" : false
+                        "upperUnbounded" : false,
+                        "lowerUnbounded" : false
                       } ]
                     } ]
                   } ],
