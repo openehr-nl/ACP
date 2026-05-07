@@ -1042,7 +1042,7 @@ Die Kodierung des Versorgungszwecks mit einer externen Terminologie wird bevorzu
 			>
 		>
 	>
-	term_binding = <
+	term_bindings = <
 		["SNOMED-CT"] = <
 			items = <
 				["at0012"] = <[SNOMED-CT::450476008]>
