@@ -860,7 +860,7 @@ Ou 'as Testemunhas de Jeová acreditam que a Bíblia proíbe os cristãos de ace
 			>
 		>
 	>
-	term_binding = <
+	term_bindings = <
 		["SNOMED-CT"] = <
 			items = <
 				["at0044"] = <[SNOMED-CT::410515003]>
