@@ -335,7 +335,7 @@ ontology
 			>
 		>
 	>
-	term_binding = <
+	term_bindings = <
 		["SNOMED-CT"] = <
 			items = <
 				["at0012"] = <[SNOMED-CT::766391000000108]>
