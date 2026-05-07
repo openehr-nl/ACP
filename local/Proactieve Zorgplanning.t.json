@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "14.1.0",
+      "sem_ver" : "1.0.0-alpha.1",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "34f52cdf0510482c63a7491a5c84e541",
+      "MD5-CAM-1.0.1" : "0b5e3128ac1fd95e1fb6ed66678b0fa4",
       "PARENT:MD5-CAM-1.0.1" : "13D55DE5073CB5A79B7527DCB7E65582"
     },
     "details" : {
@@ -125,8 +125,8 @@
         "nodeId" : "at0.11",
         "attributes" : [ ],
         "attributeTuples" : [ ],
-        "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-advance_intervention_decisions-001.v1",
-        "referenceType" : "archetypeOverlay"
+        "archetypeRef" : "Advance intervention decisions",
+        "referenceType" : "templateId"
       }, {
         "@type" : "C_ARCHETYPE_ROOT",
         "rmTypeName" : "EVALUATION",
@@ -170,6 +170,11 @@
       "composer" : {
         "aliases" : {
           "en" : "composer"
+        }
+      },
+      "category" : {
+        "aliases" : {
+          "en" : "category"
         }
       }
     }
@@ -215,336 +220,6 @@
   "templateId" : "Proactieve Zorgplanning",
   "otherMetaData" : { },
   "templateOverlays" : [ {
-    "@type" : "TEMPLATE_OVERLAY",
-    "uid" : "92bccd5d-c1e2-404c-a8c2-52128ef5b788",
-    "description" : {
-      "@type" : "RESOURCE_DESCRIPTION",
-      "originalAuthor" : { },
-      "otherContributors" : [ ],
-      "ipAcknowledgements" : { },
-      "references" : { },
-      "conversionDetails" : { },
-      "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "FEF12ACA9033560751C7E28A75C5EF54"
-      },
-      "details" : {
-        "de" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "de"
-          },
-          "purpose" : "Zur Aufzeichnung vorausschauender Entscheidungen über die Gesamtabsicht der Pflege und mögliche Interventionen, die in der Regel von einem Kliniker durchgeführt werden.\r\n",
-          "keywords" : [ "DNR", "DNAR", "DNACPR", "NFR", "Reanimation", "Wiederbelebung", "EoL", "Lebensende", "Richtlinie", "Präferenz", "Ziel", "Pflege", "Eingriff", "Intervention", "Höchstgrenze", "Grenze", "Begrenzung", "Behandlung", "Umfang", "Eskalation", "Absicht", "EOLC", "lebensverlängernd", "lebensrettend", "palliativ", "Entscheidung", "Richtung" ],
-          "use" : "Dient zur Aufzeichnung von vorausschauenden Entscheidungen über die Gesamtabsicht der Pflege und mögliche Interventionen für eine Person. Die Entscheidungen unterstützen Kliniker, indem sie Hinweise auf mögliche Behandlungen, Aktivitäten und diagnostische oder therapeutische Verfahren geben, die lebensrettend oder lebensverlängernd sein können oder unerwünschte Nebenwirkungen verursachen. \r\n\r\nDieser Archetyp soll als Teil einer integrierten Pflege- oder Lebensendplanung verwendet werden und nicht als Reaktion auf eine akute oder Notfallsituation. Jede Entscheidung sollte als Reaktion auf den allgemeinen Gesundheitszustand und die allgemeinen Umstände der Person getroffen werden und wird in der Regel von einem Arzt nach Berücksichtigung der Patientenverfügung oder der erklärten Präferenzen der Person durchgesetzt.\r\n\r\nEs kann unter bestimmten Umständen notwendig sein vorübergehende Überschreitungen der üblichen Vorausverfügungen zu erfassen, z. B. während einer Schwangerschaft oder präoperativ. In dieser Situation wird es notwendig sein eine separate Instanz dieses Archetyps aufzuzeichnen, unter Verwendung einer Kombination aus relevanten Gültigkeits- und Überprüfungsdaten.\r\n",
-          "misuse" : "Nicht zur Aufzeichnung einer \"Patientenverfügung\" oder der Präferenzen der Person für die Pflege verwenden - verwenden Sie zu diesem Zweck EVALUATION.advance_care_directive.\r\n\r\nNicht zu verwenden für die Aufzeichnung von Anordnungen, die als Folge der getroffenen und mit diesem Archetyp aufgezeichneten Entscheidungen erforderlich sind. Verwenden Sie für diesen Zweck spezifische Archetypen INSTRUCTION oder ACTION.\r\n\r\n",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        },
-        "nb" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "nb"
-          },
-          "purpose" : "For å registrere en forhåndsbeslutning om den overordnede intensjonen med omsorg/behandling, samt hensiktsmessig behandling eller intervensjoner for et individ. Disse bestemmelsene er vanligvis tatt av en eller flere klinikere.",
-          "keywords" : [ "HLR-minus, R minus, resucitering, DNR, Do not resucitate, EoL, end of life, direktiv, behandlingsmål, intervensjon, beslutning, livsforlengende, palliativ, gjenoppliving, forhåndssamtale, forberedende samtale" ],
-          "use" : "For å registrere en forhåndsbeslutning om den overordnede intensjonen med omsorg/behandling, samt hensiktsmessige intervensjoner (inkludert behandling og tiltak) for et individ. Beslutningene vil støtte klinikere ved å fungere som retningslinjer knyttet til mulige behandlinger, tiltak og diagnostiske eller terapeutiske prosedyrer som kan være livreddende, livsforlengende eller føre til uønskede konsekvenser for individet.\r\n\r\nDenne arketypen er tenkt brukt som en del av behandlingsplan eller plan for omsorg i livets sluttfase, og ikke gjort under tidspress i en akutt- eller nødsituasjon. De enkelte beslutningene bør være tilpasset individets overordnede helse og situasjon. Beslutningene blir vanligvis tatt av en eller flere klinikere, etter også å ha tatt hensyn til individets og/eller pårørendes ønsker i form av livstestamente eller andre oppgitte preferanser.\r\n\r\nDet kan være nødvendig å gjøre midlertidige avvik fra beslutningene i spesielle tilfeller, for eksempel ved svangerskap eller i forbindelse med en operasjon. Da vil det være nødvendig å lage separate instanser av denne arketypen, og sette de relevante gyldighetsdatoene i Protokoll-delen.",
-          "misuse" : "Skal ikke brukes for å registrere individets livstestament eller andre personlige ønsker, bruk i stedet arketypen \"Fremtidig behandlingsvalg\" (EVALUATION.advance_care_directive).\r\n\r\nSkal ikke brukes for å forordne eller gjøre endringer i igangsatte tiltak, basert på bestemmelser gjort i denne arketypen. Bruk spesifikke INSTRUCTION- eller ACTION-arketyper til dette.",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        },
-        "en" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "en"
-          },
-          "purpose" : "To record anticipatory decisions about the overall intent of care and possible interventions, usually asserted by a clinician.",
-          "keywords" : [ "DNR", "DNAR", "DNACPR", "NFR", "resuscitation", "resuscitate", "EoL", "end of life", "directive", "preference", "goal", "care", "intervention", "ceiling", "limit", "limitation", "treatment", "scope", "escalation", "intent", "EOLC", "life-prolonging", "life-saving", "palliative", "decision", "direction" ],
-          "use" : "Use to record anticipatory decisions about the overall intent of care and possible interventions for an individual. The decisions will support clinicians by providing guidance regarding possible treatments, activities, and diagnostic or therapeutic procedures that may be life-saving, life-prolonging or cause undesirable side effects. \r\n\r\nThis archetype is intended to be used as part of integrated care or end-of-life planning, and not as a reaction to an acute or emergency situation. Each decision should be made in response to the individual's overall health and general circumstances, and usually asserted by a clinician after consideration of the individual's advance care directives or stated preferences.\r\n\r\nIt may be necessary to record temporary overrides to usual advance intervention decisions in specific circumstances, for example during pregnancy or preoperatively. In this situation it will be necessary to record a separate instance of this archetype, using a combination of relevant validity and review dates.",
-          "misuse" : "Not to be used to record an 'Advance care directive' or the individual's preferences for care - use EVALUATION.advance_care_directive for this purpose.\r\n\r\nNot to be used to record the orders required as a consequence of the decisions made and recorded using this archetype. Use specific INSTRUCTION or ACTION archetypes for this purpose.",
-          "copyright" : "© openEHR Foundation",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        }
-      }
-    },
-    "parentArchetypeId" : "openEHR-EHR-EVALUATION.advance_intervention_decisions.v1",
-    "differential" : true,
-    "archetypeId" : {
-      "@type" : "ARCHETYPE_HRID",
-      "value" : "openEHR-EHR-EVALUATION.ovl-advance_intervention_decisions-001.v1"
-    },
-    "definition" : {
-      "@type" : "C_COMPLEX_OBJECT",
-      "rmTypeName" : "EVALUATION",
-      "nodeId" : "at0000.1",
-      "attributes" : [ {
-        "@type" : "C_ATTRIBUTE",
-        "rmAttributeName" : "data",
-        "children" : [ {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ITEM_TREE",
-          "nodeId" : "at0001",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "items",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "ELEMENT",
-              "nodeId" : "at0002.1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "value",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_CODED_TEXT",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "defining_code",
-                    "children" : [ {
-                      "@type" : "C_TERMINOLOGY_CODE",
-                      "rmTypeName" : "CODE_PHRASE",
-                      "occurrences" : "1..1",
-                      "terminologyId" : {
-                        "value" : "local"
-                      },
-                      "constraint" : [ "at0003", "at0004", "at0005", "at0006", "at0007" ]
-                    } ]
-                  } ],
-                  "attributeTuples" : [ ]
-                }, {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_TEXT",
-                  "attributes" : [ ],
-                  "attributeTuples" : [ ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "CLUSTER",
-              "nodeId" : "at0014",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "items",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "ELEMENT",
-                  "nodeId" : "at0015.1",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "value",
-                    "children" : [ {
-                      "@type" : "C_COMPLEX_OBJECT",
-                      "rmTypeName" : "DV_CODED_TEXT",
-                      "attributes" : [ {
-                        "@type" : "C_ATTRIBUTE",
-                        "rmAttributeName" : "defining_code",
-                        "children" : [ {
-                          "@type" : "C_TERMINOLOGY_CODE",
-                          "rmTypeName" : "TERMINOLOGY_CODE",
-                          "occurrences" : "1..1",
-                          "terminologyId" : {
-                            "value" : "http://snomed.info/sct"
-                          },
-                          "constraint" : [ ],
-                          "selectedTerminologies" : [ "http://snomed.info/sct" ],
-                          "includedExternalTerminologyCodes" : [ {
-                            "terminologyId" : "http://snomed.info/sct",
-                            "code" : "305351004",
-                            "value" : "opname op intensive care"
-                          }, {
-                            "terminologyId" : "http://snomed.info/sct",
-                            "code" : "40617009",
-                            "value" : "kunstmatige beademing"
-                          }, {
-                            "terminologyId" : "http://snomed.info/sct",
-                            "code" : "116762002",
-                            "value" : "toediening van bloedproduct"
-                          }, {
-                            "terminologyId" : "http://snomed.info/sct",
-                            "code" : "281789004",
-                            "value" : "antibiotische therapie"
-                          }, {
-                            "terminologyId" : "http://snomed.info/sct",
-                            "code" : "32485007",
-                            "value" : "opname in ziekenhuis"
-                          } ]
-                        } ]
-                      } ],
-                      "attributeTuples" : [ ]
-                    }, {
-                      "@type" : "C_COMPLEX_OBJECT",
-                      "rmTypeName" : "DV_TEXT",
-                      "attributes" : [ ],
-                      "attributeTuples" : [ ]
-                    } ]
-                  } ],
-                  "attributeTuples" : [ ]
-                }, {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "ELEMENT",
-                  "nodeId" : "at0034.1",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "value",
-                    "children" : [ {
-                      "@type" : "C_COMPLEX_OBJECT",
-                      "rmTypeName" : "DV_CODED_TEXT",
-                      "attributes" : [ {
-                        "@type" : "C_ATTRIBUTE",
-                        "rmAttributeName" : "defining_code",
-                        "children" : [ {
-                          "@type" : "C_TERMINOLOGY_CODE",
-                          "rmTypeName" : "TERMINOLOGY_CODE",
-                          "occurrences" : "1..1",
-                          "terminologyId" : {
-                            "value" : "http://hl7.org/fhir/consent-provision-type"
-                          },
-                          "constraint" : [ ],
-                          "selectedTerminologies" : [ "http://hl7.org/fhir/consent-provision-type" ],
-                          "includedExternalTerminologyCodes" : [ {
-                            "terminologyId" : "http://hl7.org/fhir/consent-provision-type",
-                            "code" : "deny",
-                            "value" : "Opt Out"
-                          }, {
-                            "terminologyId" : "http://hl7.org/fhir/consent-provision-type",
-                            "code" : "permit",
-                            "value" : "Opt In"
-                          } ]
-                        } ]
-                      } ],
-                      "attributeTuples" : [ ]
-                    } ]
-                  } ],
-                  "attributeTuples" : [ ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
-          "attributeTuples" : [ ]
-        } ]
-      } ],
-      "attributeTuples" : [ ]
-    },
-    "terminology" : {
-      "@type" : "ARCHETYPE_TERMINOLOGY",
-      "conceptCode" : "at0000",
-      "termDefinitions" : {
-        "en" : {
-          "at0034.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0034.1",
-            "text" : "Behandelbesluit",
-            "description" : "Decision about the identified intervention."
-          },
-          "at0002.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0002.1",
-            "text" : "Belangrijkste overeengekomen doel van medisch beleid",
-            "description" : "The overall intent for future care and treatment for the individual.",
-            "comment" : "The proposed value set is based on the MJA reference. \r\nCoding the intent of care with an external terminology is preferred, where possible."
-          }
-        },
-        "nb" : { },
-        "de" : { }
-      },
-      "termBindings" : { },
-      "terminologyExtracts" : { },
-      "valueSets" : {
-        "ac0.2" : {
-          "@type" : "VALUE_SET",
-          "id" : "ac0.2",
-          "members" : [ "at0035", "at0036", "at0037", "at0038" ]
-        },
-        "ac0.3" : {
-          "@type" : "VALUE_SET",
-          "id" : "ac0.3",
-          "members" : [ ]
-        },
-        "ac0.4" : {
-          "@type" : "VALUE_SET",
-          "id" : "ac0.4",
-          "members" : [ ]
-        },
-        "ac0.6" : {
-          "@type" : "VALUE_SET",
-          "id" : "ac0.6",
-          "members" : [ "at0016", "at0017", "at0018", "at0019", "at0020", "at0021", "at0022", "at0023", "at0024", "at0025", "at0026", "at0027", "at0028", "at0029", "at0030", "at0031", "at0032", "at0033" ]
-        },
-        "ac0.7" : {
-          "@type" : "VALUE_SET",
-          "id" : "ac0.7",
-          "members" : [ ]
-        },
-        "ac0.8" : {
-          "@type" : "VALUE_SET",
-          "id" : "ac0.8",
-          "members" : [ ]
-        },
-        "ac0.9" : {
-          "@type" : "VALUE_SET",
-          "id" : "ac0.9",
-          "members" : [ "at0003", "at0004", "at0005", "at0007" ]
-        },
-        "ac0.11" : {
-          "@type" : "VALUE_SET",
-          "id" : "ac0.11",
-          "members" : [ "at0003", "at0004", "at0005", "at0007" ]
-        }
-      }
-    },
-    "adlVersion" : "1.4",
-    "buildUid" : "3d99df16-8886-4c9a-b00d-7e1cbc9bd825",
-    "rmName" : "openehr",
-    "rmRelease" : "1.1.0",
-    "generated" : true,
-    "otherMetaData" : { },
-    "originalLanguage" : {
-      "terminologyId" : {
-        "value" : "ISO_639-1"
-      },
-      "codeString" : "en"
-    },
-    "translations" : [ {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "de"
-      },
-      "author" : {
-        "name" : "Alina Rehberg",
-        "organisation" : "Medizinische Hochschule Hannover",
-        "email" : "rehberg.alina@mh-hannover.de"
-      },
-      "otherDetails" : { }
-    }, {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "nb"
-      },
-      "author" : {
-        "name" : "Vebjørn Arntzen, John Tore Valand",
-        "organisation" : "Oslo University Hospital, Helse Bergen",
-        "email" : "varntzen@ous-hf.no, john.tore.valand@helse-bergen.no"
-      },
-      "otherDetails" : { }
-    } ]
-  }, {
     "@type" : "TEMPLATE_OVERLAY",
     "uid" : "963468b3-819c-4e2d-a563-8777b3ab9061",
     "description" : {
@@ -1165,8 +840,8 @@
                         "upper" : 100,
                         "lowerIncluded" : true,
                         "upperIncluded" : true,
-                        "upperUnbounded" : false,
-                        "lowerUnbounded" : false
+                        "lowerUnbounded" : false,
+                        "upperUnbounded" : false
                       } ]
                     } ]
                   } ],
@@ -2222,8 +1897,8 @@
                         "upper" : 100,
                         "lowerIncluded" : true,
                         "upperIncluded" : true,
-                        "upperUnbounded" : false,
-                        "lowerUnbounded" : false
+                        "lowerUnbounded" : false,
+                        "upperUnbounded" : false
                       } ]
                     } ]
                   } ],
@@ -2891,8 +2566,8 @@
                         "upper" : 100,
                         "lowerIncluded" : true,
                         "upperIncluded" : true,
-                        "upperUnbounded" : false,
-                        "lowerUnbounded" : false
+                        "lowerUnbounded" : false,
+                        "upperUnbounded" : false
                       } ]
                     } ]
                   } ],
