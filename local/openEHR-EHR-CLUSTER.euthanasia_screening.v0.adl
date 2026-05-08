@@ -26,12 +26,12 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"613b0b540cad55ee0771a83ac6c60cac">
+		["MD5-CAM-1.0.1"] = <"fd22ee081d5d87955b640105480e1017">
 		["build_uid"] = <"2d6039fd-c095-3383-9eca-401d611e5f83">
 	>
 
 definition
-	CLUSTER[at0000] matches {    -- euthanasia_screening
+	CLUSTER[at0000] matches {    -- Euthanasia screening
 		items cardinality matches {1..*; unordered} matches {
 			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Euthanasia position
 				value matches {
@@ -60,7 +60,7 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"euthanasia_screening">
+					text = <"Euthanasia screening">
 					description = <"Euthanisia screening">
 				>
 				["at0001"] = <
