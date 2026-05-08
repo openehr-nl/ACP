@@ -6,6 +6,13 @@ concept
 
 language
 	original_language = <[ISO_639-1::en]>
+	translations = <
+		["nl"] = <
+			language = <[ISO_639-1::nl]>
+			author = <
+			>
+		>
+	>
 
 description
 	original_author = <
@@ -19,6 +26,10 @@ description
 		["en"] = <
 			language = <[ISO_639-1::en]>
 		>
+		["nl"] = <
+			language = <[ISO_639-1::nl]>
+			copyright = <"© openEHR Foundation">
+		>
 	>
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
@@ -26,7 +37,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"fd22ee081d5d87955b640105480e1017">
+		["MD5-CAM-1.0.1"] = <"5b67265fd83e6dccc676efaab775e2cb">
 		["build_uid"] = <"2d6039fd-c095-3383-9eca-401d611e5f83">
 	>
 
@@ -86,6 +97,38 @@ ontology
 				["at0006"] = <
 					text = <"Comment">
 					description = <"">
+				>
+			>
+		>
+		["nl"] = <
+			items = <
+				["at0000"] = <
+					text = <"Screening op euthanasie">
+					description = <"Screening op euthanasie.">
+				>
+				["at0001"] = <
+					text = <"Euthanasie standpunt">
+					description = <"Euthanasie standpunt.">
+				>
+				["at0002"] = <
+					text = <"Heeft euthanasieverklaring">
+					description = <"Heeft euthanasieverklaring.">
+				>
+				["at0003"] = <
+					text = <"Wenst geen euthanasie">
+					description = <"Wenst geen euthanasie.">
+				>
+				["at0004"] = <
+					text = <"Nog onbekend">
+					description = <"Nog onbekend.">
+				>
+				["at0005"] = <
+					text = <"Geen euthanasieverklaring, zou wel verzoek kunnen doen in bepaalde situaties">
+					description = <"Geen euthanasieverklaring, zou wel verzoek kunnen doen in bepaalde situaties.">
+				>
+				["at0006"] = <
+					text = <"Toelichting">
+					description = <"Toelichting.">
 				>
 			>
 		>
