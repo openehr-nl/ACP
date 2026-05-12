@@ -23,6 +23,14 @@ language
 				["email"] = <"varntzen@ous-hf.no, john.tore.valand@helse-bergen.no">
 			>
 		>
+		["nl"] = <
+			language = <[ISO_639-1::nl]>
+			author = <
+				["name"] = <"Loes Jaspers">
+				["organisation"] = <"Dr Luz Public Health">
+				["email"] = <"loesjaspers@drluz.nl">
+			>
+		>
 	>
 
 description
@@ -32,7 +40,7 @@ description
 		["organisation"] = <"Atomica Informatics, Australia">
 		["email"] = <"heather.leslie@atomicainformatics.com">
 	>
-	lifecycle_state = <"published">
+	lifecycle_state = <"in_development">
 	other_contributors = <"Dag Aarhus, Vestre Viken HF, Norway","Nuno Abreu, Oporto Hospital Center, Portugal","Tor Aksel Aasmundstad, Oslo University Hospital, Norway","Tomas Alme, Norway","Vebjørn Arntzen, Oslo University Hospital, Norway (openEHR Editor)","Kari-Ann Baarlid, Nasjonalforeningen for folkehelsen, Norway","Silje Ljosland Bakke, Helse Vest IKT AS, Norway (openEHR Editor)","Terje Bektesevic Holmlund, UiT Norges arktiske universitet, Norway","SB Bhattacharyya, Sudisa Consultancy Services, India","Colin Brown, NHS Scotland SCIMP, United Kingdom","Greg Burch, Tiny Medical Apps, United Kingdom","Gry Caroline Aarnes, Nasjonalforeningen for folkehelsen, Norway","Fatemeh Chalabianloo, Helse Bergen, Norway","Bjørn Christensen, Helse Bergen HF, Norway","Oona Dunlop, Oslo University Hospital, Norway","Vibeche Fashing, Norwegian Cancer Society, Norway","Arild Faxvaag, NTNU, Norway","Grant Forrest, Lunaria Ltd, United Kingdom","Reidun Førde, Prof emirata, University of Oslo, Norway","Maria G, Norway","Heather Grain, Llewelyn Grain Informatics, Australia","Anne Grimstvedt Kvalvik, Haraldsplass Diakonale sykehus, Norway","Joost Holslag, Nedap, Netherlands","Evelyn Hovenga, EJSH Consulting, Australia","Keltie Jamieson, NSHA, Canada","Lars Morgan Karlsen, DIPS ASA, Norway","Heidi Koikkalainen, United Kingdom","Nils Kolstrup, Skansen Legekontor og Nasjonalt Senter for samhandling og telemedisin, Norway","Tomi Laptoš, Marand, Slovenia","Heather Leslie, Atomica Informatics, Australia (openEHR Editor)","Manisha Mantri, C-DAC, India","Ian McNicoll, freshEHR Clinical Informatics, United Kingdom","Per Meinich, Helse Sør-Øst RHF, Norway","Paul Miller, NES Digital Service, NHS Scotland, United Kingdom","Bjoern Naess, DIPS ASA, Norway","Arunakiry Natarajan, management4health, Germany","Svenne Naumann, Finnmarkssykehuset, Norway","Andrej Orel, Marand d.o.o., Slovenia","Vanessa Pereira, Better - Pathfinder, Portugal","Anne Rita Øksengård, Nasjonalforeningen for folkehelsen, Norway","Jussara Rotzsch, Hospital Alemão Oswaldo Cruz, Brazil","Nina Saastad, Norwegian Cancer Society, Norway","Joran Slaaen, Norwegian Cancer Society, Norway","Norwegian Review Summary, Nasjonal IKT HF, Norway","Nyree Taylor, Ocean Informatics, Australia","Rowan Thomas, St. Vincent's Hospital Melbourne, Australia","John Tore Valand, Helse Bergen, Norway (openEHR Editor)","Marc Vali Ahmed, Oslo University Hospital, Norway","Lin Zhang, Taikang Insurance Group, China">
 	details = <
 		["de"] = <
@@ -79,6 +87,20 @@ It may be necessary to record temporary overrides to usual advance intervention 
 
 Not to be used to record the orders required as a consequence of the decisions made and recorded using this archetype. Use specific INSTRUCTION or ACTION archetypes for this purpose.">
 		>
+		["nl"] = <
+			language = <[ISO_639-1::nl]>
+			purpose = <"Het vastleggen van vooraf genomen besluiten over het belangrijkste doel van medisch beleid en mogelijke interventies, doorgaans vastgesteld door een zorgverlener.
+">
+			keywords = <"NR","DNR","DNAR","DNACPR","NFR","reanimatie","reanimeren","EoL","end of life","levenseinde","wilsverklaring","voorkeur","doel","zorg","interventie","behandelplafond","grens","beperking","behandeling","reikwijdte","escalatie","intentie","EOLC","levensverlengend","levensreddend","palliatief","besluit","richting">
+			use = <"Gebruik dit archetype om vooraf genomen besluiten vast te leggen over het belangrijkste doel van medisch beleid en mogelijke interventies voor een individu. De besluiten ondersteunen zorgverleners door handvatten te bieden voor mogelijke behandelingen, activiteiten en diagnostische of therapeutische procedures die levensreddend of levensverlengend kunnen zijn, of ongewenste bijwerkingen kunnen veroorzaken.
+
+Dit archetype is bedoeld voor gebruik als onderdeel van integrale zorg of proactieve zorgplanning, en niet als reactie op een acute of spoedeisende situatie. Elk besluit dient te worden genomen op basis van de algehele gezondheidstoestand en algemene omstandigheden van het individu, en wordt doorgaans vastgesteld door een zorgverlener na afweging van de wilsverklaringen of kenbaar gemaakte voorkeuren van het individu.
+
+In specifieke omstandigheden kan het noodzakelijk zijn tijdelijke afwijkingen van de gebruikelijke behandelaanwijzingen vast te leggen, bijvoorbeeld tijdens zwangerschap of preoperatief. In dat geval is het noodzakelijk een afzonderlijke instantie van dit archetype vast te leggen, met gebruikmaking van relevante geldigheids- en herzieningsdatums.">
+			misuse = <"Gebruik dit archetype niet voor het vastleggen van een 'Wilsverklaring' of de zorgvoorkeuren van het individu — gebruik hiervoor EVALUATION.advance_care_directive.
+
+Gebruik dit archetype niet voor het vastleggen van opdrachten die voortvloeien uit de besluiten die met dit archetype zijn vastgelegd — gebruik hiervoor specifieke INSTRUCTION- of ACTION-archetypes.">
+		>
 	>
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
@@ -93,10 +115,10 @@ ZIB Centrum. [Internet]. Netherlands: Nictiz. BehandelAanwijzing-v3.2(2019NL); 2
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"FEF12ACA9033560751C7E28A75C5EF54">
-		["build_uid"] = <"3d99df16-8886-4c9a-b00d-7e1cbc9bd825">
+		["MD5-CAM-1.0.1"] = <"581E040E3C50210AE36B6E67D4450150">
+		["build_uid"] = <"16bea996-b630-4880-839c-0fda56a4b366">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomedct or info@snomed.org.">
-		["revision"] = <"1.0.0">
+		["revision"] = <"1.0.1-alpha">
 	>
 
 definition
@@ -1038,6 +1060,251 @@ Die Kodierung des Versorgungszwecks mit einer externen Terminologie wird bevorzu
 				["at0056"] = <
 					text = <"Begründung">
 					description = <"Narrative Beschreibung über die Logik und Begründung für die Entscheidung 'Intention der Behandlung'.">
+				>
+			>
+		>
+		["nl"] = <
+			items = <
+				["at0000"] = <
+					text = <"Behandelaanwijzingen">
+					description = <"Vooraf genomen besluiten over het belangrijkste doel van medisch beleid en mogelijke interventies (waaronder behandelingen, activiteiten en diagnostische of therapeutische procedures), vastgesteld door een zorgverlener.">
+				>
+				["at0001"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Belangrijkste doel van medisch beleid">
+					description = <"Het belangrijkste doel van medisch beleid voor de toekomstige zorg en behandeling van het individu.">
+					comment = <"De voorgestelde waardelijst is gebaseerd op de MJA-referentie.
+Codering van het belangrijkste doel van medisch beleid met een externe terminologie heeft de voorkeur, waar mogelijk.">
+				>
+				["at0003"] = <
+					text = <"Curatief">
+					description = <"De aandoening is curabel; alle passende levensverlengende behandelingen worden aangeboden.">
+				>
+				["at0004"] = <
+					text = <"Herstelgericht">
+					description = <"De aandoening is behandelbaar met mogelijkheid tot herstel naar de eerdere gezondheidstoestand of een langdurige remissie; alle passende levensverlengende behandelingen worden aangeboden.">
+				>
+				["at0005"] = <
+					text = <"Ondersteunend">
+					description = <"De aandoening is ongeneeslijk en progressief; actieve behandeling van de onderliggende aandoening kan passend zijn voor specifieke symptoomverlichting en/of levensverlenging op de korte termijn; gericht op comfort, kwaliteit van leven en waardigheid. Ook wel aangeduid als 'Palliatief'.">
+				>
+				["at0006"] = <
+					text = <"Terminaal">
+					description = <"De levensverwachting is kort (uren of dagen); geen actieve behandeling van de onderliggende aandoening of behandelingsgerelateerde schade; gericht op comfort, kwaliteit van leven en waardigheid.">
+				>
+				["at0007"] = <
+					text = <"Onbekend">
+					description = <"Het besluit over het belangrijkste doel van medisch beleid is niet bekend.">
+				>
+				["at0008"] = <
+					text = <"Beschrijving van besluiten">
+					description = <"Narratieve beschrijving van alle behandelaanwijzingen, inclusief het reanimatiebesluit.">
+					comment = <"Kan worden gebruikt om een narratief overzicht van de behandelaanwijzingen vast te leggen dat de specifieke omstandigheden van het individu weerspiegelt. Dit omvat eventuele beperkingen of situatie-afhankelijke omstandigheden die van toepassing zijn op interventies. Deze beschrijving kan al dan niet worden ondersteund door gestructureerde gegevens, vastgelegd via het cluster 'Per interventie'. Als zowel deze narratieve beschrijving als de gestructureerde gegevens van 'Per interventie' worden vastgelegd, is voorzichtigheid geboden vanwege het risico op onderlinge tegenstrijdigheid. Dit gegevenselement kan worden gebruikt om historische gegevens vast te leggen die niet beschikbaar zijn in een gestructureerd formaat.">
+				>
+				["at0009"] = <
+					text = <"Reanimatiebesluit">
+					description = <"Besluit over de mate waarin reanimatie (CPR) als interventie passend is voor dit individu.">
+				>
+				["at0010"] = <
+					text = <"Volledige reanimatie">
+					description = <"Alle passende reanimatiemaatregelen dienen te worden ingezet om het leven te redden of te verlengen.">
+				>
+				["at0011"] = <
+					text = <"Beperkte reanimatie">
+					description = <"Reanimatiemaatregelen dienen te worden ingezet, zoals gespecificeerd in de narratieve 'Beschrijving van besluiten' of als gestructureerde gegevens in het cluster 'Per interventie'.">
+				>
+				["at0012"] = <
+					text = <"Niet reanimeren">
+					description = <"Er dienen geen reanimatiemaatregelen te worden ingezet om het leven te redden of te verlengen. In het Engels ook wel bekend als 'Do not resuscitate (DNR)'; 'Do not attempt resuscitation (DNAR)'; 'Not for resuscitation (NFR)' of vergelijkbaar.">
+				>
+				["at0013"] = <
+					text = <"Onbekend">
+					description = <"Het reanimatiebesluit is niet bekend.">
+				>
+				["at0014"] = <
+					text = <"Per interventie">
+					description = <"Details van het besluit over mogelijke behandelingen of activiteiten die levensreddend of levensverlengend kunnen zijn, of ongewenste bijwerkingen kunnen veroorzaken.">
+				>
+				["at0015"] = <
+					text = <"Interventie">
+					description = <"Naam van de mogelijke behandeling, procedure of activiteit.">
+					comment = <"Hoewel dit archetype bedoeld is voor alle klinische besluiten over mogelijke toekomstige interventies, is de voorgestelde waardelijst van het type DV_CODED_TEXT voor het gegevenselement 'Interventie' bewust niet uitputtend bedoeld. In plaats daarvan is het ontworpen om de meest voorkomende levensreddende behandelingen in een spoedeisende setting te omvatten. De alternatieve keuze voor de optie DV_TEXT kan worden gebruikt om een lokale waardelijst toe te voegen of te koppelen aan een alternatieve externe waardelijst binnen een template.">
+				>
+				["at0016"] = <
+					text = <"Borstcompressies">
+					description = <"Techniek om het bloed handmatig uitwendig middels hartmassage door het lichaam te pompen tijdens een hartstilstand.">
+				>
+				["at0017"] = <
+					text = <"Defibrillatie">
+					description = <"Toediening van cardiale gelijkstroomstoot om de elektrische activiteit van het hart te herstellen.">
+				>
+				["at0018"] = <
+					text = <"Intubatie">
+					description = <"Het inbrengen van een tube in de trachea om de luchtweg open te houden, inclusief een tracheostomie.">
+				>
+				["at0019"] = <
+					text = <"Invasieve beademing">
+					description = <"Kunstmatige beademing waarbij invasieve middelen worden gebruikt om de natuurlijke ademhaling te ondersteunen of over te nemen.">
+				>
+				["at0020"] = <
+					text = <"Niet-invasieve beademing">
+					description = <"Kunstmatige beademing waarbij niet-invasieve middelen worden gebruikt om de natuurlijke ademhaling te ondersteunen of over te nemen.">
+				>
+				["at0021"] = <
+					text = <"Perifere intraveneuze lijn">
+					description = <"Het inbrengen van een perifere intraveneuze lijn.">
+				>
+				["at0022"] = <
+					text = <"Centraal veneuze lijn of arteriële lijn">
+					description = <"Het inbrengen van een centraal veneuze lijn of arteriële lijn.">
+				>
+				["at0023"] = <
+					text = <"Parenterale vochttoediening">
+					description = <"Het handhaven van de vochtbalans anders dan via eten of drinken.">
+				>
+				["at0024"] = <
+					text = <"Parenterale of kunstmatige voeding">
+					description = <"Het toedienen van voedingsstoffen anders dan via eten of drinken.">
+				>
+				["at0025"] = <
+					text = <"Reanimatiemedicatie">
+					description = <"Medicatie die wordt toegediend tijdens een spoedeisende reanimatie om het leven te verlengen. Bijvoorbeeld: adrenaline, atropine, natriumbicarbonaaat, calcium, overige vasoactieve medicatie.">
+				>
+				["at0026"] = <
+					text = <"Circulatoire regulatiemedicatie">
+					description = <"Medicatie die de hartfunctie ondersteunt, waaronder maar niet uitsluitend: vasopressoren, inotroop en chronotroop werkende middelen.">
+				>
+				["at0027"] = <
+					text = <"Antibiotica, antivirale of antifungale middelen">
+					description = <"Medicatie voor de behandeling van infecties.">
+				>
+				["at0028"] = <
+					text = <"Bloedproducten">
+					description = <"Therapeutisch preparaat op basis van menselijk bloed, waaronder maar niet uitsluitend: volbloed, bloedcomponenten en plasmaderivaten.">
+				>
+				["at0029"] = <
+					text = <"Thoraxdrain">
+					description = <"Het inbrengen van een tube in de pleuraholte.">
+				>
+				["at0030"] = <
+					text = <"Pacemaker">
+					description = <"Het inbrengen van een kunstmatige pacemaker om het hartritme te reguleren.">
+				>
+				["at0031"] = <
+					text = <"Dialyse">
+					description = <"Het verwijderen van overtollig water, opgeloste stoffen en toxinen uit het bloed.">
+				>
+				["at0032"] = <
+					text = <"Ziekenhuisopname">
+					description = <"Overplaatsing naar het ziekenhuis voor beoordeling of opname.">
+				>
+				["at0033"] = <
+					text = <"Overplaatsing naar de intensive care">
+					description = <"Overplaatsing naar en opname op een intensive care of medium care afdeling.">
+				>
+				["at0034"] = <
+					text = <"Besluit">
+					description = <"Besluit over de geïdentificeerde interventie.">
+				>
+				["at0035"] = <
+					text = <"Aanbevolen">
+					description = <"De interventie wordt aanbevolen.">
+				>
+				["at0036"] = <
+					text = <"Voorwaardelijke aanbeveling">
+					description = <"De interventie wordt alleen aanbevolen onder specifieke omstandigheden, vastgelegd via het gegevenselement 'Voorwaarden'.">
+				>
+				["at0037"] = <
+					text = <"Niet aanbevolen">
+					description = <"De interventie wordt niet aanbevolen.">
+				>
+				["at0038"] = <
+					text = <"Onbekend">
+					description = <"Het besluit over de interventie is niet bekend.">
+				>
+				["at0039"] = <
+					text = <"Voorwaarde">
+					description = <"Beschrijving van de omstandigheid/omstandigheden waaronder een 'Voorwaardelijke aanbeveling' van toepassing is.">
+					comment = <"Dit gegevenselement is alleen relevant als de optie 'Voorwaardelijke aanbeveling' is geselecteerd in het gegevenselement 'Besluit'. Bijvoorbeeld: \"Overplaatsing naar het ziekenhuis is alleen van toepassing als het individu een fractuur oploopt en immobilisatie nodig heeft voor pijnbestrijding.\"">
+				>
+				["at0040"] = <
+					text = <"Opmerking">
+					description = <"Aanvullende narratieve informatie over het besluit betreffende de interventie, niet vastgelegd in andere velden.">
+					comment = <"Bijvoorbeeld: de gronden waarop het besluit over de interventie is genomen.">
+				>
+				["at0041"] = <
+					text = <"Aanvullende details">
+					description = <"Aanvullende gestructureerde details over de behandelaanwijzingen.">
+					comment = <"Bijvoorbeeld: betrokkenen bij het besluitvormingsproces, indien het niet mogelijk is gebruik te maken van de participaties van het referentiemodel; of aanvullende lokaal relevante overwegingen.">
+				>
+				["at0042"] = <
+					text = <"Bekendheid bij de patient">
+					description = <"Narratieve beschrijving van de mate waarin het individu op de hoogte is van de behandelaanwijzingen.">
+					comment = <"Bijvoorbeeld: het vermogen van de patiënt om de besluiten te begrijpen.">
+				>
+				["at0043"] = <
+					text = <"Bekendheid bij naasten">
+					description = <"Narratieve beschrijving van de mate waarin familie, mantelzorgers of wettelijk vertegenwoordigers op de hoogte zijn van de behandelaanwijzingen.">
+					comment = <"Bijvoorbeeld: het individu heeft geen familie.">
+				>
+				["at0044"] = <
+					text = <"Algemene opmerking">
+					description = <"Aanvullende narratieve informatie over alle behandelaanwijzingen, niet vastgelegd in andere velden.">
+				>
+				["at0045"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0046"] = <
+					text = <"Laatst bijgewerkt">
+					description = <"De datum en/of tijd waarop de behandelaanwijzingen voor het laatst zijn bijgewerkt.">
+				>
+				["at0047"] = <
+					text = <"Begin geldigheidsduur">
+					description = <"De datum/tijd die het begin markeert van de geldigheidsduur van de behandelaanwijzingen.">
+				>
+				["at0048"] = <
+					text = <"Einde geldigheidsduur">
+					description = <"De datum/tijd die het einde markeert van de geldigheidsduur van de behandelaanwijzingen.">
+					comment = <"'Einde geldigheidsduur' overlapt vaak met 'Herzieningsdatum'. Deze kunnen echter afzonderlijk worden vastgelegd in situaties waarbij een document een verlengde geldigheidsduur heeft maar een tussentijdse herziening vereist. Dit kan het gevolg zijn van gewijzigde persoonlijke omstandigheden/gebeurtenissen of lokaal beleid.">
+				>
+				["at0049"] = <
+					text = <"Herzieningsdatum">
+					description = <"De datum waarop de behandelaanwijzingen herzien dienen te worden.">
+				>
+				["at0050"] = <
+					text = <"Grondslag">
+					description = <"Beschrijving van de wet- en regelgeving of andere gezaghebbende richtlijnen die van toepassing zijn.">
+					comment = <"Bijvoorbeeld: een wilsverklaring.">
+				>
+				["at0051"] = <
+					text = <"Digitale weergave">
+					description = <"Digitaal document, afbeelding of video die deze behandelaanwijzingen weergeeft.">
+				>
+				["at0052"] = <
+					text = <"Documentlocatie">
+					description = <"Informatie over de fysieke of digitale locatie van de vastgelegde behandelaanwijzingen.">
+				>
+				["at0053"] = <
+					text = <"Locatie">
+					description = <"Fysieke of digitale locatie van de vastgelegde behandelaanwijzingen.">
+				>
+				["at0054"] = <
+					text = <"Houder van een exemplaar">
+					description = <"Gegevens van een persoon die een exemplaar van de behandelaanwijzingen in bezit heeft.">
+					comment = <"Bijvoorbeeld: 'Jan Jansen, advocaat'.">
+				>
+				["at0055"] = <
+					text = <"Uitbreiding">
+					description = <"Aanvullende informatie die nodig is om het model uit te breiden met lokale inhoud of om het af te stemmen op andere referentiemodellen of formalismen.">
+					comment = <"Bijvoorbeeld: lokale informatiebehoeften; of aanvullende metadata om af te stemmen op FHIR.">
+				>
+				["at0056"] = <
+					text = <"Onderbouwing">
+					description = <"Narratieve beschrijving van de gronden waarop het besluit over het 'Belangrijkste doel van medisch beleid' is genomen.">
 				>
 			>
 		>
