@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.0.0-alpha.1",
+      "sem_ver" : "1.0.0-alpha.2",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "0b5e3128ac1fd95e1fb6ed66678b0fa4",
+      "MD5-CAM-1.0.1" : "534286dfbb401e970d3c4463e5e0d1d8",
       "PARENT:MD5-CAM-1.0.1" : "13D55DE5073CB5A79B7527DCB7E65582"
     },
     "details" : {
@@ -125,8 +125,8 @@
         "nodeId" : "at0.11",
         "attributes" : [ ],
         "attributeTuples" : [ ],
-        "archetypeRef" : "Advance intervention decisions",
-        "referenceType" : "templateId"
+        "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-advance_intervention_decisions-001.v1",
+        "referenceType" : "archetypeOverlay"
       }, {
         "@type" : "C_ARCHETYPE_ROOT",
         "rmTypeName" : "EVALUATION",
@@ -3024,6 +3024,360 @@
       "codeString" : "en"
     },
     "translations" : [ ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "92bccd5d-c1e2-404c-a8c2-52128ef5b788",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : {
+        "date" : "2026-05-07"
+      },
+      "otherContributors" : [ ],
+      "lifecycleState" : {
+        "codeString" : "unmanaged"
+      },
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "licence" : "This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.",
+        "custodian_organisation" : "openEHR Foundation",
+        "original_namespace" : "org.openehr",
+        "original_publisher" : "openEHR Foundation",
+        "custodian_namespace" : "org.openehr",
+        "MD5-CAM-1.0.1" : "e5a773dec34da02764e4d9ea0724cc1b",
+        "PARENT:MD5-CAM-1.0.1" : "581E040E3C50210AE36B6E67D4450150",
+        "ip_acknowledgements" : "This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org."
+      },
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nl" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nl"
+          },
+          "purpose" : "Het vastleggen van vooraf genomen besluiten over het belangrijkste doel van medisch beleid en mogelijke interventies, doorgaans vastgesteld door een zorgverlener.\r\n",
+          "keywords" : [ "NR", "DNR", "DNAR", "DNACPR", "NFR", "reanimatie", "reanimeren", "EoL", "end of life", "levenseinde", "wilsverklaring", "voorkeur", "doel", "zorg", "interventie", "behandelplafond", "grens", "beperking", "behandeling", "reikwijdte", "escalatie", "intentie", "EOLC", "levensverlengend", "levensreddend", "palliatief", "besluit", "richting" ],
+          "use" : "Gebruik dit archetype om vooraf genomen besluiten vast te leggen over het belangrijkste doel van medisch beleid en mogelijke interventies voor een individu. De besluiten ondersteunen zorgverleners door handvatten te bieden voor mogelijke behandelingen, activiteiten en diagnostische of therapeutische procedures die levensreddend of levensverlengend kunnen zijn, of ongewenste bijwerkingen kunnen veroorzaken.\r\n\r\nDit archetype is bedoeld voor gebruik als onderdeel van integrale zorg of proactieve zorgplanning, en niet als reactie op een acute of spoedeisende situatie. Elk besluit dient te worden genomen op basis van de algehele gezondheidstoestand en algemene omstandigheden van het individu, en wordt doorgaans vastgesteld door een zorgverlener na afweging van de wilsverklaringen of kenbaar gemaakte voorkeuren van het individu.\r\n\r\nIn specifieke omstandigheden kan het noodzakelijk zijn tijdelijke afwijkingen van de gebruikelijke behandelaanwijzingen vast te leggen, bijvoorbeeld tijdens zwangerschap of preoperatief. In dat geval is het noodzakelijk een afzonderlijke instantie van dit archetype vast te leggen, met gebruikmaking van relevante geldigheids- en herzieningsdatums.",
+          "misuse" : "Gebruik dit archetype niet voor het vastleggen van een 'Wilsverklaring' of de zorgvoorkeuren van het individu — gebruik hiervoor EVALUATION.advance_care_directive.\r\n\r\nGebruik dit archetype niet voor het vastleggen van opdrachten die voortvloeien uit de besluiten die met dit archetype zijn vastgelegd — gebruik hiervoor specifieke INSTRUCTION- of ACTION-archetypes.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
+    },
+    "parentArchetypeId" : "openEHR-EHR-EVALUATION.advance_intervention_decisions.v1",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-EVALUATION.ovl-advance_intervention_decisions-001.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "EVALUATION",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "data",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ITEM_TREE",
+          "nodeId" : "at0001",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0002.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "CODE_PHRASE",
+                      "occurrences" : "1..1",
+                      "terminologyId" : {
+                        "value" : "local"
+                      },
+                      "constraint" : [ "at0003", "at0004", "at0005", "at0006", "at0007" ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "CLUSTER",
+              "nodeId" : "at0014",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "items",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "nodeId" : "at0015.1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_CODED_TEXT",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "defining_code",
+                        "children" : [ {
+                          "@type" : "C_TERMINOLOGY_CODE",
+                          "rmTypeName" : "TERMINOLOGY_CODE",
+                          "occurrences" : "1..1",
+                          "terminologyId" : {
+                            "value" : "http://snomed.info/sct"
+                          },
+                          "constraint" : [ ],
+                          "selectedTerminologies" : [ "http://snomed.info/sct" ],
+                          "includedExternalTerminologyCodes" : [ {
+                            "terminologyId" : "http://snomed.info/sct",
+                            "code" : "305351004",
+                            "value" : "opname op intensive care"
+                          }, {
+                            "terminologyId" : "http://snomed.info/sct",
+                            "code" : "40617009",
+                            "value" : "kunstmatige beademing"
+                          }, {
+                            "terminologyId" : "http://snomed.info/sct",
+                            "code" : "116762002",
+                            "value" : "toediening van bloedproduct"
+                          }, {
+                            "terminologyId" : "http://snomed.info/sct",
+                            "code" : "281789004",
+                            "value" : "antibiotische therapie"
+                          }, {
+                            "terminologyId" : "http://snomed.info/sct",
+                            "code" : "32485007",
+                            "value" : "opname in ziekenhuis"
+                          } ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_TEXT",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "nodeId" : "at0034.1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_CODED_TEXT",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "defining_code",
+                        "children" : [ {
+                          "@type" : "C_TERMINOLOGY_CODE",
+                          "rmTypeName" : "TERMINOLOGY_CODE",
+                          "occurrences" : "1..1",
+                          "terminologyId" : {
+                            "value" : "http://hl7.org/fhir/consent-provision-type"
+                          },
+                          "constraint" : [ ],
+                          "selectedTerminologies" : [ "http://hl7.org/fhir/consent-provision-type" ],
+                          "includedExternalTerminologyCodes" : [ {
+                            "terminologyId" : "http://hl7.org/fhir/consent-provision-type",
+                            "code" : "deny",
+                            "value" : "Opt Out"
+                          }, {
+                            "terminologyId" : "http://hl7.org/fhir/consent-provision-type",
+                            "code" : "permit",
+                            "value" : "Opt In"
+                          } ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : {
+          "at0034.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0034.1",
+            "text" : "Behandelbesluit",
+            "description" : "Decision about the identified intervention."
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Belangrijkste overeengekomen doel van medisch beleid",
+            "description" : "The overall intent for future care and treatment for the individual.",
+            "comment" : "The proposed value set is based on the MJA reference. \r\nCoding the intent of care with an external terminology is preferred, where possible."
+          }
+        },
+        "nb" : { },
+        "de" : { },
+        "nl" : { }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : {
+        "ac0.2" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.2",
+          "members" : [ "at0035", "at0036", "at0037", "at0038" ]
+        },
+        "ac0.3" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.3",
+          "members" : [ ]
+        },
+        "ac0.4" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.4",
+          "members" : [ ]
+        },
+        "ac0.6" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.6",
+          "members" : [ "at0016", "at0017", "at0018", "at0019", "at0020", "at0021", "at0022", "at0023", "at0024", "at0025", "at0026", "at0027", "at0028", "at0029", "at0030", "at0031", "at0032", "at0033" ]
+        },
+        "ac0.7" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.7",
+          "members" : [ ]
+        },
+        "ac0.8" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.8",
+          "members" : [ ]
+        },
+        "ac0.9" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.9",
+          "members" : [ "at0003", "at0004", "at0005", "at0007" ]
+        },
+        "ac0.11" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.11",
+          "members" : [ "at0003", "at0004", "at0005", "at0007" ]
+        }
+      }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "b3b1b299-7a5e-3a3e-b9e6-7f32648c9188",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : { },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : { },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nl"
+      },
+      "author" : {
+        "name" : "Loes Jaspers",
+        "organisation" : "Dr Luz Public Health",
+        "email" : "loesjaspers@drluz.nl"
+      },
+      "otherDetails" : { }
+    } ]
   } ],
   "originalLanguage" : {
     "terminologyId" : {
