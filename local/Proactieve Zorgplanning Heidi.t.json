@@ -24,7 +24,7 @@
       "custodian_namespace" : "",
       "sem_ver" : "1.0.0-alpha.7",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "6ac1da4ba1593ad61b8a719c666c88ca",
+      "MD5-CAM-1.0.1" : "93a2c812954fd605b679b14d6e74ead5",
       "PARENT:MD5-CAM-1.0.1" : "13D55DE5073CB5A79B7527DCB7E65582"
     },
     "details" : {
@@ -198,7 +198,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "FEF12ACA9033560751C7E28A75C5EF54"
+        "PARENT:MD5-CAM-1.0.1" : "581E040E3C50210AE36B6E67D4450150"
       },
       "details" : {
         "de" : {
@@ -244,6 +244,21 @@
           "use" : "Use to record anticipatory decisions about the overall intent of care and possible interventions for an individual. The decisions will support clinicians by providing guidance regarding possible treatments, activities, and diagnostic or therapeutic procedures that may be life-saving, life-prolonging or cause undesirable side effects. \r\n\r\nThis archetype is intended to be used as part of integrated care or end-of-life planning, and not as a reaction to an acute or emergency situation. Each decision should be made in response to the individual's overall health and general circumstances, and usually asserted by a clinician after consideration of the individual's advance care directives or stated preferences.\r\n\r\nIt may be necessary to record temporary overrides to usual advance intervention decisions in specific circumstances, for example during pregnancy or preoperatively. In this situation it will be necessary to record a separate instance of this archetype, using a combination of relevant validity and review dates.",
           "misuse" : "Not to be used to record an 'Advance care directive' or the individual's preferences for care - use EVALUATION.advance_care_directive for this purpose.\r\n\r\nNot to be used to record the orders required as a consequence of the decisions made and recorded using this archetype. Use specific INSTRUCTION or ACTION archetypes for this purpose.",
           "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nl" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nl"
+          },
+          "purpose" : "Het vastleggen van vooraf genomen besluiten over het belangrijkste doel van medisch beleid en mogelijke interventies, doorgaans vastgesteld door een zorgverlener.\r\n",
+          "keywords" : [ "NR", "DNR", "DNAR", "DNACPR", "NFR", "reanimatie", "reanimeren", "EoL", "end of life", "levenseinde", "wilsverklaring", "voorkeur", "doel", "zorg", "interventie", "behandelplafond", "grens", "beperking", "behandeling", "reikwijdte", "escalatie", "intentie", "EOLC", "levensverlengend", "levensreddend", "palliatief", "besluit", "richting" ],
+          "use" : "Gebruik dit archetype om vooraf genomen besluiten vast te leggen over het belangrijkste doel van medisch beleid en mogelijke interventies voor een individu. De besluiten ondersteunen zorgverleners door handvatten te bieden voor mogelijke behandelingen, activiteiten en diagnostische of therapeutische procedures die levensreddend of levensverlengend kunnen zijn, of ongewenste bijwerkingen kunnen veroorzaken.\r\n\r\nDit archetype is bedoeld voor gebruik als onderdeel van integrale zorg of proactieve zorgplanning, en niet als reactie op een acute of spoedeisende situatie. Elk besluit dient te worden genomen op basis van de algehele gezondheidstoestand en algemene omstandigheden van het individu, en wordt doorgaans vastgesteld door een zorgverlener na afweging van de wilsverklaringen of kenbaar gemaakte voorkeuren van het individu.\r\n\r\nIn specifieke omstandigheden kan het noodzakelijk zijn tijdelijke afwijkingen van de gebruikelijke behandelaanwijzingen vast te leggen, bijvoorbeeld tijdens zwangerschap of preoperatief. In dat geval is het noodzakelijk een afzonderlijke instantie van dit archetype vast te leggen, met gebruikmaking van relevante geldigheids- en herzieningsdatums.",
+          "misuse" : "Gebruik dit archetype niet voor het vastleggen van een 'Wilsverklaring' of de zorgvoorkeuren van het individu — gebruik hiervoor EVALUATION.advance_care_directive.\r\n\r\nGebruik dit archetype niet voor het vastleggen van opdrachten die voortvloeien uit de besluiten die met dit archetype zijn vastgelegd — gebruik hiervoor specifieke INSTRUCTION- of ACTION-archetypes.",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -1325,7 +1340,8 @@
             "text" : "Pro Intervention (6)",
             "description" : "Details der Entscheidung über mögliche Behandlungen oder Aktivitäten, die lebensrettend oder lebensverlängernd sein können oder unerwünschte Nebenwirkungen verursachen.\r\n"
           }
-        }
+        },
+        "nl" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -1415,6 +1431,20 @@
         "name" : "Vebjørn Arntzen, John Tore Valand",
         "organisation" : "Oslo University Hospital, Helse Bergen",
         "email" : "varntzen@ous-hf.no, john.tore.valand@helse-bergen.no"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nl"
+      },
+      "author" : {
+        "name" : "Loes Jaspers",
+        "organisation" : "Dr Luz Public Health",
+        "email" : "loesjaspers@drluz.nl"
       },
       "otherDetails" : { }
     } ]
@@ -1577,6 +1607,28 @@
               "nodeId" : "at0015.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "name",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "1..1",
+                      "terminologyId" : {
+                        "value" : "local"
+                      },
+                      "constraint" : [ "ac0.128" ],
+                      "selectedTerminologies" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              }, {
+                "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "value",
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
@@ -1618,28 +1670,6 @@
                         "code" : "UNK",
                         "value" : "Nog onbekend"
                       } ]
-                    } ]
-                  } ],
-                  "attributeTuples" : [ ]
-                } ]
-              }, {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "name",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_CODED_TEXT",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "defining_code",
-                    "children" : [ {
-                      "@type" : "C_TERMINOLOGY_CODE",
-                      "rmTypeName" : "TERMINOLOGY_CODE",
-                      "occurrences" : "1..1",
-                      "terminologyId" : {
-                        "value" : "local"
-                      },
-                      "constraint" : [ "ac0.128" ],
-                      "selectedTerminologies" : [ ]
                     } ]
                   } ],
                   "attributeTuples" : [ ]
@@ -3088,7 +3118,33 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "5b67265fd83e6dccc676efaab775e2cb"
       },
-      "details" : { }
+      "details" : {
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nl" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nl"
+          },
+          "keywords" : [ ],
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.euthanasia_screening.v0",
     "differential" : true,
@@ -3164,6 +3220,14 @@
             "code" : "ac0.1",
             "description" : ""
           }
+        },
+        "nl" : {
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.1",
+            "description" : ""
+          }
         }
       },
       "termBindings" : { },
@@ -3188,7 +3252,17 @@
       },
       "codeString" : "en"
     },
-    "translations" : [ ]
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nl"
+      },
+      "author" : { },
+      "otherDetails" : { }
+    } ]
   } ],
   "originalLanguage" : {
     "terminologyId" : {
