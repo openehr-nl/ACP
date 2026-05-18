@@ -1,0 +1,1259 @@
+{
+  "@type" : "TEMPLATE",
+  "uid" : "c05ffd8d-dabf-49c0-85c4-2cc897b005af",
+  "description" : {
+    "@type" : "RESOURCE_DESCRIPTION",
+    "originalAuthor" : {
+      "date" : "2026-05-18"
+    },
+    "otherContributors" : [ ],
+    "lifecycleState" : {
+      "codeString" : "unmanaged"
+    },
+    "ipAcknowledgements" : { },
+    "references" : { },
+    "conversionDetails" : { },
+    "otherDetails" : {
+      "licence" : "This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.",
+      "custodian_organisation" : "openEHR Foundation",
+      "original_namespace" : "org.openehr",
+      "original_publisher" : "openEHR Foundation",
+      "custodian_namespace" : "org.openehr",
+      "MD5-CAM-1.0.1" : "e734e131b8bbd81a25f966d253a9cabe",
+      "PARENT:MD5-CAM-1.0.1" : "40152D512B48468201F8792F0F35E147"
+    },
+    "details" : {
+      "en" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "en"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      }
+    }
+  },
+  "parentArchetypeId" : "openEHR-EHR-EVALUATION.care_preference_uk.v0",
+  "differential" : true,
+  "archetypeId" : {
+    "@type" : "ARCHETYPE_HRID",
+    "value" : "openEHR-EHR-EVALUATION.preferredpriorities of care.v0"
+  },
+  "definition" : {
+    "@type" : "C_COMPLEX_OBJECT",
+    "rmTypeName" : "EVALUATION",
+    "nodeId" : "at0000.1",
+    "attributes" : [ {
+      "@type" : "C_ATTRIBUTE",
+      "rmAttributeName" : "data",
+      "children" : [ {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "ITEM_TREE",
+        "nodeId" : "at0001",
+        "attributes" : [ {
+          "@type" : "C_ATTRIBUTE",
+          "rmAttributeName" : "items",
+          "children" : [ {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "occurrences" : "0..0",
+            "nodeId" : "at0038.1",
+            "attributes" : [ ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "occurrences" : "0..1",
+            "nodeId" : "at0030.1",
+            "attributes" : [ ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "occurrences" : "0..1",
+            "nodeId" : "at0030.2",
+            "attributes" : [ ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "occurrences" : "0..0",
+            "nodeId" : "at0003.1",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "name",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "DV_CODED_TEXT",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "defining_code",
+                  "children" : [ {
+                    "@type" : "C_TERMINOLOGY_CODE",
+                    "rmTypeName" : "TERMINOLOGY_CODE",
+                    "occurrences" : "1..1",
+                    "terminologyId" : {
+                      "value" : "local"
+                    },
+                    "constraint" : [ "ac0.23" ],
+                    "selectedTerminologies" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              } ]
+            }, {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "value",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "DV_CODED_TEXT",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "defining_code",
+                  "children" : [ {
+                    "@type" : "C_TERMINOLOGY_CODE",
+                    "rmTypeName" : "TERMINOLOGY_CODE",
+                    "occurrences" : "1..1",
+                    "terminologyId" : {
+                      "value" : "local"
+                    },
+                    "constraint" : [ "ac0.24" ],
+                    "selectedTerminologies" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "occurrences" : "0..0",
+            "nodeId" : "at0034.1",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "name",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "DV_CODED_TEXT",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "defining_code",
+                  "children" : [ {
+                    "@type" : "C_TERMINOLOGY_CODE",
+                    "rmTypeName" : "TERMINOLOGY_CODE",
+                    "occurrences" : "1..1",
+                    "terminologyId" : {
+                      "value" : "local"
+                    },
+                    "constraint" : [ "ac0.26" ],
+                    "selectedTerminologies" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "occurrences" : "0..1",
+            "nodeId" : "at0015.1",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "value",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "DV_CODED_TEXT",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "defining_code",
+                  "children" : [ {
+                    "@type" : "C_TERMINOLOGY_CODE",
+                    "rmTypeName" : "TERMINOLOGY_CODE",
+                    "occurrences" : "1..1",
+                    "terminologyId" : {
+                      "value" : "http://snomed.info/sct"
+                    },
+                    "constraint" : [ ],
+                    "selectedTerminologies" : [ "http://snomed.info/sct" ],
+                    "includedExternalTerminologyCodes" : [ {
+                      "terminologyId" : "http://snomed.info/sct",
+                      "code" : "264362003",
+                      "value" : "Thuis"
+                    }, {
+                      "terminologyId" : "http://snomed.info/sct",
+                      "code" : "22232009",
+                      "value" : "Ziekenhuis"
+                    }, {
+                      "terminologyId" : "http://snomed.info/sct",
+                      "code" : "108344006",
+                      "value" : "Verpleeghuis"
+                    }, {
+                      "terminologyId" : "http://snomed.info/sct",
+                      "code" : "284546000",
+                      "value" : "Hospice"
+                    }, {
+                      "terminologyId" : "http://snomed.info/sct",
+                      "code" : "OTH",
+                      "value" : "Anders"
+                    }, {
+                      "terminologyId" : "http://snomed.info/sct",
+                      "code" : "UNK",
+                      "value" : "Nog onbekend"
+                    } ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              } ]
+            }, {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "name",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "DV_CODED_TEXT",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "defining_code",
+                  "children" : [ {
+                    "@type" : "C_TERMINOLOGY_CODE",
+                    "rmTypeName" : "TERMINOLOGY_CODE",
+                    "occurrences" : "1..1",
+                    "terminologyId" : {
+                      "value" : "local"
+                    },
+                    "constraint" : [ "ac0.136" ],
+                    "selectedTerminologies" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "occurrences" : "0..0",
+            "nodeId" : "at0036.1",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "name",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "DV_CODED_TEXT",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "defining_code",
+                  "children" : [ {
+                    "@type" : "C_TERMINOLOGY_CODE",
+                    "rmTypeName" : "TERMINOLOGY_CODE",
+                    "occurrences" : "1..1",
+                    "terminologyId" : {
+                      "value" : "local"
+                    },
+                    "constraint" : [ "ac0.46" ],
+                    "selectedTerminologies" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "occurrences" : "0..0",
+            "nodeId" : "at0039.1",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "value",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "DV_COUNT",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "magnitude",
+                  "children" : [ {
+                    "@type" : "C_INTEGER",
+                    "rmTypeName" : "INTEGER",
+                    "occurrences" : "1..1",
+                    "constraint" : [ {
+                      "lower" : 1,
+                      "upper" : 100,
+                      "lowerIncluded" : true,
+                      "upperIncluded" : true,
+                      "lowerUnbounded" : false,
+                      "upperUnbounded" : false
+                    } ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "nodeId" : "at0029.1",
+            "attributes" : [ ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_ARCHETYPE_ROOT",
+            "rmTypeName" : "CLUSTER",
+            "occurrences" : "0..1",
+            "nodeId" : "at0040.1",
+            "attributes" : [ ],
+            "attributeTuples" : [ ],
+            "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-euthanasia_screening-001.v0",
+            "referenceType" : "archetypeOverlay"
+          } ]
+        } ],
+        "attributeTuples" : [ ]
+      } ]
+    }, {
+      "@type" : "C_ATTRIBUTE",
+      "rmAttributeName" : "protocol",
+      "children" : [ {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "ITEM_TREE",
+        "nodeId" : "at0031",
+        "attributes" : [ {
+          "@type" : "C_ATTRIBUTE",
+          "rmAttributeName" : "items",
+          "children" : [ {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "occurrences" : "0..0",
+            "nodeId" : "at0026.1",
+            "attributes" : [ ],
+            "attributeTuples" : [ ]
+          } ]
+        } ],
+        "attributeTuples" : [ ]
+      } ]
+    } ],
+    "attributeTuples" : [ ]
+  },
+  "terminology" : {
+    "@type" : "ARCHETYPE_TERMINOLOGY",
+    "conceptCode" : "at0000",
+    "termDefinitions" : {
+      "en" : {
+        "at0030.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0030.1",
+          "text" : "Wat zouden zorgverleners, volgens de patiënt, moeten weten om goede zorg te kunnen verlenen? Heeft deze patiënt specifieke wensen met betrekking tot zijn zorg? (incl. culturele/religieuze/sociale/spirituele aspecten)",
+          "description" : "Any other specifc personal request or preference, including cultural or religious preferences."
+        },
+        "ac0.23" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "(Synthesized)",
+          "code" : "ac0.23",
+          "description" : ""
+        },
+        "ac0.24" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "(Synthesized)",
+          "code" : "ac0.24",
+          "description" : ""
+        },
+        "ac0.26" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "(Synthesized)",
+          "code" : "ac0.26",
+          "description" : ""
+        },
+        "ac0.46" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "(Synthesized)",
+          "code" : "ac0.46",
+          "description" : ""
+        },
+        "at0030.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0030.2",
+          "text" : "Wat verder nog belangrijk is",
+          "description" : "Any other specifc personal request or preference, including cultural or religious preferences."
+        },
+        "at0015.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0015",
+          "text" : "Preferred place of death",
+          "description" : "The patient's first choice preferred place of death."
+        },
+        "at0029.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0029.1",
+          "text" : "Toelichting",
+          "description" : "Any additional comments about the subject's place of care preferences."
+        },
+        "ac0.136" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "(Synthesized)",
+          "code" : "ac0.136",
+          "description" : ""
+        }
+      }
+    },
+    "termBindings" : {
+      "SNOMED-CT" : {
+        "at0015.1" : "term:SNOMED-CT::395091006"
+      }
+    },
+    "terminologyExtracts" : { },
+    "valueSets" : {
+      "ac0.2" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.2",
+        "members" : [ "at0027", "at0028" ]
+      },
+      "ac0.3" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.3",
+        "members" : [ "at0027", "at0028" ]
+      },
+      "ac0.4" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.4",
+        "members" : [ "at0016", "at0017", "at0018", "at0019", "at0020", "at0021", "at0022", "at0023", "at0024", "at0025", "at0032", "at0033" ]
+      },
+      "ac0.5" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.5",
+        "members" : [ "at0027", "at0028" ]
+      },
+      "ac0.6" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.6",
+        "members" : [ "at0027", "at0028" ]
+      },
+      "ac0.7" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.7",
+        "members" : [ ]
+      },
+      "ac0.8" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.8",
+        "members" : [ "at0027", "at0028" ]
+      },
+      "ac0.9" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.9",
+        "members" : [ "at0027", "at0028" ]
+      },
+      "ac0.10" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.10",
+        "members" : [ ]
+      },
+      "ac0.11" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.11",
+        "members" : [ "at0027", "at0028" ]
+      },
+      "ac0.12" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.12",
+        "members" : [ "at0027", "at0028" ]
+      },
+      "ac0.13" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.13",
+        "members" : [ "at0027", "at0028" ]
+      },
+      "ac0.14" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.14",
+        "members" : [ "at0027", "at0028" ]
+      },
+      "ac0.15" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.15",
+        "members" : [ "ac0.1" ]
+      },
+      "ac0.16" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.16",
+        "members" : [ "at0027", "at0028" ]
+      },
+      "ac0.17" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.17",
+        "members" : [ "at0027", "at0028" ]
+      },
+      "ac0.18" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.18",
+        "members" : [ "at0027", "at0028" ]
+      },
+      "ac0.19" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.19",
+        "members" : [ "at0027", "at0028" ]
+      },
+      "ac0.20" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.20",
+        "members" : [ "at0027", "at0028" ]
+      },
+      "ac0.21" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.21",
+        "members" : [ "at0027", "at0028" ]
+      },
+      "ac0.22" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.22",
+        "members" : [ "at0004", "at0005" ]
+      },
+      "ac0.23" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.23",
+        "members" : [ "at0004", "at0005" ]
+      },
+      "ac0.24" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.24",
+        "members" : [ "at0006", "at0007", "at0008", "at0009", "at0010", "at0011", "at0012", "at0013", "at0014" ]
+      },
+      "ac0.25" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.25",
+        "members" : [ "at0034", "at0035" ]
+      },
+      "ac0.26" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.26",
+        "members" : [ "at0034", "at0035" ]
+      },
+      "ac0.27" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.27",
+        "members" : [ "at0027", "at0028" ]
+      },
+      "ac0.28" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.28",
+        "members" : [ "at0027", "at0028" ]
+      },
+      "ac0.29" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.29",
+        "members" : [ "at0027", "at0028" ]
+      },
+      "ac0.30" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.30",
+        "members" : [ "at0027", "at0028" ]
+      },
+      "ac0.31" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.31",
+        "members" : [ "at0027", "at0028" ]
+      },
+      "ac0.32" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.32",
+        "members" : [ "at0027", "at0028" ]
+      },
+      "ac0.33" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.33",
+        "members" : [ "at0027", "at0028" ]
+      },
+      "ac0.34" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.34",
+        "members" : [ "at0027", "at0028" ]
+      },
+      "ac0.35" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.35",
+        "members" : [ "at0027", "at0028" ]
+      },
+      "ac0.36" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.36",
+        "members" : [ "at0027", "at0028" ]
+      },
+      "ac0.37" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.37",
+        "members" : [ "at0027", "at0028" ]
+      },
+      "ac0.38" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.38",
+        "members" : [ "at0027", "at0028" ]
+      },
+      "ac0.39" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.39",
+        "members" : [ "at0027", "at0028" ]
+      },
+      "ac0.40" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.40",
+        "members" : [ "at0027", "at0028" ]
+      },
+      "ac0.41" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.41",
+        "members" : [ "at0027", "at0028" ]
+      },
+      "ac0.42" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.42",
+        "members" : [ "at0027", "at0028" ]
+      },
+      "ac0.43" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.43",
+        "members" : [ "at0027", "at0028" ]
+      },
+      "ac0.44" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.44",
+        "members" : [ "at0027", "at0028" ]
+      },
+      "ac0.45" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.45",
+        "members" : [ "at0036", "at0037" ]
+      },
+      "ac0.46" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.46",
+        "members" : [ "at0036", "at0037" ]
+      },
+      "ac0.47" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.47",
+        "members" : [ "at0027", "at0028" ]
+      },
+      "ac0.48" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.48",
+        "members" : [ "at0027", "at0028" ]
+      },
+      "ac0.49" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.49",
+        "members" : [ "at0027", "at0028" ]
+      },
+      "ac0.50" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.50",
+        "members" : [ "at0027", "at0028" ]
+      },
+      "ac0.51" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.51",
+        "members" : [ "at0027", "at0028" ]
+      },
+      "ac0.52" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.52",
+        "members" : [ "at0027", "at0028" ]
+      },
+      "ac0.53" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.53",
+        "members" : [ "at0027", "at0028" ]
+      },
+      "ac0.54" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.54",
+        "members" : [ "at0027", "at0028" ]
+      },
+      "ac0.55" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.55",
+        "members" : [ "at0027", "at0028" ]
+      },
+      "ac0.56" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.56",
+        "members" : [ "at0027", "at0028" ]
+      },
+      "ac0.57" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.57",
+        "members" : [ "at0027", "at0028" ]
+      },
+      "ac0.58" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.58",
+        "members" : [ "at0027", "at0028" ]
+      },
+      "ac0.59" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.59",
+        "members" : [ "at0027", "at0028" ]
+      },
+      "ac0.60" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.60",
+        "members" : [ "at0027", "at0028" ]
+      },
+      "ac0.61" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.61",
+        "members" : [ "at0027", "at0028" ]
+      },
+      "ac0.62" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.62",
+        "members" : [ "at0027", "at0028" ]
+      },
+      "ac0.63" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.63",
+        "members" : [ "at0027", "at0028" ]
+      },
+      "ac0.64" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.64",
+        "members" : [ "at0027", "at0028" ]
+      },
+      "ac0.65" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.65",
+        "members" : [ "at0027", "at0028" ]
+      },
+      "ac0.66" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.66",
+        "members" : [ "at0027", "at0028" ]
+      },
+      "ac0.67" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.67",
+        "members" : [ "at0027", "at0028" ]
+      },
+      "ac0.68" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.68",
+        "members" : [ "at0027", "at0028" ]
+      },
+      "ac0.69" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.69",
+        "members" : [ "at0027", "at0028" ]
+      },
+      "ac0.70" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.70",
+        "members" : [ "at0027", "at0028" ]
+      },
+      "ac0.71" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.71",
+        "members" : [ "at0027", "at0028" ]
+      },
+      "ac0.72" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.72",
+        "members" : [ "at0027", "at0028" ]
+      },
+      "ac0.73" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.73",
+        "members" : [ "at0027", "at0028" ]
+      },
+      "ac0.74" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.74",
+        "members" : [ "at0027", "at0028" ]
+      },
+      "ac0.75" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.75",
+        "members" : [ "at0027", "at0028" ]
+      },
+      "ac0.76" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.76",
+        "members" : [ "at0027", "at0028" ]
+      },
+      "ac0.77" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.77",
+        "members" : [ "at0027", "at0028" ]
+      },
+      "ac0.78" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.78",
+        "members" : [ "at0027", "at0028" ]
+      },
+      "ac0.79" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.79",
+        "members" : [ "at0027", "at0028" ]
+      },
+      "ac0.80" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.80",
+        "members" : [ "at0027", "at0028" ]
+      },
+      "ac0.81" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.81",
+        "members" : [ "at0027", "at0028" ]
+      },
+      "ac0.82" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.82",
+        "members" : [ "at0027", "at0028" ]
+      },
+      "ac0.83" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.83",
+        "members" : [ "at0027", "at0028" ]
+      },
+      "ac0.84" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.84",
+        "members" : [ "at0027", "at0028" ]
+      },
+      "ac0.85" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.85",
+        "members" : [ "at0027", "at0028" ]
+      },
+      "ac0.86" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.86",
+        "members" : [ "at0027", "at0028" ]
+      },
+      "ac0.87" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.87",
+        "members" : [ "at0027", "at0028" ]
+      },
+      "ac0.88" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.88",
+        "members" : [ "at0027", "at0028" ]
+      },
+      "ac0.89" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.89",
+        "members" : [ "at0027", "at0028" ]
+      },
+      "ac0.90" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.90",
+        "members" : [ "at0027", "at0028" ]
+      },
+      "ac0.91" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.91",
+        "members" : [ "at0027", "at0028" ]
+      },
+      "ac0.92" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.92",
+        "members" : [ "at0027", "at0028" ]
+      },
+      "ac0.93" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.93",
+        "members" : [ "at0027", "at0028" ]
+      },
+      "ac0.94" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.94",
+        "members" : [ "at0027", "at0028" ]
+      },
+      "ac0.95" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.95",
+        "members" : [ "at0027", "at0028" ]
+      },
+      "ac0.96" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.96",
+        "members" : [ "at0027", "at0028" ]
+      },
+      "ac0.97" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.97",
+        "members" : [ "at0027" ]
+      },
+      "ac0.98" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.98",
+        "members" : [ "at0027" ]
+      },
+      "ac0.99" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.99",
+        "members" : [ "at0027" ]
+      },
+      "ac0.100" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.100",
+        "members" : [ "at0027" ]
+      },
+      "ac0.101" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.101",
+        "members" : [ "at0027" ]
+      },
+      "ac0.102" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.102",
+        "members" : [ "at0027" ]
+      },
+      "ac0.103" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.103",
+        "members" : [ "at0027" ]
+      },
+      "ac0.104" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.104",
+        "members" : [ "at0027" ]
+      },
+      "ac0.105" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.105",
+        "members" : [ "at0027" ]
+      },
+      "ac0.106" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.106",
+        "members" : [ "at0027" ]
+      },
+      "ac0.107" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.107",
+        "members" : [ "at0027" ]
+      },
+      "ac0.108" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.108",
+        "members" : [ "at0027" ]
+      },
+      "ac0.109" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.109",
+        "members" : [ "at0027" ]
+      },
+      "ac0.110" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.110",
+        "members" : [ "at0027" ]
+      },
+      "ac0.111" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.111",
+        "members" : [ "at0027" ]
+      },
+      "ac0.112" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.112",
+        "members" : [ "at0027" ]
+      },
+      "ac0.113" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.113",
+        "members" : [ "at0027" ]
+      },
+      "ac0.114" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.114",
+        "members" : [ "at0027" ]
+      },
+      "ac0.115" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.115",
+        "members" : [ "at0027" ]
+      },
+      "ac0.116" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.116",
+        "members" : [ "at0027" ]
+      },
+      "ac0.117" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.117",
+        "members" : [ "at0027" ]
+      },
+      "ac0.118" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.118",
+        "members" : [ "at0027" ]
+      },
+      "ac0.119" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.119",
+        "members" : [ "at0027" ]
+      },
+      "ac0.120" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.120",
+        "members" : [ "at0027" ]
+      },
+      "ac0.121" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.121",
+        "members" : [ "at0027" ]
+      },
+      "ac0.122" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.122",
+        "members" : [ "at0027" ]
+      },
+      "ac0.123" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.123",
+        "members" : [ "at0027" ]
+      },
+      "ac0.124" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.124",
+        "members" : [ "at0027" ]
+      },
+      "ac0.125" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.125",
+        "members" : [ "at0027" ]
+      },
+      "ac0.126" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.126",
+        "members" : [ "at0027" ]
+      },
+      "ac0.127" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.127",
+        "members" : [ "at0027" ]
+      },
+      "ac0.128" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.128",
+        "members" : [ "at0027" ]
+      },
+      "ac0.129" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.129",
+        "members" : [ "at0027" ]
+      },
+      "ac0.130" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.130",
+        "members" : [ "at0027" ]
+      },
+      "ac0.131" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.131",
+        "members" : [ "at0027" ]
+      },
+      "ac0.132" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.132",
+        "members" : [ "at0027" ]
+      },
+      "ac0.133" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.133",
+        "members" : [ "at0027" ]
+      },
+      "ac0.134" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.134",
+        "members" : [ "at0027" ]
+      },
+      "ac0.135" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.135",
+        "members" : [ "at0027" ]
+      },
+      "ac0.136" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.136",
+        "members" : [ "at0027" ]
+      }
+    }
+  },
+  "adlVersion" : "1.4",
+  "buildUid" : "313ccc5f-3cb5-3a79-be9c-3fee2ee14408",
+  "rmName" : "openehr",
+  "rmRelease" : "1.1.0",
+  "generated" : true,
+  "templateId" : "Preferred priorities of care",
+  "otherMetaData" : { },
+  "templateOverlays" : [ {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "d4382ce2-8e89-41e2-a9f7-8192e34a6e0e",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "5b67265fd83e6dccc676efaab775e2cb"
+      },
+      "details" : {
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nl" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nl"
+          },
+          "keywords" : [ ],
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.euthanasia_screening.v0",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-euthanasia_screening-001.v0"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "items",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0001.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "ac0.1" ],
+                  "selectedTerminologies" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0006.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : {
+          "at0001.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001.1",
+            "text" : "Euthanasie standpunt",
+            "description" : ""
+          },
+          "at0006.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006.1",
+            "text" : "Toelichting",
+            "description" : ""
+          },
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.1",
+            "description" : ""
+          }
+        },
+        "nl" : {
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.1",
+            "description" : ""
+          }
+        }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : {
+        "ac0.1" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.1",
+          "members" : [ "at0002", "at0003", "at0004", "at0005" ]
+        }
+      }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "2d6039fd-c095-3383-9eca-401d611e5f83",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nl"
+      },
+      "author" : { },
+      "otherDetails" : { }
+    } ]
+  } ],
+  "originalLanguage" : {
+    "terminologyId" : {
+      "value" : "ISO_639-1"
+    },
+    "codeString" : "en"
+  },
+  "translations" : [ ]
+}
