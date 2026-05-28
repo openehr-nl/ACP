@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.0.0-alpha.1",
+      "sem_ver" : "1.0.0-alpha.2",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "130098d76bb9077c2045cf0d3febe099",
+      "MD5-CAM-1.0.1" : "f1f99342d0a9184e9744f8658d03cafc",
       "PARENT:MD5-CAM-1.0.1" : "13D55DE5073CB5A79B7527DCB7E65582"
     },
     "details" : {
@@ -134,7 +134,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "Advance Intervention Decisions",
+          "text" : "Belangrijkste overeengekomen doel van medisch beleid / Behandelgrenzen",
           "description" : "A persistent and managed list of any combination of archetypes that will support the accurate recording of a Care plan."
         }
       },
