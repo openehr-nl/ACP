@@ -19,8 +19,10 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "e734e131b8bbd81a25f966d253a9cabe",
-      "PARENT:MD5-CAM-1.0.1" : "40152D512B48468201F8792F0F35E147"
+      "MD5-CAM-1.0.1" : "564d8224f268af8dfdcbd7d7144224d1",
+      "PARENT:MD5-CAM-1.0.1" : "40152D512B48468201F8792F0F35E147",
+      "sem_ver" : "1.0.0-alpha.1",
+      "build_uid" : ""
     },
     "details" : {
       "en" : {
@@ -41,7 +43,7 @@
   "differential" : true,
   "archetypeId" : {
     "@type" : "ARCHETYPE_HRID",
-    "value" : "openEHR-EHR-EVALUATION.preferredpriorities of care.v0"
+    "value" : "openEHR-EHR-EVALUATION.preferredpriorities_of_care.v0"
   },
   "definition" : {
     "@type" : "C_COMPLEX_OBJECT",
@@ -177,35 +179,10 @@
                     "rmTypeName" : "TERMINOLOGY_CODE",
                     "occurrences" : "1..1",
                     "terminologyId" : {
-                      "value" : "http://snomed.info/sct"
+                      "value" : "ACP Preferred Place of Death"
                     },
-                    "constraint" : [ ],
-                    "selectedTerminologies" : [ "http://snomed.info/sct" ],
-                    "includedExternalTerminologyCodes" : [ {
-                      "terminologyId" : "http://snomed.info/sct",
-                      "code" : "264362003",
-                      "value" : "Thuis"
-                    }, {
-                      "terminologyId" : "http://snomed.info/sct",
-                      "code" : "22232009",
-                      "value" : "Ziekenhuis"
-                    }, {
-                      "terminologyId" : "http://snomed.info/sct",
-                      "code" : "108344006",
-                      "value" : "Verpleeghuis"
-                    }, {
-                      "terminologyId" : "http://snomed.info/sct",
-                      "code" : "284546000",
-                      "value" : "Hospice"
-                    }, {
-                      "terminologyId" : "http://snomed.info/sct",
-                      "code" : "OTH",
-                      "value" : "Anders"
-                    }, {
-                      "terminologyId" : "http://snomed.info/sct",
-                      "code" : "UNK",
-                      "value" : "Nog onbekend"
-                    } ]
+                    "constraint" : [ "ac0.161" ],
+                    "selectedTerminologies" : [ "ACP Preferred Place of Death" ]
                   } ]
                 } ],
                 "attributeTuples" : [ ]
@@ -226,7 +203,7 @@
                     "terminologyId" : {
                       "value" : "local"
                     },
-                    "constraint" : [ "ac0.136" ],
+                    "constraint" : [ "ac0.163" ],
                     "selectedTerminologies" : [ ]
                   } ]
                 } ],
@@ -391,10 +368,10 @@
           "text" : "Toelichting",
           "description" : "Any additional comments about the subject's place of care preferences."
         },
-        "ac0.136" : {
+        "ac0.163" : {
           "@type" : "ARCHETYPE_TERM",
           "text" : "(Synthesized)",
-          "code" : "ac0.136",
+          "code" : "ac0.163",
           "description" : ""
         }
       }
@@ -402,6 +379,9 @@
     "termBindings" : {
       "SNOMED-CT" : {
         "at0015.1" : "term:SNOMED-CT::395091006"
+      },
+      "ACP Preferred Place of Death" : {
+        "ac0.161" : "terminology://fhir.hl7.org/ValueSet/$expand?url=https://api.iknl.nl/docs/pzp/r4/ValueSet/ACP-PreferredPlaceOfDeath"
       }
     },
     "terminologyExtracts" : { },
@@ -1080,11 +1060,141 @@
         "@type" : "VALUE_SET",
         "id" : "ac0.136",
         "members" : [ "at0027" ]
+      },
+      "ac0.137" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.137",
+        "members" : [ "at0027" ]
+      },
+      "ac0.138" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.138",
+        "members" : [ "at0027" ]
+      },
+      "ac0.139" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.139",
+        "members" : [ "at0027" ]
+      },
+      "ac0.140" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.140",
+        "members" : [ "at0027" ]
+      },
+      "ac0.141" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.141",
+        "members" : [ "at0027" ]
+      },
+      "ac0.142" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.142",
+        "members" : [ "at0027" ]
+      },
+      "ac0.143" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.143",
+        "members" : [ "at0027" ]
+      },
+      "ac0.144" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.144",
+        "members" : [ "at0027" ]
+      },
+      "ac0.145" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.145",
+        "members" : [ "at0027" ]
+      },
+      "ac0.146" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.146",
+        "members" : [ "at0027" ]
+      },
+      "ac0.147" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.147",
+        "members" : [ "at0027" ]
+      },
+      "ac0.148" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.148",
+        "members" : [ "at0027" ]
+      },
+      "ac0.149" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.149",
+        "members" : [ "at0027" ]
+      },
+      "ac0.150" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.150",
+        "members" : [ "at0027" ]
+      },
+      "ac0.151" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.151",
+        "members" : [ "at0027" ]
+      },
+      "ac0.152" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.152",
+        "members" : [ "at0027" ]
+      },
+      "ac0.153" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.153",
+        "members" : [ "at0027" ]
+      },
+      "ac0.154" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.154",
+        "members" : [ "at0027" ]
+      },
+      "ac0.155" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.155",
+        "members" : [ "at0027" ]
+      },
+      "ac0.156" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.156",
+        "members" : [ "at0027" ]
+      },
+      "ac0.157" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.157",
+        "members" : [ "at0027" ]
+      },
+      "ac0.158" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.158",
+        "members" : [ "at0027" ]
+      },
+      "ac0.159" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.159",
+        "members" : [ "at0027" ]
+      },
+      "ac0.160" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.160",
+        "members" : [ "at0027" ]
+      },
+      "ac0.162" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.162",
+        "members" : [ "at0027" ]
+      },
+      "ac0.163" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.163",
+        "members" : [ "at0027" ]
       }
     }
   },
   "adlVersion" : "1.4",
-  "buildUid" : "313ccc5f-3cb5-3a79-be9c-3fee2ee14408",
+  "buildUid" : "37b342d5-b4c4-32ef-a8ee-fcc47f01bc6a",
   "rmName" : "openehr",
   "rmRelease" : "1.1.0",
   "generated" : true,
@@ -1162,10 +1272,10 @@
                   "rmTypeName" : "TERMINOLOGY_CODE",
                   "occurrences" : "1..1",
                   "terminologyId" : {
-                    "value" : "local"
+                    "value" : "ACP Position Regarding Euthanasia"
                   },
-                  "constraint" : [ "ac0.1" ],
-                  "selectedTerminologies" : [ ]
+                  "constraint" : [ "ac0.2" ],
+                  "selectedTerminologies" : [ "ACP Position Regarding Euthanasia" ]
                 } ]
               } ],
               "attributeTuples" : [ ]
@@ -1198,30 +1308,31 @@
             "code" : "at0006.1",
             "text" : "Toelichting",
             "description" : ""
-          },
-          "ac0.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.1",
-            "description" : ""
           }
         },
-        "nl" : {
-          "ac0.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.1",
-            "description" : ""
-          }
+        "nl" : { }
+      },
+      "termBindings" : {
+        "ACP Position Regarding Euthanasia" : {
+          "ac0.2" : "terminology://fhir.hl7.org/ValueSet/$expand?url=https://api.iknl.nl/docs/pzp/r4/ValueSet/ACP-PositionRegardingEuthanasia"
         }
       },
-      "termBindings" : { },
       "terminologyExtracts" : { },
       "valueSets" : {
         "ac0.1" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.1",
           "members" : [ "at0002", "at0003", "at0004", "at0005" ]
+        },
+        "ac0.3" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.3",
+          "members" : [ "at0002", "at0003", "at0004", "at0005" ]
+        },
+        "ac0.4" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.4",
+          "members" : [ ]
         }
       }
     },
