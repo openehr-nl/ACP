@@ -19,8 +19,10 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "64cea8ed889dfaedbbff48c08bf858da",
-      "PARENT:MD5-CAM-1.0.1" : "581E040E3C50210AE36B6E67D4450150"
+      "MD5-CAM-1.0.1" : "712459dd821a0a995a261e0ccd85a133",
+      "PARENT:MD5-CAM-1.0.1" : "581E040E3C50210AE36B6E67D4450150",
+      "sem_ver" : "1.0.0-alpha.4",
+      "build_uid" : ""
     },
     "details" : {
       "de" : {
@@ -77,7 +79,7 @@
   "differential" : true,
   "archetypeId" : {
     "@type" : "ARCHETYPE_HRID",
-    "value" : "openEHR-EHR-EVALUATION.advanceintervention decisions.v1"
+    "value" : "openEHR-EHR-EVALUATION.advanceintervention_decisions.v1"
   },
   "definition" : {
     "@type" : "C_COMPLEX_OBJECT",
@@ -108,19 +110,15 @@
                   "rmAttributeName" : "defining_code",
                   "children" : [ {
                     "@type" : "C_TERMINOLOGY_CODE",
-                    "rmTypeName" : "CODE_PHRASE",
+                    "rmTypeName" : "TERMINOLOGY_CODE",
                     "occurrences" : "1..1",
                     "terminologyId" : {
-                      "value" : "local"
+                      "value" : "ACP Primary Agreed-upon Goal of Medical Policy"
                     },
-                    "constraint" : [ "at0003", "at0004", "at0005", "at0006", "at0007" ]
+                    "constraint" : [ "ac0.23" ],
+                    "selectedTerminologies" : [ "ACP Primary Agreed-upon Goal of Medical Policy" ]
                   } ]
                 } ],
-                "attributeTuples" : [ ]
-              }, {
-                "@type" : "C_COMPLEX_OBJECT",
-                "rmTypeName" : "DV_TEXT",
-                "attributes" : [ ],
                 "attributeTuples" : [ ]
               } ]
             } ],
@@ -147,23 +145,19 @@
               "rmAttributeName" : "value",
               "children" : [ {
                 "@type" : "C_COMPLEX_OBJECT",
-                "rmTypeName" : "DV_TEXT",
-                "attributes" : [ ],
-                "attributeTuples" : [ ]
-              }, {
-                "@type" : "C_COMPLEX_OBJECT",
                 "rmTypeName" : "DV_CODED_TEXT",
                 "attributes" : [ {
                   "@type" : "C_ATTRIBUTE",
                   "rmAttributeName" : "defining_code",
                   "children" : [ {
                     "@type" : "C_TERMINOLOGY_CODE",
-                    "rmTypeName" : "CODE_PHRASE",
+                    "rmTypeName" : "TERMINOLOGY_CODE",
                     "occurrences" : "1..1",
                     "terminologyId" : {
                       "value" : "local"
                     },
-                    "constraint" : [ "at0010", "at0011", "at0012", "at0013" ]
+                    "constraint" : [ "ac0.14" ],
+                    "selectedTerminologies" : [ ]
                   } ]
                 } ],
                 "attributeTuples" : [ ]
@@ -246,19 +240,10 @@
                         "rmTypeName" : "TERMINOLOGY_CODE",
                         "occurrences" : "1..1",
                         "terminologyId" : {
-                          "value" : "http://hl7.org/fhir/consent-provision-type"
+                          "value" : "ACP Yes, No, Unknown valueSet"
                         },
-                        "constraint" : [ ],
-                        "selectedTerminologies" : [ "http://hl7.org/fhir/consent-provision-type" ],
-                        "includedExternalTerminologyCodes" : [ {
-                          "terminologyId" : "http://hl7.org/fhir/consent-provision-type",
-                          "code" : "deny",
-                          "value" : "Opt Out"
-                        }, {
-                          "terminologyId" : "http://hl7.org/fhir/consent-provision-type",
-                          "code" : "permit",
-                          "value" : "Opt In"
-                        } ]
+                        "constraint" : [ "ac0.26" ],
+                        "selectedTerminologies" : [ "ACP Yes, No, Unknown valueSet" ]
                       } ]
                     } ],
                     "attributeTuples" : [ ]
@@ -356,19 +341,10 @@
                         "rmTypeName" : "TERMINOLOGY_CODE",
                         "occurrences" : "1..1",
                         "terminologyId" : {
-                          "value" : "http://hl7.org/fhir/consent-provision-type"
+                          "value" : "ACP Yes, No, Unknown valueSet"
                         },
-                        "constraint" : [ ],
-                        "selectedTerminologies" : [ "http://hl7.org/fhir/consent-provision-type" ],
-                        "includedExternalTerminologyCodes" : [ {
-                          "terminologyId" : "http://hl7.org/fhir/consent-provision-type",
-                          "code" : "deny",
-                          "value" : "Opt Out"
-                        }, {
-                          "terminologyId" : "http://hl7.org/fhir/consent-provision-type",
-                          "code" : "permit",
-                          "value" : "Opt In"
-                        } ]
+                        "constraint" : [ "ac0.27" ],
+                        "selectedTerminologies" : [ "ACP Yes, No, Unknown valueSet" ]
                       } ]
                     } ],
                     "attributeTuples" : [ ]
@@ -466,19 +442,10 @@
                         "rmTypeName" : "TERMINOLOGY_CODE",
                         "occurrences" : "1..1",
                         "terminologyId" : {
-                          "value" : "http://hl7.org/fhir/consent-provision-type"
+                          "value" : "ACP Yes, No, Unknown valueSet"
                         },
-                        "constraint" : [ ],
-                        "selectedTerminologies" : [ "http://hl7.org/fhir/consent-provision-type" ],
-                        "includedExternalTerminologyCodes" : [ {
-                          "terminologyId" : "http://hl7.org/fhir/consent-provision-type",
-                          "code" : "deny",
-                          "value" : "Opt Out"
-                        }, {
-                          "terminologyId" : "http://hl7.org/fhir/consent-provision-type",
-                          "code" : "permit",
-                          "value" : "Opt In"
-                        } ]
+                        "constraint" : [ "ac0.29" ],
+                        "selectedTerminologies" : [ "ACP Yes, No, Unknown valueSet" ]
                       } ]
                     } ],
                     "attributeTuples" : [ ]
@@ -576,19 +543,10 @@
                         "rmTypeName" : "TERMINOLOGY_CODE",
                         "occurrences" : "1..1",
                         "terminologyId" : {
-                          "value" : "http://hl7.org/fhir/consent-provision-type"
+                          "value" : "ACP Yes, No, Unknown valueSet"
                         },
-                        "constraint" : [ ],
-                        "selectedTerminologies" : [ "http://hl7.org/fhir/consent-provision-type" ],
-                        "includedExternalTerminologyCodes" : [ {
-                          "terminologyId" : "http://hl7.org/fhir/consent-provision-type",
-                          "code" : "deny",
-                          "value" : "Opt Out"
-                        }, {
-                          "terminologyId" : "http://hl7.org/fhir/consent-provision-type",
-                          "code" : "permit",
-                          "value" : "Opt In"
-                        } ]
+                        "constraint" : [ "ac0.30" ],
+                        "selectedTerminologies" : [ "ACP Yes, No, Unknown valueSet" ]
                       } ]
                     } ],
                     "attributeTuples" : [ ]
@@ -686,19 +644,10 @@
                         "rmTypeName" : "TERMINOLOGY_CODE",
                         "occurrences" : "1..1",
                         "terminologyId" : {
-                          "value" : "http://hl7.org/fhir/consent-provision-type"
+                          "value" : "ACP Yes, No, Unknown valueSet"
                         },
-                        "constraint" : [ ],
-                        "selectedTerminologies" : [ "http://hl7.org/fhir/consent-provision-type" ],
-                        "includedExternalTerminologyCodes" : [ {
-                          "terminologyId" : "http://hl7.org/fhir/consent-provision-type",
-                          "code" : "deny",
-                          "value" : "Opt Out"
-                        }, {
-                          "terminologyId" : "http://hl7.org/fhir/consent-provision-type",
-                          "code" : "permit",
-                          "value" : "Opt In"
-                        } ]
+                        "constraint" : [ "ac0.31" ],
+                        "selectedTerminologies" : [ "ACP Yes, No, Unknown valueSet" ]
                       } ]
                     } ],
                     "attributeTuples" : [ ]
@@ -773,19 +722,10 @@
                         "rmTypeName" : "TERMINOLOGY_CODE",
                         "occurrences" : "1..1",
                         "terminologyId" : {
-                          "value" : "http://hl7.org/fhir/consent-provision-type"
+                          "value" : "ACP Yes, No, Unknown valueSet"
                         },
-                        "constraint" : [ ],
-                        "selectedTerminologies" : [ "http://hl7.org/fhir/consent-provision-type" ],
-                        "includedExternalTerminologyCodes" : [ {
-                          "terminologyId" : "http://hl7.org/fhir/consent-provision-type",
-                          "code" : "deny",
-                          "value" : "Opt Out"
-                        }, {
-                          "terminologyId" : "http://hl7.org/fhir/consent-provision-type",
-                          "code" : "permit",
-                          "value" : "Opt In"
-                        } ]
+                        "constraint" : [ "ac0.32" ],
+                        "selectedTerminologies" : [ "ACP Yes, No, Unknown valueSet" ]
                       } ]
                     } ],
                     "attributeTuples" : [ ]
@@ -1084,6 +1024,12 @@
           "text" : "Beperkingen",
           "description" : "Description of the circumstance/s in which a 'Conditional recommendation' is applicable.",
           "comment" : "This data element is only relevant if the 'Conditional recommendation' option is selected in the 'Decision' data element. For example:' \"Transfer to hospital is only applicable in the circumstances where the individual suffers a fracture and requires immobilization for pain relief.#"
+        },
+        "ac0.14" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "(Synthesized)",
+          "code" : "ac0.14",
+          "description" : ""
         }
       },
       "nb" : {
@@ -1116,6 +1062,12 @@
           "code" : "at0014.1",
           "text" : "Per intervensjon (6)",
           "description" : "Detaljer om beslutninger om mulige behandlinger eller tiltak som kan være livreddende, livsforlengende eller føre til uønskede konsekvenser for individet."
+        },
+        "ac0.14" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "*(Synthesized) (en)",
+          "code" : "ac0.14",
+          "description" : ""
         }
       },
       "de" : {
@@ -1148,11 +1100,36 @@
           "code" : "at0014.1",
           "text" : "Pro Intervention (6)",
           "description" : "Details der Entscheidung über mögliche Behandlungen oder Aktivitäten, die lebensrettend oder lebensverlängernd sein können oder unerwünschte Nebenwirkungen verursachen.\r\n"
+        },
+        "ac0.14" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "*(Synthesized) (en)",
+          "code" : "ac0.14",
+          "description" : ""
         }
       },
-      "nl" : { }
+      "nl" : {
+        "ac0.14" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "*(Synthesized) (en)",
+          "code" : "ac0.14",
+          "description" : ""
+        }
+      }
     },
-    "termBindings" : { },
+    "termBindings" : {
+      "ACP Primary Agreed-upon Goal of Medical Policy" : {
+        "ac0.23" : "terminology://fhir.hl7.org/ValueSet/$expand?url=https://api.iknl.nl/docs/pzp/r4/ValueSet/ACP-MedicalPolicyGoal"
+      },
+      "ACP Yes, No, Unknown valueSet" : {
+        "ac0.26" : "terminology://fhir.hl7.org/ValueSet/$expand?url=https://api.iknl.nl/docs/pzp/r4/ValueSet/ACP-YesNoUnknownVS",
+        "ac0.27" : "terminology://fhir.hl7.org/ValueSet/$expand?url=https://api.iknl.nl/docs/pzp/r4/ValueSet/ACP-YesNoUnknownVS",
+        "ac0.29" : "terminology://fhir.hl7.org/ValueSet/$expand?url=https://api.iknl.nl/docs/pzp/r4/ValueSet/ACP-YesNoUnknownVS",
+        "ac0.30" : "terminology://fhir.hl7.org/ValueSet/$expand?url=https://api.iknl.nl/docs/pzp/r4/ValueSet/ACP-YesNoUnknownVS",
+        "ac0.31" : "terminology://fhir.hl7.org/ValueSet/$expand?url=https://api.iknl.nl/docs/pzp/r4/ValueSet/ACP-YesNoUnknownVS",
+        "ac0.32" : "terminology://fhir.hl7.org/ValueSet/$expand?url=https://api.iknl.nl/docs/pzp/r4/ValueSet/ACP-YesNoUnknownVS"
+      }
+    },
     "terminologyExtracts" : { },
     "valueSets" : {
       "ac0.2" : {
@@ -1199,11 +1176,61 @@
         "@type" : "VALUE_SET",
         "id" : "ac0.13",
         "members" : [ "at0016", "at0017", "at0018", "at0019", "at0020", "at0021", "at0022", "at0023", "at0024", "at0025", "at0026", "at0027", "at0028", "at0029", "at0030", "at0031", "at0032", "at0033" ]
+      },
+      "ac0.14" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.14",
+        "members" : [ "at0010", "at0011", "at0012", "at0013" ]
+      },
+      "ac0.16" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.16",
+        "members" : [ "at0035", "at0036", "at0037", "at0038" ]
+      },
+      "ac0.18" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.18",
+        "members" : [ "at0035", "at0036", "at0037", "at0038" ]
+      },
+      "ac0.19" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.19",
+        "members" : [ ]
+      },
+      "ac0.20" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.20",
+        "members" : [ ]
+      },
+      "ac0.21" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.21",
+        "members" : [ ]
+      },
+      "ac0.22" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.22",
+        "members" : [ "at0003", "at0004", "at0005", "at0006", "at0007" ]
+      },
+      "ac0.24" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.24",
+        "members" : [ "at0003", "at0004", "at0005", "at0006", "at0007" ]
+      },
+      "ac0.25" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.25",
+        "members" : [ ]
+      },
+      "ac0.28" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.28",
+        "members" : [ ]
       }
     }
   },
   "adlVersion" : "1.4",
-  "buildUid" : "b3b1b299-7a5e-3a3e-b9e6-7f32648c9188",
+  "buildUid" : "1056a862-d4d0-3426-9d4e-0053ef2633c4",
   "rmName" : "openehr",
   "rmRelease" : "1.1.0",
   "generated" : true,
