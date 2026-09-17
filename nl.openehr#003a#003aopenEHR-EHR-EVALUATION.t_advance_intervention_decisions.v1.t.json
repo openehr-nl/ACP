@@ -1,0 +1,1655 @@
+{
+  "@type" : "TEMPLATE",
+  "uid" : "58c4c07c-83ba-497d-9cc3-0ebcc6f626f8",
+  "description" : {
+    "@type" : "RESOURCE_DESCRIPTION",
+    "originalAuthor" : {
+      "date" : "2026-05-18"
+    },
+    "otherContributors" : [ ],
+    "lifecycleState" : {
+      "codeString" : "unmanaged"
+    },
+    "ipAcknowledgements" : { },
+    "references" : { },
+    "conversionDetails" : { },
+    "otherDetails" : {
+      "licence" : "This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.",
+      "custodian_organisation" : "Stichting openEHR Nederland",
+      "original_namespace" : "nl.openehr",
+      "original_publisher" : "Stichting openEHR Nederland",
+      "custodian_namespace" : "nl.openehr",
+      "MD5-CAM-1.0.1" : "c6a7d8432c1fb25c9300c706ae9f916e",
+      "PARENT:MD5-CAM-1.0.1" : "581E040E3C50210AE36B6E67D4450150",
+      "sem_ver" : "1.0.0-alpha.27",
+      "build_uid" : ""
+    },
+    "details" : {
+      "de" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "de"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "nb" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "nb"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "en" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "en"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "nl" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "nl"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      }
+    }
+  },
+  "parentArchetypeId" : "openEHR-EHR-EVALUATION.advance_intervention_decisions.v1",
+  "differential" : true,
+  "archetypeId" : {
+    "@type" : "ARCHETYPE_HRID",
+    "value" : "openEHR-EHR-EVALUATION.advanceintervention_decisions.v1"
+  },
+  "definition" : {
+    "@type" : "C_COMPLEX_OBJECT",
+    "rmTypeName" : "EVALUATION",
+    "nodeId" : "at0000.1",
+    "attributes" : [ {
+      "@type" : "C_ATTRIBUTE",
+      "rmAttributeName" : "data",
+      "children" : [ {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "ITEM_TREE",
+        "nodeId" : "at0001",
+        "attributes" : [ {
+          "@type" : "C_ATTRIBUTE",
+          "rmAttributeName" : "items",
+          "children" : [ {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "nodeId" : "at0002.1",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "value",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "DV_CODED_TEXT",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "defining_code",
+                  "children" : [ {
+                    "@type" : "C_TERMINOLOGY_CODE",
+                    "rmTypeName" : "TERMINOLOGY_CODE",
+                    "occurrences" : "1..1",
+                    "terminologyId" : {
+                      "value" : "ACP Primary Agreed-upon Goal of Medical Policy"
+                    },
+                    "constraint" : [ "ac0.23" ],
+                    "selectedTerminologies" : [ "ACP Primary Agreed-upon Goal of Medical Policy" ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "occurrences" : "0..0",
+            "nodeId" : "at0056.1",
+            "attributes" : [ ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "nodeId" : "at0008.1",
+            "attributes" : [ ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "nodeId" : "at0009.1",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "value",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "DV_CODED_TEXT",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "defining_code",
+                  "children" : [ {
+                    "@type" : "C_TERMINOLOGY_CODE",
+                    "rmTypeName" : "TERMINOLOGY_CODE",
+                    "occurrences" : "1..1",
+                    "terminologyId" : {
+                      "value" : "local"
+                    },
+                    "constraint" : [ "ac0.14" ],
+                    "selectedTerminologies" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "CLUSTER",
+            "occurrences" : "0..1",
+            "nodeId" : "at0014.1",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "items",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "nodeId" : "at0015.1",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_CODED_TEXT",
+                    "defaultValue" : {
+                      "defining_code" : {
+                        "terminology_id" : {
+                          "value" : "http://snomed.info/sct",
+                          "@type" : "TERMINOLOGY_ID"
+                        },
+                        "code_string" : "40617009",
+                        "@type" : "CODE_PHRASE"
+                      },
+                      "value" : "Kunstmatige beademing",
+                      "@type" : "DV_CODED_TEXT"
+                    },
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "defining_code",
+                      "children" : [ {
+                        "@type" : "C_TERMINOLOGY_CODE",
+                        "rmTypeName" : "TERMINOLOGY_CODE",
+                        "occurrences" : "1..1",
+                        "terminologyId" : {
+                          "value" : "http://snomed.info/sct"
+                        },
+                        "constraint" : [ ],
+                        "selectedTerminologies" : [ "http://snomed.info/sct" ],
+                        "includedExternalTerminologyCodes" : [ {
+                          "terminologyId" : "http://snomed.info/sct",
+                          "code" : "40617009",
+                          "value" : "Kunstmatige beademing"
+                        } ]
+                      } ]
+                    } ],
+                    "attributeTuples" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "nodeId" : "at0034.1",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_CODED_TEXT",
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "defining_code",
+                      "children" : [ {
+                        "@type" : "C_TERMINOLOGY_CODE",
+                        "rmTypeName" : "CODE_PHRASE",
+                        "occurrences" : "1..1",
+                        "terminologyId" : {
+                          "value" : "local"
+                        },
+                        "constraint" : [ "at0035", "at0036", "at0037", "at0038" ]
+                      } ]
+                    } ],
+                    "attributeTuples" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..1",
+                "nodeId" : "at0039.2",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "nodeId" : "at0040.1",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "CLUSTER",
+            "occurrences" : "0..1",
+            "nodeId" : "at0014.2",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "items",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "nodeId" : "at0015.2",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_CODED_TEXT",
+                    "defaultValue" : {
+                      "defining_code" : {
+                        "terminology_id" : {
+                          "value" : "http://snomed.info/sct",
+                          "@type" : "TERMINOLOGY_ID"
+                        },
+                        "code_string" : "305351004",
+                        "@type" : "CODE_PHRASE"
+                      },
+                      "value" : "Opname op intensive care",
+                      "@type" : "DV_CODED_TEXT"
+                    },
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "defining_code",
+                      "children" : [ {
+                        "@type" : "C_TERMINOLOGY_CODE",
+                        "rmTypeName" : "TERMINOLOGY_CODE",
+                        "occurrences" : "1..1",
+                        "terminologyId" : {
+                          "value" : "http://snomed.info/sct"
+                        },
+                        "constraint" : [ ],
+                        "selectedTerminologies" : [ "http://snomed.info/sct" ],
+                        "includedExternalTerminologyCodes" : [ {
+                          "terminologyId" : "http://snomed.info/sct",
+                          "code" : "305351004",
+                          "value" : "Opname op intensive care"
+                        } ]
+                      } ]
+                    } ],
+                    "attributeTuples" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "nodeId" : "at0034.2",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_CODED_TEXT",
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "defining_code",
+                      "children" : [ {
+                        "@type" : "C_TERMINOLOGY_CODE",
+                        "rmTypeName" : "CODE_PHRASE",
+                        "occurrences" : "1..1",
+                        "terminologyId" : {
+                          "value" : "local"
+                        },
+                        "constraint" : [ "at0035", "at0036", "at0037", "at0038" ]
+                      } ]
+                    } ],
+                    "attributeTuples" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..1",
+                "nodeId" : "at0039.3",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "nodeId" : "at0040.2",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "CLUSTER",
+            "occurrences" : "0..1",
+            "nodeId" : "at0014.3",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "items",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "nodeId" : "at0015.3",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_CODED_TEXT",
+                    "defaultValue" : {
+                      "defining_code" : {
+                        "terminology_id" : {
+                          "value" : "http://snomed.info/sct",
+                          "@type" : "TERMINOLOGY_ID"
+                        },
+                        "code_string" : "32485007",
+                        "@type" : "CODE_PHRASE"
+                      },
+                      "value" : "Opname in ziekenhuis",
+                      "@type" : "DV_CODED_TEXT"
+                    },
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "defining_code",
+                      "children" : [ {
+                        "@type" : "C_TERMINOLOGY_CODE",
+                        "rmTypeName" : "TERMINOLOGY_CODE",
+                        "occurrences" : "1..1",
+                        "terminologyId" : {
+                          "value" : "http://snomed.info/sct"
+                        },
+                        "constraint" : [ ],
+                        "selectedTerminologies" : [ "http://snomed.info/sct" ],
+                        "includedExternalTerminologyCodes" : [ {
+                          "terminologyId" : "http://snomed.info/sct",
+                          "code" : "32485007",
+                          "value" : "Opname in ziekenhuis"
+                        } ]
+                      } ]
+                    } ],
+                    "attributeTuples" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "nodeId" : "at0034.3",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_CODED_TEXT",
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "defining_code",
+                      "children" : [ {
+                        "@type" : "C_TERMINOLOGY_CODE",
+                        "rmTypeName" : "CODE_PHRASE",
+                        "occurrences" : "1..1",
+                        "terminologyId" : {
+                          "value" : "local"
+                        },
+                        "constraint" : [ "at0035", "at0036", "at0037", "at0038" ]
+                      } ]
+                    } ],
+                    "attributeTuples" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..1",
+                "nodeId" : "at0039.4",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "nodeId" : "at0040.3",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "CLUSTER",
+            "occurrences" : "0..1",
+            "nodeId" : "at0014.4",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "items",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "nodeId" : "at0015.4",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_CODED_TEXT",
+                    "defaultValue" : {
+                      "defining_code" : {
+                        "terminology_id" : {
+                          "value" : "http://snomed.info/sct",
+                          "@type" : "TERMINOLOGY_ID"
+                        },
+                        "code_string" : "281789004",
+                        "@type" : "CODE_PHRASE"
+                      },
+                      "value" : "Antibiotische therapie",
+                      "@type" : "DV_CODED_TEXT"
+                    },
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "defining_code",
+                      "children" : [ {
+                        "@type" : "C_TERMINOLOGY_CODE",
+                        "rmTypeName" : "TERMINOLOGY_CODE",
+                        "occurrences" : "1..1",
+                        "terminologyId" : {
+                          "value" : "http://snomed.info/sct"
+                        },
+                        "constraint" : [ ],
+                        "selectedTerminologies" : [ "http://snomed.info/sct" ],
+                        "includedExternalTerminologyCodes" : [ {
+                          "terminologyId" : "http://snomed.info/sct",
+                          "code" : "281789004",
+                          "value" : "Antibiotische therapie"
+                        } ]
+                      } ]
+                    } ],
+                    "attributeTuples" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "nodeId" : "at0034.4",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_CODED_TEXT",
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "defining_code",
+                      "children" : [ {
+                        "@type" : "C_TERMINOLOGY_CODE",
+                        "rmTypeName" : "CODE_PHRASE",
+                        "occurrences" : "1..1",
+                        "terminologyId" : {
+                          "value" : "local"
+                        },
+                        "constraint" : [ "at0035", "at0036", "at0037", "at0038" ]
+                      } ]
+                    } ],
+                    "attributeTuples" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..1",
+                "nodeId" : "at0039.5",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "nodeId" : "at0040.4",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "CLUSTER",
+            "occurrences" : "0..1",
+            "nodeId" : "at0014.5",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "items",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "nodeId" : "at0015.5",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_CODED_TEXT",
+                    "defaultValue" : {
+                      "defining_code" : {
+                        "terminology_id" : {
+                          "value" : "http://snomed.info/sct",
+                          "@type" : "TERMINOLOGY_ID"
+                        },
+                        "code_string" : "116762002",
+                        "@type" : "CODE_PHRASE"
+                      },
+                      "value" : "Toediening van bloedproduct",
+                      "@type" : "DV_CODED_TEXT"
+                    },
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "defining_code",
+                      "children" : [ {
+                        "@type" : "C_TERMINOLOGY_CODE",
+                        "rmTypeName" : "TERMINOLOGY_CODE",
+                        "occurrences" : "1..1",
+                        "terminologyId" : {
+                          "value" : "http://snomed.info/sct"
+                        },
+                        "constraint" : [ ],
+                        "selectedTerminologies" : [ "http://snomed.info/sct" ],
+                        "includedExternalTerminologyCodes" : [ {
+                          "terminologyId" : "http://snomed.info/sct",
+                          "code" : "116762002",
+                          "value" : "Toediening van bloedproduct"
+                        } ]
+                      } ]
+                    } ],
+                    "attributeTuples" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "nodeId" : "at0034.5",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_CODED_TEXT",
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "defining_code",
+                      "children" : [ {
+                        "@type" : "C_TERMINOLOGY_CODE",
+                        "rmTypeName" : "CODE_PHRASE",
+                        "occurrences" : "1..1",
+                        "terminologyId" : {
+                          "value" : "local"
+                        },
+                        "constraint" : [ "at0035", "at0036", "at0037", "at0038" ]
+                      } ]
+                    } ],
+                    "attributeTuples" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..1",
+                "nodeId" : "at0039.6",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "nodeId" : "at0040.5",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "CLUSTER",
+            "occurrences" : "0..1",
+            "nodeId" : "at0014.6",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "items",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "nodeId" : "at0015.6",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_TEXT",
+                    "attributes" : [ ],
+                    "attributeTuples" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "nodeId" : "at0034.7",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_CODED_TEXT",
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "defining_code",
+                      "children" : [ {
+                        "@type" : "C_TERMINOLOGY_CODE",
+                        "rmTypeName" : "TERMINOLOGY_CODE",
+                        "occurrences" : "1..1",
+                        "terminologyId" : {
+                          "value" : "local"
+                        },
+                        "constraint" : [ "ac0.38" ],
+                        "selectedTerminologies" : [ ]
+                      } ]
+                    } ],
+                    "attributeTuples" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0039.1",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "nodeId" : "at0040.6",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "CLUSTER",
+            "occurrences" : "0..1",
+            "nodeId" : "at0014.7",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "items",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "nodeId" : "at0015.7",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_CODED_TEXT",
+                    "defaultValue" : {
+                      "defining_code" : {
+                        "terminology_id" : {
+                          "value" : "http://snomed.info/sct",
+                          "@type" : "TERMINOLOGY_ID"
+                        },
+                        "code_string" : "400231000146108",
+                        "@type" : "CODE_PHRASE"
+                      },
+                      "value" : "Uitzetten van cardioverter-defibrillator in laatste levensfase (verrichting)",
+                      "@type" : "DV_CODED_TEXT"
+                    },
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "defining_code",
+                      "children" : [ {
+                        "@type" : "C_TERMINOLOGY_CODE",
+                        "rmTypeName" : "TERMINOLOGY_CODE",
+                        "occurrences" : "1..1",
+                        "terminologyId" : {
+                          "value" : "http://snomed.info/sct"
+                        },
+                        "constraint" : [ ],
+                        "selectedTerminologies" : [ "http://snomed.info/sct" ],
+                        "includedExternalTerminologyCodes" : [ {
+                          "terminologyId" : "http://snomed.info/sct",
+                          "code" : "400231000146108",
+                          "value" : "Uitzetten van cardioverter-defibrillator in laatste levensfase (verrichting)"
+                        } ]
+                      } ]
+                    } ],
+                    "attributeTuples" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "nodeId" : "at0034.6",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_CODED_TEXT",
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "defining_code",
+                      "children" : [ {
+                        "@type" : "C_TERMINOLOGY_CODE",
+                        "rmTypeName" : "TERMINOLOGY_CODE",
+                        "occurrences" : "1..1",
+                        "terminologyId" : {
+                          "value" : "Afspraak Uitzetten ICD (BehandelBesluit)"
+                        },
+                        "constraint" : [ ],
+                        "selectedTerminologies" : [ "Afspraak Uitzetten ICD (BehandelBesluit)" ],
+                        "includedExternalTerminologyCodes" : [ {
+                          "terminologyId" : "Afspraak Uitzetten ICD (BehandelBesluit)",
+                          "code" : "0",
+                          "value" : "Wel uitvoeren"
+                        }, {
+                          "terminologyId" : "Afspraak Uitzetten ICD (BehandelBesluit)",
+                          "code" : "ASKU",
+                          "value" : "Nee, nog geen besluit genomen"
+                        }, {
+                          "terminologyId" : "Afspraak Uitzetten ICD (BehandelBesluit)",
+                          "code" : "NASK",
+                          "value" : "Niet besproken"
+                        } ]
+                      } ]
+                    } ],
+                    "attributeTuples" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0039.7",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "nodeId" : "at0040.7",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "occurrences" : "0..0",
+            "nodeId" : "at0042.1",
+            "attributes" : [ ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "occurrences" : "0..0",
+            "nodeId" : "at0043.1",
+            "attributes" : [ ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "nodeId" : "at0044.1",
+            "attributes" : [ ],
+            "attributeTuples" : [ ]
+          } ]
+        } ],
+        "attributeTuples" : [ ]
+      } ]
+    }, {
+      "@type" : "C_ATTRIBUTE",
+      "rmAttributeName" : "protocol",
+      "children" : [ {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "ITEM_TREE",
+        "nodeId" : "at0045",
+        "attributes" : [ {
+          "@type" : "C_ATTRIBUTE",
+          "rmAttributeName" : "items",
+          "children" : [ {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "occurrences" : "0..0",
+            "nodeId" : "at0046.1",
+            "attributes" : [ ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "occurrences" : "0..0",
+            "nodeId" : "at0047.1",
+            "attributes" : [ ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "occurrences" : "0..0",
+            "nodeId" : "at0048.1",
+            "attributes" : [ ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "occurrences" : "0..0",
+            "nodeId" : "at0049.1",
+            "attributes" : [ ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "occurrences" : "0..0",
+            "nodeId" : "at0050.1",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "value",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "DV_TEXT",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "DV_EHR_URI",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "CLUSTER",
+            "occurrences" : "0..0",
+            "nodeId" : "at0052.1",
+            "attributes" : [ ],
+            "attributeTuples" : [ ]
+          } ]
+        } ],
+        "attributeTuples" : [ ]
+      } ]
+    } ],
+    "attributeTuples" : [ ]
+  },
+  "terminology" : {
+    "@type" : "ARCHETYPE_TERMINOLOGY",
+    "conceptCode" : "at0000",
+    "termDefinitions" : {
+      "en" : {
+        "at0002.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0002.1",
+          "text" : "Main goal of treatment",
+          "description" : "The overall intent for future care and treatment for the individual.",
+          "comment" : "The proposed value set is based on the MJA reference. \r\nCoding the intent of care with an external terminology is preferred, where possible."
+        },
+        "at0014.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0014.1",
+          "text" : "Artificial ventilation",
+          "description" : "Details of the decision about possible treatments or activities that may be life-saving, life-prolonging or cause undesirable side effects."
+        },
+        "at0014.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0014.2",
+          "text" : "Admission to intensive care unit",
+          "description" : "Details of the decision about possible treatments or activities that may be life-saving, life-prolonging or cause undesirable side effects."
+        },
+        "at0014.3" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0014.3",
+          "text" : "Hospital admission",
+          "description" : "Details of the decision about possible treatments or activities that may be life-saving, life-prolonging or cause undesirable side effects."
+        },
+        "at0014.4" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0014.4",
+          "text" : "Antibiotic therapy",
+          "description" : "Details of the decision about possible treatments or activities that may be life-saving, life-prolonging or cause undesirable side effects."
+        },
+        "at0014.5" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0014.5",
+          "text" : "Administration of blood product",
+          "description" : "Details of the decision about possible treatments or activities that may be life-saving, life-prolonging or cause undesirable side effects."
+        },
+        "at0014.6" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0014.6",
+          "text" : "Other treatment limits",
+          "description" : "Details of the decision about possible treatments or activities that may be life-saving, life-prolonging or cause undesirable side effects."
+        },
+        "at0009.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0009.1",
+          "text" : "Cardiopulmonary resuscitation",
+          "description" : "Decision about the extent of cardiopulmonary resuscitation (CPR) intervention appropriate for this individual."
+        },
+        "at0008.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0008.1",
+          "text" : "Restrictions",
+          "description" : "Narrative description about all advance intervention decisions, including the CPR decision.",
+          "comment" : "May be used to record a narrative overview of the advance intervention decision that reflect the specific circumstances for the individual. This includes any limitations, or conditional circumstances applicable, to interventions. This description may or may not be supported by structured data, recorded using the ‘Per intervention’ cluster. If both this narrative description and ‘Per intervention’ structured data is recorded, caution is required as there is a potential risk of divergence. This data element may be used to capture legacy data that is not available in a structured format."
+        },
+        "at0044.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0044.1",
+          "text" : "Comment",
+          "description" : "Additional narrative about all advance intervention decisions, not captured in other fields."
+        },
+        "at0039.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0039.2",
+          "text" : "Restrictions",
+          "description" : "Description of the circumstance/s in which a 'Conditional recommendation' is applicable.",
+          "comment" : "This data element is only relevant if the 'Conditional recommendation' option is selected in the 'Decision' data element. For example:' \"Transfer to hospital is only applicable in the circumstances where the individual suffers a fracture and requires immobilization for pain relief.#"
+        },
+        "at0039.3" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0039.3",
+          "text" : "Restrictions",
+          "description" : "Description of the circumstance/s in which a 'Conditional recommendation' is applicable.",
+          "comment" : "This data element is only relevant if the 'Conditional recommendation' option is selected in the 'Decision' data element. For example:' \"Transfer to hospital is only applicable in the circumstances where the individual suffers a fracture and requires immobilization for pain relief.#"
+        },
+        "at0039.4" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0039.4",
+          "text" : "Restrictions",
+          "description" : "Description of the circumstance/s in which a 'Conditional recommendation' is applicable.",
+          "comment" : "This data element is only relevant if the 'Conditional recommendation' option is selected in the 'Decision' data element. For example:' \"Transfer to hospital is only applicable in the circumstances where the individual suffers a fracture and requires immobilization for pain relief.#"
+        },
+        "at0039.5" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0039.5",
+          "text" : "Restrictions",
+          "description" : "Description of the circumstance/s in which a 'Conditional recommendation' is applicable.",
+          "comment" : "This data element is only relevant if the 'Conditional recommendation' option is selected in the 'Decision' data element. For example:' \"Transfer to hospital is only applicable in the circumstances where the individual suffers a fracture and requires immobilization for pain relief.#"
+        },
+        "at0039.6" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0039.6",
+          "text" : "Restrictions",
+          "description" : "Description of the circumstance/s in which a 'Conditional recommendation' is applicable.",
+          "comment" : "This data element is only relevant if the 'Conditional recommendation' option is selected in the 'Decision' data element. For example:' \"Transfer to hospital is only applicable in the circumstances where the individual suffers a fracture and requires immobilization for pain relief.#"
+        },
+        "ac0.14" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "(Synthesized)",
+          "code" : "ac0.14",
+          "description" : ""
+        },
+        "at0014.7" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0014.7",
+          "text" : "Is there a verified agreement on the timing of turning off the ICD?",
+          "description" : "Details of the decision about possible treatments or activities that may be life-saving, life-prolonging or cause undesirable side effects."
+        },
+        "at0034.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0034.1",
+          "text" : "Treatment permitted",
+          "description" : "Decision about the identified intervention."
+        },
+        "at0034.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0034.2",
+          "text" : "Treatment permitted",
+          "description" : "Decision about the identified intervention."
+        },
+        "at0034.3" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0034.3",
+          "text" : "Treatment permitted",
+          "description" : "Decision about the identified intervention."
+        },
+        "at0034.4" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0034.4",
+          "text" : "Treatment permitted",
+          "description" : "Decision about the identified intervention."
+        },
+        "at0034.5" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0034.5",
+          "text" : "Treatment permitted",
+          "description" : "Decision about the identified intervention."
+        },
+        "at0034.6" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0034.6",
+          "text" : "Agreement to turn off ICD",
+          "description" : "Decision about the identified intervention."
+        },
+        "at0034.7" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0034.7",
+          "text" : "Treatment permitted",
+          "description" : "Decision about the identified intervention."
+        },
+        "ac0.38" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "(Synthesized)",
+          "code" : "ac0.38",
+          "description" : ""
+        },
+        "at0015.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0015.1",
+          "text" : "Treatment",
+          "description" : "Name of the possible treatment, procedure or activity.",
+          "comment" : "While this archetype is intended for all clinical decisions about possible future interventions, the proposed DV_CODED_TEXT value set for the 'Intervention' data element is deliberately not intended to be exhaustive. Instead it has been designed to be inclusive of most of the common life-saving treatments within an emergency context. The alternate choice of the DV_TEXT option can be used to add a local value set or bind to an alternative external value set within a template."
+        },
+        "at0015.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0015.2",
+          "text" : "Treatment",
+          "description" : "Name of the possible treatment, procedure or activity.",
+          "comment" : "While this archetype is intended for all clinical decisions about possible future interventions, the proposed DV_CODED_TEXT value set for the 'Intervention' data element is deliberately not intended to be exhaustive. Instead it has been designed to be inclusive of most of the common life-saving treatments within an emergency context. The alternate choice of the DV_TEXT option can be used to add a local value set or bind to an alternative external value set within a template."
+        },
+        "at0015.3" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0015.3",
+          "text" : "Treatment",
+          "description" : "Name of the possible treatment, procedure or activity.",
+          "comment" : "While this archetype is intended for all clinical decisions about possible future interventions, the proposed DV_CODED_TEXT value set for the 'Intervention' data element is deliberately not intended to be exhaustive. Instead it has been designed to be inclusive of most of the common life-saving treatments within an emergency context. The alternate choice of the DV_TEXT option can be used to add a local value set or bind to an alternative external value set within a template."
+        },
+        "at0015.4" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0015.4",
+          "text" : "Treatment",
+          "description" : "Name of the possible treatment, procedure or activity.",
+          "comment" : "While this archetype is intended for all clinical decisions about possible future interventions, the proposed DV_CODED_TEXT value set for the 'Intervention' data element is deliberately not intended to be exhaustive. Instead it has been designed to be inclusive of most of the common life-saving treatments within an emergency context. The alternate choice of the DV_TEXT option can be used to add a local value set or bind to an alternative external value set within a template."
+        },
+        "at0015.5" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0015.5",
+          "text" : "Treatment",
+          "description" : "Name of the possible treatment, procedure or activity.",
+          "comment" : "While this archetype is intended for all clinical decisions about possible future interventions, the proposed DV_CODED_TEXT value set for the 'Intervention' data element is deliberately not intended to be exhaustive. Instead it has been designed to be inclusive of most of the common life-saving treatments within an emergency context. The alternate choice of the DV_TEXT option can be used to add a local value set or bind to an alternative external value set within a template."
+        },
+        "at0015.6" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0015.6",
+          "text" : "Treatment",
+          "description" : "Name of the possible treatment, procedure or activity.",
+          "comment" : "While this archetype is intended for all clinical decisions about possible future interventions, the proposed DV_CODED_TEXT value set for the 'Intervention' data element is deliberately not intended to be exhaustive. Instead it has been designed to be inclusive of most of the common life-saving treatments within an emergency context. The alternate choice of the DV_TEXT option can be used to add a local value set or bind to an alternative external value set within a template."
+        },
+        "at0015.7" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0015.7",
+          "text" : "Treatment of turning off ICD",
+          "description" : "Name of the possible treatment, procedure or activity.",
+          "comment" : "While this archetype is intended for all clinical decisions about possible future interventions, the proposed DV_CODED_TEXT value set for the 'Intervention' data element is deliberately not intended to be exhaustive. Instead it has been designed to be inclusive of most of the common life-saving treatments within an emergency context. The alternate choice of the DV_TEXT option can be used to add a local value set or bind to an alternative external value set within a template."
+        }
+      },
+      "nb" : {
+        "at0014.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0014.1",
+          "text" : "Per intervensjon (2)",
+          "description" : "Detaljer om beslutninger om mulige behandlinger eller tiltak som kan være livreddende, livsforlengende eller føre til uønskede konsekvenser for individet."
+        },
+        "at0014.3" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0014.1",
+          "text" : "Per intervensjon (3)",
+          "description" : "Detaljer om beslutninger om mulige behandlinger eller tiltak som kan være livreddende, livsforlengende eller føre til uønskede konsekvenser for individet."
+        },
+        "at0014.4" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0014.1",
+          "text" : "Per intervensjon (4)",
+          "description" : "Detaljer om beslutninger om mulige behandlinger eller tiltak som kan være livreddende, livsforlengende eller føre til uønskede konsekvenser for individet."
+        },
+        "at0014.5" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0014.1",
+          "text" : "Per intervensjon (5)",
+          "description" : "Detaljer om beslutninger om mulige behandlinger eller tiltak som kan være livreddende, livsforlengende eller føre til uønskede konsekvenser for individet."
+        },
+        "at0014.6" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0014.1",
+          "text" : "Per intervensjon (6)",
+          "description" : "Detaljer om beslutninger om mulige behandlinger eller tiltak som kan være livreddende, livsforlengende eller føre til uønskede konsekvenser for individet."
+        },
+        "ac0.14" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "*(Synthesized) (en)",
+          "code" : "ac0.14",
+          "description" : ""
+        },
+        "at0014.7" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0014.1",
+          "text" : "Per intervensjon (7)",
+          "description" : "Detaljer om beslutninger om mulige behandlinger eller tiltak som kan være livreddende, livsforlengende eller føre til uønskede konsekvenser for individet."
+        },
+        "ac0.38" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "*(Synthesized) (en)",
+          "code" : "ac0.38",
+          "description" : ""
+        }
+      },
+      "de" : {
+        "at0014.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0014.1",
+          "text" : "Pro Intervention (2)",
+          "description" : "Details der Entscheidung über mögliche Behandlungen oder Aktivitäten, die lebensrettend oder lebensverlängernd sein können oder unerwünschte Nebenwirkungen verursachen.\r\n"
+        },
+        "at0014.3" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0014.1",
+          "text" : "Pro Intervention (3)",
+          "description" : "Details der Entscheidung über mögliche Behandlungen oder Aktivitäten, die lebensrettend oder lebensverlängernd sein können oder unerwünschte Nebenwirkungen verursachen.\r\n"
+        },
+        "at0014.4" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0014.1",
+          "text" : "Pro Intervention (4)",
+          "description" : "Details der Entscheidung über mögliche Behandlungen oder Aktivitäten, die lebensrettend oder lebensverlängernd sein können oder unerwünschte Nebenwirkungen verursachen.\r\n"
+        },
+        "at0014.5" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0014.1",
+          "text" : "Pro Intervention (5)",
+          "description" : "Details der Entscheidung über mögliche Behandlungen oder Aktivitäten, die lebensrettend oder lebensverlängernd sein können oder unerwünschte Nebenwirkungen verursachen.\r\n"
+        },
+        "at0014.6" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0014.1",
+          "text" : "Pro Intervention (6)",
+          "description" : "Details der Entscheidung über mögliche Behandlungen oder Aktivitäten, die lebensrettend oder lebensverlängernd sein können oder unerwünschte Nebenwirkungen verursachen.\r\n"
+        },
+        "ac0.14" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "*(Synthesized) (en)",
+          "code" : "ac0.14",
+          "description" : ""
+        },
+        "at0014.7" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0014.1",
+          "text" : "Pro Intervention (7)",
+          "description" : "Details der Entscheidung über mögliche Behandlungen oder Aktivitäten, die lebensrettend oder lebensverlängernd sein können oder unerwünschte Nebenwirkungen verursachen.\r\n"
+        },
+        "ac0.38" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "*(Synthesized) (en)",
+          "code" : "ac0.38",
+          "description" : ""
+        }
+      },
+      "nl" : {
+        "ac0.14" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "*(Synthesized) (en)",
+          "code" : "ac0.14",
+          "description" : ""
+        },
+        "at0014.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0014.2",
+          "text" : "Opname op intensive care",
+          "description" : "Details van het besluit over mogelijke behandelingen of activiteiten die levensreddend of levensverlengend kunnen zijn, of ongewenste bijwerkingen kunnen veroorzaken."
+        },
+        "at0014.3" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0014.3",
+          "text" : "Opname in ziekenhuis",
+          "description" : "Details van het besluit over mogelijke behandelingen of activiteiten die levensreddend of levensverlengend kunnen zijn, of ongewenste bijwerkingen kunnen veroorzaken."
+        },
+        "at0014.4" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0014.4",
+          "text" : "Behandeling met antibiotica",
+          "description" : "Details van het besluit over mogelijke behandelingen of activiteiten die levensreddend of levensverlengend kunnen zijn, of ongewenste bijwerkingen kunnen veroorzaken."
+        },
+        "at0014.5" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0014.5",
+          "text" : "Toediening van een bloedproduct",
+          "description" : "Details van het besluit over mogelijke behandelingen of activiteiten die levensreddend of levensverlengend kunnen zijn, of ongewenste bijwerkingen kunnen veroorzaken."
+        },
+        "at0014.6" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0014.6",
+          "text" : "Overige behandelgrenzen",
+          "description" : "Details van het besluit over mogelijke behandelingen of activiteiten die levensreddend of levensverlengend kunnen zijn, of ongewenste bijwerkingen kunnen veroorzaken."
+        },
+        "at0014.7" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0014.7",
+          "text" : "Is er een afrspraak over moment van uitzetten ICD?",
+          "description" : "Details van het besluit over mogelijke behandelingen of activiteiten die levensreddend of levensverlengend kunnen zijn, of ongewenste bijwerkingen kunnen veroorzaken."
+        },
+        "at0009.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0009.1",
+          "text" : "Reanimatie",
+          "description" : "Besluit over de mate waarin reanimatie (CPR) als interventie passend is voor dit individu."
+        },
+        "at0002.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0002.1",
+          "text" : "Belangrijkste overeengekomen doel van medisch beleid",
+          "description" : "Het belangrijkste doel van medisch beleid voor de toekomstige zorg en behandeling van het individu.",
+          "comment" : "De voorgestelde waardelijst is gebaseerd op de MJA-referentie.\r\nCodering van het belangrijkste doel van medisch beleid met een externe terminologie heeft de voorkeur, waar mogelijk."
+        },
+        "at0008.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0008.1",
+          "text" : "Beperkingen",
+          "description" : "Narratieve beschrijving van alle behandelaanwijzingen, inclusief het reanimatiebesluit.",
+          "comment" : "Kan worden gebruikt om een narratief overzicht van de behandelaanwijzingen vast te leggen dat de specifieke omstandigheden van het individu weerspiegelt. Dit omvat eventuele beperkingen of situatie-afhankelijke omstandigheden die van toepassing zijn op interventies. Deze beschrijving kan al dan niet worden ondersteund door gestructureerde gegevens, vastgelegd via het cluster 'Per interventie'. Als zowel deze narratieve beschrijving als de gestructureerde gegevens van 'Per interventie' worden vastgelegd, is voorzichtigheid geboden vanwege het risico op onderlinge tegenstrijdigheid. Dit gegevenselement kan worden gebruikt om historische gegevens vast te leggen die niet beschikbaar zijn in een gestructureerd formaat."
+        },
+        "at0034.3" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0034.3",
+          "text" : "Behandelbesluit",
+          "description" : "Besluit over de geïdentificeerde interventie."
+        },
+        "at0034.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0034.2",
+          "text" : "Behandelbesluit",
+          "description" : "Besluit over de geïdentificeerde interventie."
+        },
+        "at0034.5" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0034.5",
+          "text" : "Behandelbesluit",
+          "description" : "Besluit over de geïdentificeerde interventie."
+        },
+        "at0034.4" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0034.4",
+          "text" : "Behandelbesluit",
+          "description" : "Besluit over de geïdentificeerde interventie."
+        },
+        "at0034.7" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0034.7",
+          "text" : "Behandelbesluit",
+          "description" : "Besluit over de geïdentificeerde interventie."
+        },
+        "at0034.6" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0034.6",
+          "text" : "Behandelbesluit",
+          "description" : "Besluit over de geïdentificeerde interventie."
+        },
+        "at0034.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0034.1",
+          "text" : "Behandelbesluit",
+          "description" : "Besluit over de geïdentificeerde interventie."
+        },
+        "at0014.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0014.1",
+          "text" : "Kunstmatige invasieve beademing",
+          "description" : "Details van het besluit over mogelijke behandelingen of activiteiten die levensreddend of levensverlengend kunnen zijn, of ongewenste bijwerkingen kunnen veroorzaken."
+        },
+        "at0039.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0039.2",
+          "text" : "Beperkingen",
+          "description" : "Beschrijving van de omstandigheid/omstandigheden waaronder een 'Voorwaardelijke aanbeveling' van toepassing is.",
+          "comment" : "Dit gegevenselement is alleen relevant als de optie 'Voorwaardelijke aanbeveling' is geselecteerd in het gegevenselement 'Besluit'. Bijvoorbeeld: \"Overplaatsing naar het ziekenhuis is alleen van toepassing als het individu een fractuur oploopt en immobilisatie nodig heeft voor pijnbestrijding.\""
+        },
+        "at0039.4" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0039.4",
+          "text" : "Beperkingen",
+          "description" : "Beschrijving van de omstandigheid/omstandigheden waaronder een 'Voorwaardelijke aanbeveling' van toepassing is.",
+          "comment" : "Dit gegevenselement is alleen relevant als de optie 'Voorwaardelijke aanbeveling' is geselecteerd in het gegevenselement 'Besluit'. Bijvoorbeeld: \"Overplaatsing naar het ziekenhuis is alleen van toepassing als het individu een fractuur oploopt en immobilisatie nodig heeft voor pijnbestrijding.\""
+        },
+        "at0039.3" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0039.3",
+          "text" : "Beperkingen",
+          "description" : "Beschrijving van de omstandigheid/omstandigheden waaronder een 'Voorwaardelijke aanbeveling' van toepassing is.",
+          "comment" : "Dit gegevenselement is alleen relevant als de optie 'Voorwaardelijke aanbeveling' is geselecteerd in het gegevenselement 'Besluit'. Bijvoorbeeld: \"Overplaatsing naar het ziekenhuis is alleen van toepassing als het individu een fractuur oploopt en immobilisatie nodig heeft voor pijnbestrijding.\""
+        },
+        "at0039.6" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0039.6",
+          "text" : "Beperkingen",
+          "description" : "Beschrijving van de omstandigheid/omstandigheden waaronder een 'Voorwaardelijke aanbeveling' van toepassing is.",
+          "comment" : "Dit gegevenselement is alleen relevant als de optie 'Voorwaardelijke aanbeveling' is geselecteerd in het gegevenselement 'Besluit'. Bijvoorbeeld: \"Overplaatsing naar het ziekenhuis is alleen van toepassing als het individu een fractuur oploopt en immobilisatie nodig heeft voor pijnbestrijding.\""
+        },
+        "at0039.5" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0039.5",
+          "text" : "Beperkingen",
+          "description" : "Beschrijving van de omstandigheid/omstandigheden waaronder een 'Voorwaardelijke aanbeveling' van toepassing is.",
+          "comment" : "Dit gegevenselement is alleen relevant als de optie 'Voorwaardelijke aanbeveling' is geselecteerd in het gegevenselement 'Besluit'. Bijvoorbeeld: \"Overplaatsing naar het ziekenhuis is alleen van toepassing als het individu een fractuur oploopt en immobilisatie nodig heeft voor pijnbestrijding.\""
+        },
+        "at0040.7" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0040.7",
+          "text" : "Toelichting gemaakte afspraken",
+          "description" : "Aanvullende narratieve informatie over het besluit betreffende de interventie, niet vastgelegd in andere velden.",
+          "comment" : "Bijvoorbeeld: de gronden waarop het besluit over de interventie is genomen."
+        },
+        "at0040.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0040.1",
+          "text" : "Toelichting",
+          "description" : "Aanvullende narratieve informatie over het besluit betreffende de interventie, niet vastgelegd in andere velden.",
+          "comment" : "Bijvoorbeeld: de gronden waarop het besluit over de interventie is genomen."
+        },
+        "at0040.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0040.2",
+          "text" : "Toelichting",
+          "description" : "Aanvullende narratieve informatie over het besluit betreffende de interventie, niet vastgelegd in andere velden.",
+          "comment" : "Bijvoorbeeld: de gronden waarop het besluit over de interventie is genomen."
+        },
+        "at0040.5" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0040.5",
+          "text" : "Toelichting",
+          "description" : "Aanvullende narratieve informatie over het besluit betreffende de interventie, niet vastgelegd in andere velden.",
+          "comment" : "Bijvoorbeeld: de gronden waarop het besluit over de interventie is genomen."
+        },
+        "at0044.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0044.1",
+          "text" : "Toelichting",
+          "description" : "Aanvullende narratieve informatie over alle behandelaanwijzingen, niet vastgelegd in andere velden."
+        },
+        "at0040.6" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0040.6",
+          "text" : "Toelichting",
+          "description" : "Aanvullende narratieve informatie over het besluit betreffende de interventie, niet vastgelegd in andere velden.",
+          "comment" : "Bijvoorbeeld: de gronden waarop het besluit over de interventie is genomen."
+        },
+        "at0040.3" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0040.3",
+          "text" : "Toelichting",
+          "description" : "Aanvullende narratieve informatie over het besluit betreffende de interventie, niet vastgelegd in andere velden.",
+          "comment" : "Bijvoorbeeld: de gronden waarop het besluit over de interventie is genomen."
+        },
+        "at0040.4" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0040.4",
+          "text" : "Toelichting",
+          "description" : "Aanvullende narratieve informatie over het besluit betreffende de interventie, niet vastgelegd in andere velden.",
+          "comment" : "Bijvoorbeeld: de gronden waarop het besluit over de interventie is genomen."
+        },
+        "ac0.38" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "*(Synthesized) (en)",
+          "code" : "ac0.38",
+          "description" : ""
+        }
+      }
+    },
+    "termBindings" : {
+      "ACP Primary Agreed-upon Goal of Medical Policy" : {
+        "ac0.23" : "terminology://fhir.hl7.org/ValueSet/$expand?url=https://api.iknl.nl/docs/pzp/r4/ValueSet/ACP-MedicalPolicyGoal"
+      },
+      "ACP Yes, No, Unknown valueSet" : {
+        "ac0.26" : "terminology://fhir.hl7.org/ValueSet/$expand?url=https://api.iknl.nl/docs/pzp/r4/ValueSet/ACP-YesNoUnknownVS",
+        "ac0.27" : "terminology://fhir.hl7.org/ValueSet/$expand?url=https://api.iknl.nl/docs/pzp/r4/ValueSet/ACP-YesNoUnknownVS",
+        "ac0.29" : "terminology://fhir.hl7.org/ValueSet/$expand?url=https://api.iknl.nl/docs/pzp/r4/ValueSet/ACP-YesNoUnknownVS",
+        "ac0.30" : "terminology://fhir.hl7.org/ValueSet/$expand?url=https://api.iknl.nl/docs/pzp/r4/ValueSet/ACP-YesNoUnknownVS",
+        "ac0.31" : "terminology://fhir.hl7.org/ValueSet/$expand?url=https://api.iknl.nl/docs/pzp/r4/ValueSet/ACP-YesNoUnknownVS",
+        "ac0.32" : "terminology://fhir.hl7.org/ValueSet/$expand?url=https://api.iknl.nl/docs/pzp/r4/ValueSet/ACP-YesNoUnknownVS",
+        "ac0.33" : "terminology://fhir.hl7.org/ValueSet/$expand?url=https://api.iknl.nl/docs/pzp/r4/ValueSet/ACP-YesNoUnknownVS"
+      }
+    },
+    "terminologyExtracts" : { },
+    "valueSets" : {
+      "ac0.2" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.2",
+        "members" : [ "at0035", "at0036", "at0037", "at0038" ]
+      },
+      "ac0.3" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.3",
+        "members" : [ ]
+      },
+      "ac0.4" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.4",
+        "members" : [ ]
+      },
+      "ac0.6" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.6",
+        "members" : [ "at0016", "at0017", "at0018", "at0019", "at0020", "at0021", "at0022", "at0023", "at0024", "at0025", "at0026", "at0027", "at0028", "at0029", "at0030", "at0031", "at0032", "at0033" ]
+      },
+      "ac0.7" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.7",
+        "members" : [ ]
+      },
+      "ac0.8" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.8",
+        "members" : [ ]
+      },
+      "ac0.9" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.9",
+        "members" : [ "at0003", "at0004", "at0005", "at0007" ]
+      },
+      "ac0.11" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.11",
+        "members" : [ "at0003", "at0004", "at0005", "at0007" ]
+      },
+      "ac0.13" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.13",
+        "members" : [ "at0016", "at0017", "at0018", "at0019", "at0020", "at0021", "at0022", "at0023", "at0024", "at0025", "at0026", "at0027", "at0028", "at0029", "at0030", "at0031", "at0032", "at0033" ]
+      },
+      "ac0.14" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.14",
+        "members" : [ "at0010", "at0011", "at0012", "at0013" ]
+      },
+      "ac0.16" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.16",
+        "members" : [ "at0035", "at0036", "at0037", "at0038" ]
+      },
+      "ac0.18" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.18",
+        "members" : [ "at0035", "at0036", "at0037", "at0038" ]
+      },
+      "ac0.19" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.19",
+        "members" : [ ]
+      },
+      "ac0.20" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.20",
+        "members" : [ ]
+      },
+      "ac0.21" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.21",
+        "members" : [ ]
+      },
+      "ac0.22" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.22",
+        "members" : [ "at0003", "at0004", "at0005", "at0006", "at0007" ]
+      },
+      "ac0.24" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.24",
+        "members" : [ "at0003", "at0004", "at0005", "at0006", "at0007" ]
+      },
+      "ac0.25" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.25",
+        "members" : [ ]
+      },
+      "ac0.28" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.28",
+        "members" : [ ]
+      },
+      "ac0.35" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.35",
+        "members" : [ "at0035", "at0036", "at0037", "at0038" ]
+      },
+      "ac0.36" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.36",
+        "members" : [ ]
+      },
+      "ac0.37" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.37",
+        "members" : [ ]
+      },
+      "ac0.38" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.38",
+        "members" : [ "at0035", "at0037", "at0038" ]
+      },
+      "ac0.40" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.40",
+        "members" : [ "at0016", "at0017", "at0018", "at0019", "at0020", "at0021", "at0022", "at0023", "at0024", "at0025", "at0026", "at0027", "at0028", "at0029", "at0030", "at0031", "at0032", "at0033" ]
+      },
+      "ac0.41" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.41",
+        "members" : [ "at0016", "at0017", "at0018", "at0019", "at0020", "at0021", "at0022", "at0023", "at0024", "at0025", "at0026", "at0027", "at0028", "at0029", "at0030", "at0031", "at0032", "at0033" ]
+      },
+      "ac0.43" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.43",
+        "members" : [ "at0016", "at0017", "at0018", "at0019", "at0020", "at0021", "at0022", "at0023", "at0024", "at0025", "at0026", "at0027", "at0028", "at0029", "at0030", "at0031", "at0032", "at0033" ]
+      },
+      "ac0.44" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.44",
+        "members" : [ ]
+      },
+      "ac0.45" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.45",
+        "members" : [ ]
+      },
+      "ac0.46" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.46",
+        "members" : [ "ac0.42" ]
+      },
+      "ac0.47" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.47",
+        "members" : [ "ac0.42" ]
+      }
+    }
+  },
+  "adlVersion" : "1.4",
+  "buildUid" : "1056a862-d4d0-3426-9d4e-0053ef2633c4",
+  "rmName" : "openehr",
+  "rmRelease" : "1.1.0",
+  "generated" : true,
+  "templateId" : "nl.openehr::openEHR-EHR-EVALUATION.t_advance_intervention_decisions.v1",
+  "otherMetaData" : { },
+  "templateOverlays" : [ ],
+  "originalLanguage" : {
+    "terminologyId" : {
+      "value" : "ISO_639-1"
+    },
+    "codeString" : "en"
+  },
+  "translations" : [ {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "de"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "nb"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "nl"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  } ]
+}
