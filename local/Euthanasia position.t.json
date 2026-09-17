@@ -8,7 +8,7 @@
     },
     "otherContributors" : [ ],
     "lifecycleState" : {
-      "codeString" : "unmanaged"
+      "codeString" : "in_development"
     },
     "ipAcknowledgements" : { },
     "references" : { },
@@ -19,9 +19,9 @@
       "original_namespace" : "nl.openehr",
       "original_publisher" : "Stichting openEHR Nederland",
       "custodian_namespace" : "nl.openehr",
-      "MD5-CAM-1.0.1" : "4d786eb4176320357983cf8af9643159",
+      "MD5-CAM-1.0.1" : "ea7ea4d65fab989ac8fd9d6371fb37c8",
       "PARENT:MD5-CAM-1.0.1" : "9254286c96812c60c8e57857a30c5ca1",
-      "sem_ver" : "1.0.0-alpha.3",
+      "sem_ver" : "1.0.0-alpha.4",
       "build_uid" : ""
     },
     "details" : {
@@ -150,7 +150,7 @@
     }
   },
   "adlVersion" : "1.4",
-  "buildUid" : "c35a4d36-1212-3f43-8c96-51da4de6421e",
+  "buildUid" : "abe1a311-6a06-3f39-8de9-60296a98e49c",
   "rmName" : "openehr",
   "rmRelease" : "1.1.0",
   "generated" : true,
