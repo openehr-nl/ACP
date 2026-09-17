@@ -19,9 +19,9 @@
       "original_namespace" : "nl.openehr",
       "original_publisher" : "Stichting openEHR Nederland",
       "custodian_namespace" : "nl.openehr",
-      "MD5-CAM-1.0.1" : "83c7cecf856c5e34bd0789e5e7ab2cfc",
+      "MD5-CAM-1.0.1" : "bf4737aae83e7b798067a90a56ccbf52",
       "PARENT:MD5-CAM-1.0.1" : "9fd0940aa213a572427fcfc4dd7e8cd7",
-      "sem_ver" : "1.0.0-alpha.6",
+      "sem_ver" : "1.0.0-alpha.7",
       "build_uid" : ""
     },
     "details" : {
@@ -264,7 +264,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "Voorkeursplaats van overlijden",
+          "text" : "Gewenste plek van overlijden",
           "description" : "*Optimum care setting (en)"
         }
       }
