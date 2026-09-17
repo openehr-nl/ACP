@@ -22,10 +22,10 @@
       "original_namespace" : "nl.rsozuidlimburg",
       "original_publisher" : "RSO Zuid-Limburg",
       "custodian_namespace" : "nl.rsozuidlimburg",
-      "sem_ver" : "1.0.0-alpha.7",
+      "sem_ver" : "1.0.0-alpha.8",
       "is_singleton" : "ehr-tag-formName",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "92f3b0be47f62a354f3068e5332c2cf5",
+      "MD5-CAM-1.0.1" : "e0a0e128ef411cfc05b060ee6d5cb951",
       "PARENT:MD5-CAM-1.0.1" : "0a8590e666d6bfe0c863a79f4b610652"
     },
     "details" : {
@@ -148,11 +148,18 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "Patient preferences",
+          "text" : "Treatment preferences",
           "description" : "A plan for the management of future health and social care requirements, including chronic illness and end of life care."
         }
       },
-      "nl" : { }
+      "nl" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Behandelwensen",
+          "description" : "*A plan for the management of future health and social care requirements, including chronic illness and end of life care. (en)"
+        }
+      }
     },
     "termBindings" : { },
     "terminologyExtracts" : { },
