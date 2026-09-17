@@ -1,0 +1,247 @@
+archetype (adl_version=1.4; uid=3ef74434-1861-4688-a17f-9b614d8af95d)
+	openEHR-EHR-EVALUATION.preferred_care_setting.v1
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+	translations = <
+		["nl"] = <
+			language = <[ISO_639-1::nl]>
+			author = <
+			>
+		>
+	>
+
+description
+	original_author = <
+		["date"] = <"2026-06-12">
+		["name"] = <"Ian McNicoll">
+		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
+		["email"] = <"ian@freshehr.com">
+	>
+	lifecycle_state = <"in_development">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+		["nl"] = <
+			language = <[ISO_639-1::nl]>
+			copyright = <"© openEHR Foundation">
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"freshEHR Clinical Informatics">
+		["current_contact"] = <"Ian McNicoll">
+		["original_namespace"] = <"com.freshehr">
+		["original_publisher"] = <"freshEHR Clinical Informatics">
+		["custodian_namespace"] = <"com.freshehr">
+		["MD5-CAM-1.0.1"] = <"9fd0940aa213a572427fcfc4dd7e8cd7">
+		["build_uid"] = <"49c92f52-5992-3786-b613-1047dab6b57f">
+		["revision"] = <"1.0.0-alpha.1">
+	>
+
+definition
+	EVALUATION[at0000] matches {    -- Preferred care setting
+		data matches {
+			ITEM_TREE[at0001] matches {    -- Item tree
+				items cardinality matches {0..*; unordered} matches {
+					ELEMENT[at0002] occurrences matches {0..1} matches {    -- Care context
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0003] occurrences matches {0..1} matches {    -- Personal or professional
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0005,    -- Personal preference
+									at0006]    -- Professional recommendation
+								}
+							}
+						}
+					}
+					CLUSTER[at0007] occurrences matches {0..*} matches {    -- Preferred care setting
+						items cardinality matches {1..*; unordered} matches {
+							ELEMENT[at0008] occurrences matches {0..1} matches {    -- Order of preference
+								value matches {
+									DV_COUNT matches {*}
+								}
+							}
+							ELEMENT[at0009] occurrences matches {0..1} matches {    -- Care setting
+								value matches {
+									DV_TEXT matches {*}
+								}
+							}
+							ELEMENT[at0014] occurrences matches {0..1} matches {    -- Rationale
+								value matches {
+									DV_TEXT matches {*}
+								}
+							}
+							ELEMENT[at0011] occurrences matches {0..1} matches {    -- Exact location
+								value matches {
+									DV_TEXT matches {*}
+								}
+							}
+							allow_archetype CLUSTER[at0010] occurrences matches {0..*} matches {    -- Location details
+								include
+									archetype_id/value matches {/openEHR-EHR-CLUSTER\.organisation\.v1/}
+							}
+						}
+					}
+				}
+			}
+		}
+		protocol matches {
+			ITEM_TREE[at0004] matches {    -- Item tree
+				items cardinality matches {0..*; unordered} matches {
+					allow_archetype CLUSTER[at0012] occurrences matches {0..*} matches {    -- Extension
+						include
+							archetype_id/value matches {/.*/}
+					}
+					ELEMENT[at0013] occurrences matches {0..1} matches {    -- Last updated
+						value matches {
+							DV_DATE_TIME matches {*}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Preferred care setting">
+					description = <"Optimum care setting">
+				>
+				["at0001"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Care context">
+					description = <"The clinical or care context to which this recomendation or preference applies.">
+					comment = <"For example: Urgent care, Sickle cell disease, Respiratory issues.">
+				>
+				["at0003"] = <
+					text = <"Personal or professional">
+					description = <"Is this a personal preference or clinical recommendation">
+				>
+				["at0004"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0005"] = <
+					text = <"Personal preference">
+					description = <"This is a personal care setting preference.">
+				>
+				["at0006"] = <
+					text = <"Professional recommendation">
+					description = <"This is a professional care setting recommendation.">
+				>
+				["at0007"] = <
+					text = <"Preferred care setting">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"Order of preference">
+					description = <"">
+				>
+				["at0009"] = <
+					text = <"Care setting">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"Location details">
+					description = <"">
+				>
+				["at0011"] = <
+					text = <"Exact location">
+					description = <"">
+				>
+				["at0012"] = <
+					text = <"Extension">
+					description = <"">
+				>
+				["at0013"] = <
+					text = <"Last updated">
+					description = <"">
+				>
+				["at0014"] = <
+					text = <"Rationale">
+					description = <"The reason why this location is preferred or recommended.">
+				>
+			>
+		>
+		["nl"] = <
+			items = <
+				["at0000"] = <
+					text = <"*Preferred care setting (en)">
+					description = <"*Optimum care setting (en)">
+				>
+				["at0001"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"*Care context (en)">
+					description = <"*The clinical or care context to which this recomendation or preference applies. (en)">
+					comment = <"*For example: Urgent care, Sickle cell disease, Respiratory issues. (en)">
+				>
+				["at0003"] = <
+					text = <"*Personal or professional (en)">
+					description = <"*Is this a personal preference or clinical recommendation (en)">
+				>
+				["at0004"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0005"] = <
+					text = <"*Personal preference (en)">
+					description = <"*This is a personal care setting preference. (en)">
+				>
+				["at0006"] = <
+					text = <"*Professional recommendation (en)">
+					description = <"*This is a professional care setting recommendation. (en)">
+				>
+				["at0007"] = <
+					text = <"*Preferred care setting (en)">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"*Order of preference (en)">
+					description = <"">
+				>
+				["at0009"] = <
+					text = <"*Care setting (en)">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"*Location details (en)">
+					description = <"">
+				>
+				["at0011"] = <
+					text = <"*Exact location (en)">
+					description = <"">
+				>
+				["at0012"] = <
+					text = <"*Extension (en)">
+					description = <"">
+				>
+				["at0013"] = <
+					text = <"*Last updated (en)">
+					description = <"">
+				>
+				["at0014"] = <
+					text = <"*Rationale (en)">
+					description = <"*The reason why this location is preferred or recommended. (en)">
+				>
+			>
+		>
+	>
