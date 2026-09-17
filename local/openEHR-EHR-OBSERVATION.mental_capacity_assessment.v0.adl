@@ -1,0 +1,241 @@
+archetype (adl_version=1.4; uid=2c767695-258f-43d0-8928-291808d03605)
+	openEHR-EHR-OBSERVATION.mental_capacity_assessment.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["date"] = <"2021-03-30">
+		["name"] = <"Ian McNicoll">
+		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
+		["email"] = <"ian@freshehr.com">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"To records details of the ability of an individual to use and understand information to make or consent to a decision, plan or intervention.">
+			keywords = <"mental, capacity, competency, competent, decision", ...>
+			use = <"Use to record details about the ability of an individual to use and understand information to make or consent to a decision, plan or intervention.
+
+This archetype is intended to capture information about the mental capacity status of an individual, which is typically assessed in relation to a specific decision or plan that needs to be made about their medical care or treatment at a particular time. If specific details about the mental capacity assessments are required, additional archetypes can be nested within the 'Assessment details' SLOT.">
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["references"] = <"Think Capacity, Think Consent [Internet]. NHS Education for Scotland. 2020 [cited 2020 May 12]. Available from: https://www.nes.scot.nhs.uk/media/1557644/capacity_and_consent-interactive.pdf
+
+What is capacity? [Internet]. Compassion in Dying. 2020 [cited 2020 May 12]. Available from: https://compassionindying.org.uk/making-decisions-and-planning-your-care/treatment-care-decisions/about-capacity/.">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"eb16cbf43a16cb93e556346dcab2c2a2">
+		["build_uid"] = <"3e767161-8af7-3b2a-9dc0-a499c419cded">
+	>
+
+definition
+	OBSERVATION[at0000] matches {    -- Mental capacity assessment
+		data matches {
+			HISTORY[at0001] matches {    -- History
+				events cardinality matches {0..*; unordered} matches {
+					POINT_EVENT[at0002] occurrences matches {0..1} matches {    -- Any event
+						data matches {
+							ITEM_TREE[at0003] matches {    -- Tree
+								items cardinality matches {0..*; unordered} matches {
+									ELEMENT[at0023] occurrences matches {0..1} matches {    -- Context
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0004] occurrences matches {0..1} matches {    -- Decision/plan
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0005] occurrences matches {0..1} matches {    -- Personal capacity
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0006,    -- Has capacity
+													at0007,    -- Does not have capacity
+													at0008]    -- Indeterminate
+												}
+											}
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0021] occurrences matches {0..1} matches {    -- Parental responsibility
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::at0022]    -- Those holding parental responsibility have been involved
+												}
+											}
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0009] occurrences matches {0..1} matches {    -- Description
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									allow_archetype CLUSTER[at0016] occurrences matches {0..*} matches {    -- Details
+										include
+											archetype_id/value matches {/.*/}
+									}
+									CLUSTER[at0010] occurrences matches {0..*} matches {    -- Formal assessment
+										items cardinality matches {1..*; unordered} matches {
+											ELEMENT[at0011] occurrences matches {0..1} matches {    -- Valid period start
+												value matches {
+													DV_DATE_TIME matches {*}
+												}
+											}
+											ELEMENT[at0012] occurrences matches {0..1} matches {    -- Valid period end
+												value matches {
+													DV_DATE_TIME matches {*}
+												}
+											}
+											allow_archetype CLUSTER[at0013] occurrences matches {0..1} matches {    -- Assessor
+												include
+													archetype_id/value matches {/.*/}
+											}
+											allow_archetype CLUSTER[at0014] occurrences matches {0..*} matches {    -- Person consulted
+												include
+													archetype_id/value matches {/.*/}
+											}
+											allow_archetype CLUSTER[at0015] occurrences matches {0..*} matches {    -- Assessment details
+												include
+													archetype_id/value matches {/.*/}
+											}
+										}
+									}
+									ELEMENT[at0017] occurrences matches {0..1} matches {    -- Comment
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		protocol matches {
+			ITEM_TREE[at0018] matches {    -- Item tree
+				items cardinality matches {0..*; unordered} matches {
+					allow_archetype CLUSTER[at0019] occurrences matches {0..*} matches {    -- Extension
+						include
+							archetype_id/value matches {/.*/}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Mental capacity assessment">
+					description = <"The ability of an individual to use and understand information to make or consent to a decision, plan or intervention.">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Any event">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"Decision/plan">
+					description = <"Description of the specific decision or plan to which the mental capacity status and assessment details relate.">
+				>
+				["at0005"] = <
+					text = <"Personal capacity">
+					description = <"The individual's mental capacity status.">
+				>
+				["at0006"] = <
+					text = <"Has capacity">
+					description = <"The individual has sufficient mental capacity to make the decision or plan.">
+				>
+				["at0007"] = <
+					text = <"Does not have capacity">
+					description = <"The individual does not have sufficient mental capacity to make the decision or plan.">
+				>
+				["at0008"] = <
+					text = <"Indeterminate">
+					description = <"It has not been able to determinate whether the individual has sufficient mental capacity to make decision or plan.">
+				>
+				["at0009"] = <
+					text = <"Description">
+					description = <"Narrative description of the individual's mental capacity.">
+				>
+				["at0010"] = <
+					text = <"Formal assessment">
+					description = <"Details of a mental capacity assessment undertaken in relation to the specific decision or plan.">
+				>
+				["at0011"] = <
+					text = <"Valid period start">
+					description = <"The date/time that marks the beginning of the valid period of time for this mental capacity assessment.">
+				>
+				["at0012"] = <
+					text = <"Valid period end">
+					description = <"The date/time that marks the conclusion of the valid period of time for this mental capacity assessment.">
+				>
+				["at0013"] = <
+					text = <"Assessor">
+					description = <"Details of the person carrying out the mental capacity assessment.">
+				>
+				["at0014"] = <
+					text = <"Person consulted">
+					description = <"Details of a person who has been consulted in relation to the mental capacity assessment.">
+				>
+				["at0015"] = <
+					text = <"Assessment details">
+					description = <"Additional structured details about the mental capacity assessment.">
+				>
+				["at0016"] = <
+					text = <"Details">
+					description = <"Structured details about the the individual's mental capacity.">
+				>
+				["at0017"] = <
+					text = <"Comment">
+					description = <"Additional narrative about the individual's mental capacity or incapacity not captured in other fields.">
+				>
+				["at0018"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0019"] = <
+					text = <"Extension">
+					description = <"Additional information required to extend the model with local content or to align with other reference models/formalisms.">
+					comment = <"For example: local information requirements; or additional metadata to align with FHIR.">
+				>
+				["at0021"] = <
+					text = <"Parental responsibility">
+					description = <"">
+				>
+				["at0022"] = <
+					text = <"Those holding parental responsibility have been involved">
+					description = <"Those holding parental responsibility have been fully involved in discussing and making this plan.">
+				>
+				["at0023"] = <
+					text = <"Context">
+					description = <"Description of the specific context to which the mental capacity status and assessment details relate.">
+				>
+			>
+		>
+	>
