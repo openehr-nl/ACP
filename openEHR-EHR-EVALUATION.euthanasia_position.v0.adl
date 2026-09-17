@@ -1,0 +1,175 @@
+archetype (adl_version=1.4; uid=8ef40b79-0de9-420e-9e46-316ef8fb7999)
+	openEHR-EHR-EVALUATION.euthanasia_position.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+	translations = <
+		["nl"] = <
+			language = <[ISO_639-1::nl]>
+			author = <
+			>
+		>
+	>
+
+description
+	original_author = <
+		["date"] = <"2026-07-20">
+		["name"] = <"Heidi Koikkalainen">
+		["organisation"] = <"freshEHR">
+		["email"] = <"hk.freshehr.gmail.com">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+		["nl"] = <
+			language = <[ISO_639-1::nl]>
+			copyright = <"© openEHR Foundation">
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"9254286c96812c60c8e57857a30c5ca1">
+		["build_uid"] = <"02160338-2f31-3867-ba6f-c57b792c4423">
+	>
+
+definition
+	EVALUATION[at0000] matches {    -- Euthanasia position
+		data matches {
+			ITEM_TREE[at0001] matches {    -- Item tree
+				items cardinality matches {0..*; unordered} matches {
+					ELEMENT[at0002] occurrences matches {0..1} matches {    -- Euthanasia position
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0003,    -- Has euthanasia declaration
+									at0004,    -- Does not wish for euthanasia
+									at0005,    -- Unknown
+									at0006]    -- No euthanasia declaration, but could make a request in certain situations
+								}
+							}
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0007] occurrences matches {0..1} matches {    -- Comment
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+				}
+			}
+		}
+		protocol matches {
+			ITEM_TREE[at0008] matches {    -- Item tree
+				items cardinality matches {0..*; unordered} matches {
+					allow_archetype CLUSTER[at0009] occurrences matches {0..*} matches {    -- Extension
+						include
+							archetype_id/value matches {/.*/}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Euthanasia position">
+					description = <"The euthanasia position of an individual, asserted by a clinician.">
+				>
+				["at0001"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Euthanasia position">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"Has euthanasia declaration">
+					description = <"The individual has made a euthanasia declaration.">
+				>
+				["at0004"] = <
+					text = <"Does not wish for euthanasia">
+					description = <"The individual does not wish for euthanasia.">
+				>
+				["at0005"] = <
+					text = <"Unknown">
+					description = <"The individual's position on euthanasia is unknown.">
+				>
+				["at0006"] = <
+					text = <"No euthanasia declaration, but could make a request in certain situations">
+					description = <"The individual has not made a euthanasia declaration, but could make a request in certain situations.">
+				>
+				["at0007"] = <
+					text = <"Comment">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0009"] = <
+					text = <"Extension">
+					description = <"Additional information required to extend the model with local content or to align with other reference models/formalisms.">
+					comment = <"For example: local information requirements; or additional metadata to align with FHIR.">
+				>
+			>
+		>
+		["nl"] = <
+			items = <
+				["at0000"] = <
+					text = <"Euthanasie standpunt">
+					description = <"Het standpunt van een individu inzake euthanasie, zoals naar voren gebracht door een clinicus.">
+				>
+				["at0001"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Euthanasie standpunt">
+					description = <"Het standpunt van een individu inzake euthanasie.">
+				>
+				["at0003"] = <
+					text = <"Heeft euthanasieverklaring">
+					description = <"De persoon heeft een euthanasieverklaring opgesteld.">
+				>
+				["at0004"] = <
+					text = <"Wenst geen euthanasie">
+					description = <"De persoon wenst geen euthanasie.">
+				>
+				["at0005"] = <
+					text = <"Nog onbekend">
+					description = <"Het standpunt van de persoon over euthanasie is onbekend.">
+				>
+				["at0006"] = <
+					text = <"Geen euthanasieverklaring, zou wel verzoek kunnen doen in bepaalde situaties">
+					description = <"De persoon heeft geen euthanasieverklaring opgesteld, maar zou in bepaalde situaties een verzoek kunnen indienen.">
+				>
+				["at0007"] = <
+					text = <"Opmerking">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0009"] = <
+					text = <"Uitbreiding">
+					description = <"Aanvullende informatie die nodig is om het model uit te breiden met lokale inhoud of om het af te stemmen op andere referentiemodellen of formalismen.">
+					comment = <"Bijvoorbeeld: lokale informatiebehoeften; of aanvullende metadata om af te stemmen op FHIR.">
+				>
+			>
+		>
+	>
