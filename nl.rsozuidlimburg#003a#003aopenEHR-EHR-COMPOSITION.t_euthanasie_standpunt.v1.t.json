@@ -22,10 +22,10 @@
       "original_namespace" : "nl.rsozuidlimburg",
       "original_publisher" : "RSO Zuid-Limburg",
       "custodian_namespace" : "nl.rsozuidlimburg",
-      "sem_ver" : "1.0.0-alpha.7",
+      "sem_ver" : "1.0.0-alpha.8",
       "is_singleton" : "ehr-tag-formName",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "92bffc0114ed392dd8e92ccf28912ed1",
+      "MD5-CAM-1.0.1" : "d351cb0101228289432d04a54b532b80",
       "PARENT:MD5-CAM-1.0.1" : "0a8590e666d6bfe0c863a79f4b610652"
     },
     "details" : {
@@ -143,7 +143,14 @@
           "description" : "A plan for the management of future health and social care requirements, including chronic illness and end of life care."
         }
       },
-      "nl" : { }
+      "nl" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Euthanasie standpunt",
+          "description" : "*A plan for the management of future health and social care requirements, including chronic illness and end of life care. (en)"
+        }
+      }
     },
     "termBindings" : { },
     "terminologyExtracts" : { },
