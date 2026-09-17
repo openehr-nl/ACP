@@ -19,9 +19,9 @@
       "original_namespace" : "nl.openehr",
       "original_publisher" : "Stichting openEHR Nederland",
       "custodian_namespace" : "nl.openehr",
-      "MD5-CAM-1.0.1" : "f6b169d987fdc5f6534d7de3e949b838",
+      "MD5-CAM-1.0.1" : "2561ecddf243327b82afd2537e9ab628",
       "PARENT:MD5-CAM-1.0.1" : "8d3d4e087840051c6901fb2ee7b49f30",
-      "sem_ver" : "1.0.0-alpha.9",
+      "sem_ver" : "1.0.0-alpha.10",
       "build_uid" : ""
     },
     "details" : {
@@ -75,6 +75,7 @@
           "children" : [ {
             "@type" : "C_COMPLEX_OBJECT",
             "rmTypeName" : "ELEMENT",
+            "occurrences" : "0..0",
             "nodeId" : "at0011.1",
             "attributes" : [ {
               "@type" : "C_ATTRIBUTE",
@@ -213,6 +214,12 @@
           "code" : "at0002.4",
           "text" : "Wat verder nog belangrijk is",
           "description" : "*Narrative supplied by the patient about the topic. (en)"
+        },
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Over mij",
+          "description" : "*About me (en)"
         }
       }
     },
