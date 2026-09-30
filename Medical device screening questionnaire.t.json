@@ -20,8 +20,8 @@
       "original_publisher" : "Stichting openEHR Nederland",
       "custodian_namespace" : "nl.openehr",
       "MD5-CAM-1.0.1" : "3f5f9279512a0afc1f497640a678c7b0",
-      "PARENT:MD5-CAM-1.0.1" : "CAC43F51B959C1BAF588E16126C71E63",
-      "sem_ver" : "1.0.0-alpha.6",
+      "PARENT:MD5-CAM-1.0.1" : "809a2908c52638f78b341e60a474fdf0",
+      "sem_ver" : "1.0.0-alpha.7",
       "build_uid" : ""
     },
     "details" : {
